@@ -81,8 +81,8 @@ def main(input_filepath, output_filepath):
         Train[i] = merged
 
     # Convert to dataloader object
-    train_images = torch.Tensor(Train['images']).view(1, Train['images'].shape[0], Train['images'].shape[1])
-    test_images = torch.Tensor(Test['images']).view(1, Train['images'].shape[0], Train['images'].shape[1])
+    train_images = torch.Tensor(Train['images'])
+    test_images = torch.Tensor(Test['images'])
     Train = torch.utils.data.TensorDataset(train_images, torch.Tensor(Train['labels']).type(torch.LongTensor))
     Test = torch.utils.data.TensorDataset(test_images, torch.Tensor(Test['labels']).type(torch.LongTensor))
 

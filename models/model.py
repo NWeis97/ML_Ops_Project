@@ -31,6 +31,8 @@ class ConvolutionModel_v1(nn.Module):
         self.Dropout = nn.Dropout(p=0.2)
 
     def forward(self, x):
+        x = x.view(x.shape[0], 1, x.shape[1], x.shape[2])
+
         x = self.maxpooling(F.leaky_relu(self.cl1(x)))
         x = self.maxpooling(F.leaky_relu(self.cl2(x)))
         x = self.maxpooling(F.leaky_relu(self.cl3(x)))

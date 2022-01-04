@@ -82,7 +82,7 @@ if Test.__getitem__(0).__len__() == 2:  # If labels are known
                 "Labels": all_labels,
             }
         )
-        res.to_csv("reports/predictions/" + args.modelName + ".csv")
+        res.to_csv("reports/predictions/" + modelName + ".csv")
 
         # Print scores
         running_acc = running_acc / len(test_set)
@@ -106,8 +106,8 @@ else:  # If labels are unknown
                 "Labels": all_labels,
             }
         )
-        res.to_csv("reports/predictions/" + args.modelName + ".csv")
+        res.to_csv("reports/predictions/" + modelName + ".csv")
 
 
-print('See predictions in "' + "reports/predictions/" + args.modelName + '.csv"')
+print('See predictions in "' + "reports/predictions/" + modelName + '.csv"')
 print("Done!\n")

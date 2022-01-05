@@ -7,6 +7,7 @@ import click
 import numpy as np
 import torch
 from dotenv import find_dotenv, load_dotenv
+import os
 
 # I mports for data prep
 from numpy.lib.npyio import load
@@ -15,25 +16,22 @@ from numpy.lib.npyio import load
 @click.command()
 @click.argument("input_filepath", type=click.Path(exists=True))
 @click.argument("output_filepath", type=click.Path())
+
 def main(input_filepath, output_filepath):
     """Runs data processing scripts to turn raw data from (../raw) into
     cleaned data ready to be analyzed (saved in ../processed).
     """
     # Load data
-    folderpath = "data/raw/"
+    folderpath = input_filepath
     Test = dict(np.load(folderpath + "test.npz"))
 
     # Concatenate training datasets
     # Inspiration from https://coderedirect.com/questions/615101/how-to-merge-very-large-numpy-arrays
 
     # Define train datasets to load and dicts
-    data_files = [
-        "train_0.npz",
-        "train_1.npz",
-        "train_2.npz",
-        "train_3.npz",
-        "train_4.npz",
-    ]
+    files = os.listdir(folderpath)
+    data_files = [word for word in files if word.startswith('train')]
+  
     n_items = {"images": 0, "labels": 0, "allow_pickle": 0}
     rows = {"images": None, "labels": None, "allow_pickle": None}
     cols = {"images": None, "labels": None, "allow_pickle": None}
@@ -87,8 +85,8 @@ def main(input_filepath, output_filepath):
     Test = torch.utils.data.TensorDataset(test_images, torch.Tensor(Test['labels']).type(torch.LongTensor))
 
     # Save datasets in data/processed
-    torch.save(Train, "data/processed/train_dataset.pt")
-    torch.save(Test, "data/processed/test_dataset.pt")
+    torch.save(Train, output_filepath + "train_dataset.pt")
+    torch.save(Test, output_filepath + "test_dataset.pt")
 
     # Exit notes
     logger = logging.getLogger(__name__)

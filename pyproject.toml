@@ -35,6 +35,11 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
+[tool.flake8]
+#exclude = venv
+extend-ignore = "W503," # W503: Line break occurred before binary operator
+max-line-length = 100
+
 [tool.black]
 line-length = 100
 target_version = ['py39']

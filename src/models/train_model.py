@@ -113,6 +113,7 @@ def main():
     # Plot training loss
     sns.set_theme()
     plt.plot(train_losses)
+    os.makedirs("reports/figures/training_loss/", exist_ok=True) #Create if not already exist
     plt.savefig(
         "reports/figures/training_loss/"
         + args.modelType

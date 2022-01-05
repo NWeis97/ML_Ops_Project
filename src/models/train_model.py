@@ -22,7 +22,9 @@ import seaborn as sns
 import torch
 from torch import nn, optim
 
-from models.model import ConvolutionModel_v1
+import os
+
+from model import ConvolutionModel_v1
 
 sns.set_style("whitegrid")
 
@@ -94,6 +96,7 @@ def main():
             print("")
 
     # Save model
+    os.makedirs("models/fits/", exist_ok=True) #Create if not already exist
     torch.save(
         model,
         "models/fits/"

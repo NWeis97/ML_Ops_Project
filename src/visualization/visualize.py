@@ -98,9 +98,7 @@ def main():
 
             # Create path to images, if not existing
             pathToImage = fpath + modelName + "/" + name + "/"
-            isExist = os.path.exists(pathToImage)
-            if not isExist:
-                os.makedirs(pathToImage)
+            os.makedirs(pathToImage, exist_ok=True)
 
             for i in range(10):
                 # Get activations of i'th number

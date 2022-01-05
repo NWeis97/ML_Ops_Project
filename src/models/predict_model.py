@@ -9,8 +9,6 @@ import seaborn as sns
 import torch
 from torch import nn, optim
 
-from models.model import ConvolutionModel_v1
-
 sns.set_style("whitegrid")
 
 import pdb

@@ -96,7 +96,7 @@ def main():
             print("")
 
     # Save model
-    os.makedirs("models/fits/", exist_ok=True) #Create if not already exist
+    os.makedirs("./models/fits/", exist_ok=True) #Create if not already exist
     torch.save(
         model,
         "models/fits/"
@@ -113,7 +113,7 @@ def main():
     # Plot training loss
     sns.set_theme()
     plt.plot(train_losses)
-    os.makedirs("reports/figures/training_loss/", exist_ok=True) #Create if not already exist
+    os.makedirs("./reports/figures/training_loss/", exist_ok=True) #Create if not already exist
     plt.savefig(
         "reports/figures/training_loss/"
         + args.modelType

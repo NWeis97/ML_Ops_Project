@@ -8,6 +8,7 @@ import pandas as pd
 import seaborn as sns
 import torch
 from torch import nn, optim
+import os
 
 sns.set_style("whitegrid")
 
@@ -81,6 +82,7 @@ def main():
                     "Labels": all_labels,
                 }
             )
+            os.makedirs("reports/predictions/", exist_ok=True) #Create if not already exist
             res.to_csv("reports/predictions/" + modelName + ".csv")
 
             # Print scores
@@ -105,6 +107,7 @@ def main():
                     "Labels": all_labels,
                 }
             )
+            os.makedirs("reports/predictions/", exist_ok=True) #Create if not already exist
             res.to_csv("reports/predictions/" + modelName + ".csv")
 
 

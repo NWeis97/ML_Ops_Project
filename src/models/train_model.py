@@ -23,55 +23,89 @@ import torch
 from torch import nn, optim
 
 import os
-
-from model import ConvolutionModel_v1
-
+import pdb
+from model import ConvolutionModel_v1, CNNModuleVar
 sns.set_style("whitegrid")
 
-import pdb
+import hydra
+from hydra import compose, initialize
+from omegaconf import OmegaConf,DictConfig
 
-def main():
-    ###################################################
-    #################### Arguments ####################
-    ###################################################
-    # Arguments to be called
-    parser = argparse.ArgumentParser(description="Training arguments")
-    parser.add_argument("--lr", default=0.003)
-    parser.add_argument("--epochs", default=30)
-    parser.add_argument("--batchsize", default=64)
-    parser.add_argument("--modelType", default="ConvolutionModel_v1")
 
-    # Save arguments in args
-    args = parser.parse_args(sys.argv[1:])
-    print(args)
+import logging
+log = logging.getLogger(__name__)
 
+
+
+def build_model():
+    initialize(config_path="../../configs/", job_name="model")
+    cfg = compose(config_name="model.yaml")
+    log.info(f"configuration: \n {OmegaConf.to_yaml(cfg)}")
+    configs = cfg['hyperparameters']
 
     ###################################################
     ################# Hyperparameters #################
     ###################################################
-    # Define models, loss-function and optimizer
-    if args.modelType == "ConvolutionModel_v1":
-        model = ConvolutionModel_v1()
-    else:
-        print("Model type not found")
-    epochs = args.epochs
+    input_channel = configs['input_channel']
+    conv_to_linear_dim = configs['conv_to_linear_dim']
+    output_dim = configs['output_dim']
+    hidden_channel_array = configs['hidden_channel_array']
+    hidden_kernel_array = configs['hidden_kernel_array']
+    hidden_stride_array = configs['hidden_stride_array']
+    hidden_padding_array = configs['hidden_padding_array']
+    hidden_dim_array = configs['hidden_dim_array']
+    non_linear_function_array = configs['non_linear_function_array']
+    regularization_array = configs['regularization_array']
 
+    # Define models, loss-function and optimizer
+    model = CNNModuleVar(input_channel, conv_to_linear_dim,
+                        output_dim,hidden_channel_array,
+                        hidden_kernel_array,hidden_stride_array,
+                        hidden_padding_array,hidden_dim_array,
+                        non_linear_function_array,regularization_array)
+
+    return model
+
+
+
+def train():
+    # Get model struct
+    model = build_model()
+
+    cfg = compose(config_name="training.yaml")
+    log.info(f"configuration: \n {OmegaConf.to_yaml(cfg)}")
+    configs = cfg['hyperparameters']
+    
+    ###################################################
+    ################# Hyperparameters #################
+    ###################################################
+    batch_size = configs['batch_size']
+    lr = configs['lr']
+    epochs = configs['epochs']
+    seed = configs['seed']
+
+    # Set seed
+    torch.manual_seed(seed)
+
+    # Set name
+    modelType = 'CNNModuleVar'
 
     ###################################################
     ################### Load data #####################
     ###################################################
     # Load data and put in DataLoader
     Train = torch.load("data/processed/train_dataset.pt")
-    train_set = torch.utils.data.DataLoader(Train, batch_size=args.batchsize, shuffle=True)
+    train_set = torch.utils.data.DataLoader(Train, batch_size=batch_size, shuffle=True)
 
     # Set loss-function and optimizer
     criterion = nn.NLLLoss()
-    optimizer = optim.Adam(model.parameters(), lr=args.lr)
+    optimizer = optim.Adam(model.parameters(), lr=lr)
 
 
     ###################################################
     ################## Run training ###################
     ###################################################
+    epochs = epochs
     model.train()
     train_losses = []
     for e in range(epochs):
@@ -91,22 +125,22 @@ def main():
 
         else:
             train_losses.append(running_loss / len(train_set))
-            print("epoch: ", str(e), "/", str(epochs))
-            print("Training_loss: ", str(train_losses[e]))
-            print("")
+            log.info("epoch: ", str(e), "/", str(epochs))
+            log.info("Training_loss: ", str(train_losses[e]))
+            log.info("")
 
     # Save model
     os.makedirs("./models/fits/", exist_ok=True) #Create if not already exist
     torch.save(
         model,
         "models/fits/"
-        + args.modelType
+        + modelType
         + "_lr"
-        + str(args.lr)
+        + str(lr)
         + "_e"
-        + str(args.epochs)
+        + str(epochs)
         + "_bs"
-        + str(args.batchsize)
+        + str(batch_size)
         + ".pth",
     )
 
@@ -116,16 +150,16 @@ def main():
     os.makedirs("./reports/figures/training_loss/", exist_ok=True) #Create if not already exist
     plt.savefig(
         "reports/figures/training_loss/"
-        + args.modelType
+        + modelType
         + "_lr"
-        + str(args.lr)
+        + str(lr)
         + "_e"
-        + str(args.epochs)
+        + str(epochs)
         + "_bs"
-        + str(args.batchsize)
+        + str(batch_size)
         + ".png"
     )
 
 
 if __name__ == "__main__":
-    main()
+    train()

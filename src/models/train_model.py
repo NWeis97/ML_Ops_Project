@@ -30,17 +30,24 @@ sns.set_style("whitegrid")
 import hydra
 from hydra import compose, initialize
 from omegaconf import OmegaConf,DictConfig
+import datetime
+import wandb
+
 
 
 import logging
-log = logging.getLogger(__name__)
-
+#log = logging.getLogger(__name__)
+logfp = 'outputs/' + str(datetime.datetime.now().date()) + '/' + str(datetime.datetime.now().strftime("%H-%M-%S")) + '/'
+os.makedirs(logfp, exist_ok = True)
+result = re.search("(.*).py", os.path.basename(__file__))
+fileName = result.group(1)
+logging.basicConfig(filename=logfp+fileName+'.log', encoding='utf-8', level=logging.INFO)
 
 
 def build_model():
     initialize(config_path="../../configs/", job_name="model")
     cfg = compose(config_name="model.yaml")
-    log.info(f"configuration: \n {OmegaConf.to_yaml(cfg)}")
+    logging.info(f"configuration: \n {OmegaConf.to_yaml(cfg)}")
     configs = cfg['hyperparameters']
 
     ###################################################
@@ -64,18 +71,23 @@ def build_model():
                         hidden_padding_array,hidden_dim_array,
                         non_linear_function_array,regularization_array)
 
-    return model
+    return model, configs
 
 
 
 def train():
     # Get model struct
-    model = build_model()
+    model, model_conf = build_model()
 
     cfg = compose(config_name="training.yaml")
-    log.info(f"configuration: \n {OmegaConf.to_yaml(cfg)}")
+    logging.info(f"configuration: \n {OmegaConf.to_yaml(cfg)}")
     configs = cfg['hyperparameters']
     
+
+    # Set up wandb magic
+    wandb.init(config={'model':model_conf, 'train':configs})
+    wandb.watch(model, log_freq=100)
+
     ###################################################
     ################# Hyperparameters #################
     ###################################################
@@ -125,9 +137,10 @@ def train():
 
         else:
             train_losses.append(running_loss / len(train_set))
-            log.info("epoch: ", str(e), "/", str(epochs))
-            log.info("Training_loss: ", str(train_losses[e]))
-            log.info("")
+            wandb.log({"loss": train_losses[e]})
+            logging.info("epoch: " + str(e) + "/" + str(epochs))
+            logging.info("Training_loss: " + str(train_losses[e]))
+            logging.info("")
 
     # Save model
     os.makedirs("./models/fits/", exist_ok=True) #Create if not already exist

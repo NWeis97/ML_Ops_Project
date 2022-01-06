@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/train_model.py", line 203, in <module>
+    train()
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/train_model.py", line 199, in train
+    wandb.log({'validation_accuracy': torch.mean(equals)})
+RuntimeError: mean(): input dtype should be either floating point or complex dtypes. Got Bool instead.

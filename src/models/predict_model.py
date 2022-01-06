@@ -31,7 +31,7 @@ def main():
     modelName = configs['modelName']
 
     # Set up wandb magic
-    wandb.init(config={'predict':configs}, job_type='Predict')
+    wandb.init(config={'predict':configs}, job_type='Predict',entity='nweis97',project='ML_Ops_Project')
 
     ###################################################
     ############### Load model and data ###############

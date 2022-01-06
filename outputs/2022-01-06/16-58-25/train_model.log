@@ -1,0 +1,55 @@
+INFO:root:configuration: 
+ hyperparameters:
+  input_channel: 1
+  conv_to_linear_dim: 144
+  output_dim: 10
+  hidden_channel_array:
+  - 4
+  - 8
+  - 16
+  hidden_kernel_array:
+  - 3
+  - 3
+  - 3
+  hidden_stride_array:
+  - 1
+  - 1
+  - 1
+  hidden_padding_array:
+  - 1
+  - 1
+  - 1
+  hidden_dim_array:
+  - 50
+  non_linear_function_array: []
+  regularization_array: []
+
+INFO:root:configuration: 
+ hyperparameters:
+  batch_size: 64
+  batch_ratio_validation: 0.2
+  lr: 0.001
+  epochs: 20
+  seed: 1234
+  optimizer: adam
+  momentum: 0.9
+  weight_decay: 0.02
+
+INFO:root:epoch: 0/20
+INFO:root:Training_loss: 2.302660075187683
+INFO:root:
+INFO:root:epoch: 1/20
+INFO:root:Training_loss: 2.30146165561676
+INFO:root:
+INFO:root:epoch: 2/20
+INFO:root:Training_loss: 2.301219604969025
+INFO:root:
+INFO:root:epoch: 3/20
+INFO:root:Training_loss: 2.3011696567535402
+INFO:root:
+INFO:root:epoch: 4/20
+INFO:root:Training_loss: 2.3011690969467162
+INFO:root:
+INFO:root:epoch: 5/20
+INFO:root:Training_loss: 2.301172926425934
+INFO:root:

@@ -66,10 +66,10 @@ class CNNModuleVar(nn.Module):
         self.hidden_conv_layers = len(hidden_channel_array)
         self.hidden_linear_layers = len(hidden_dim_array)
         
-        #Extract activation functions - not implemented yet
+        
+#Extract activation functions - not implemented yet
         #self.non_linear_functions_conv = [x() for x in non_linear_function_array[:self.hidden_conv_layers]]
         #self.non_linear_functions_linear = [x() for x in non_linear_function_array[self.hidden_conv_layers:]]
-
         #Extract reguralizers - not implemented yet
         #self.regularization_conv = [x() for x in regularization_array[:self.hidden_conv_layers]]
         #self.regularization_linear = [x() for x in regularization_array[self.hidden_conv_layers:]]

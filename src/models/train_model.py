@@ -86,7 +86,7 @@ def train():
     
 
     # Set up wandb magic
-    wandb.init(config={'model':model_conf, 'train':configs})
+    wandb.init(config={'model':model_conf, 'train':configs},job_type='Train',entity='nweis97',project='ML_Ops_Project')
     wandb.watch(model, log_freq=100)
 
     ###################################################
@@ -96,6 +96,10 @@ def train():
     lr = configs['lr']
     epochs = configs['epochs']
     seed = configs['seed']
+    optimizer = configs['optimizer']
+    batch_ratio_validation = configs['batch_ratio_validation']
+    momentum = configs['momentum']
+    weight_decay = configs['weight_decay']
 
     # Set seed
     torch.manual_seed(seed)
@@ -106,18 +110,26 @@ def train():
     ###################################################
     ################### Load data #####################
     ###################################################
-    # Load data and put in DataLoader
+    # Load data and put in DataLoader (also split into train and validation data)
     Train = torch.load("data/processed/train_dataset.pt")
+    num_val = int(batch_ratio_validation*Train.__len__())
+    (Train, Val) = torch.utils.data.random_split(Train, [
+                                                 Train.__len__()-num_val,num_val
+                                                 ])
     train_set = torch.utils.data.DataLoader(Train, batch_size=batch_size, shuffle=True)
+    val_set = torch.utils.data.DataLoader(Val, batch_size=Val.__len__(), shuffle=False)
+
+    # Set val-data for validation accuracy
+    val_images, val_labels = next(iter(val_set))
 
     # Set loss-function and optimizer
     criterion = nn.NLLLoss()
-    optimizer = optim.Adam(model.parameters(), lr=lr)
-
-
-    # See examples of test-data in wandb
-    (images, labels) = next(iter(train_set))
-    wandb.log({"examples" : [wandb.Image(im) for im in images]})
+    if optimizer == 'sgd':
+        optimizer = optim.SGD(model.parameters(), lr=lr, momentum = momentum)
+    elif optimizer == 'adamw':
+        optimizer = optim.AdamW(model.parameters(), lr=lr, weight_decay=weight_decay)
+    else:
+        optimizer = optim.Adam(model.parameters(), lr=lr)
 
 
     ###################################################
@@ -127,7 +139,6 @@ def train():
     model.train()
     train_losses = []
     for e in range(epochs):
-        model.train()
         running_loss = 0
         for images, labels in train_set:
 
@@ -140,7 +151,7 @@ def train():
             optimizer.step()
 
             running_loss += loss.item()
-            wandb.log({"batch_loss": loss.item()})
+            wandb.log({"batch_loss": loss.item()}) #Log to wandb
         else:
             train_losses.append(running_loss / len(train_set))
             wandb.log({"loss": train_losses[e]})
@@ -148,8 +159,6 @@ def train():
             logging.info("Training_loss: " + str(train_losses[e]))
             logging.info("")
 
-    # Save name of model to wandb
-    wandb.log({"modelLocation": 'models/' + logfp + modelType})
 
     # Save model
     os.makedirs("./models/" + logfp, exist_ok=True) #Create if not already exist
@@ -171,6 +180,22 @@ def train():
         + modelType
         + ".png",
     )
+
+    ###################################################
+    ####################  WandB  ######################
+    ###################################################
+    # Save name of model to wandb
+    wandb.log({"modelLocation": 'models/' + logfp + modelType})
+
+    # See examples of train-data in wandb
+    (images, labels) = next(iter(train_set))
+    wandb.log({"examples" : [wandb.Image(im) for im in images]})
+
+    #Calculate validation and send to wandb
+    log_ps_valid = torch.exp(model(val_images))
+    top_p, top_class = log_ps_valid.topk(1, dim=1)
+    equals = top_class == val_labels.view(*top_class.shape)
+    wandb.log({'validation_accuracy': torch.mean(equals)})
 
 
 if __name__ == "__main__":

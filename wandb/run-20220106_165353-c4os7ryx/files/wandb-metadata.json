@@ -1,0 +1,39 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.9.7",
+    "heartbeatAt": "2022-01-06T15:53:55.028703",
+    "startedAt": "2022-01-06T15:53:53.308590",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "batch_size=32",
+        "conv_to_linear_dim=144",
+        "epochs=40",
+        "hidden_channel_array=[4, 8, 16]",
+        "hidden_dim_array=[50]",
+        "hidden_kernel_array=[3, 3, 3]",
+        "hidden_padding_array=[1, 1, 1]",
+        "hidden_stride_array=[1, 1, 1]",
+        "input_channel=1",
+        "lr=0.001",
+        "momentum=0.95",
+        "non_linear_function_array=[]",
+        "optimizer=adamw",
+        "output_dim=10",
+        "regularization_array=[]",
+        "weight_decay=0.02"
+    ],
+    "state": "running",
+    "program": "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/train_model.py",
+    "codePath": "src/models/train_model.py",
+    "git": {
+        "remote": "https://github.com/NWeis97/ML_Ops_Project.git",
+        "commit": "b0d72b151b3f12bc510284d13b17cb78b841a3ad"
+    },
+    "email": "nicolai.weisbjerg@gmail.com",
+    "root": "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo",
+    "host": "nicolais-mbp-2.students.clients.local",
+    "username": "weis",
+    "executable": "/opt/anaconda3/envs/py39/bin/python"
+}

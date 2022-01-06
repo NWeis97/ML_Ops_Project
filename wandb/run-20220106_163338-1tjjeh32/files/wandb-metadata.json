@@ -1,0 +1,22 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.9.7",
+    "heartbeatAt": "2022-01-06T15:33:40.915766",
+    "startedAt": "2022-01-06T15:33:38.704067",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/train_model.py",
+    "codePath": "src/models/train_model.py",
+    "git": {
+        "remote": "https://github.com/NWeis97/ML_Ops_Project.git",
+        "commit": "b0d72b151b3f12bc510284d13b17cb78b841a3ad"
+    },
+    "email": "nicolai.weisbjerg@gmail.com",
+    "root": "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo",
+    "host": "nicolais-mbp-2.students.clients.local",
+    "username": "weis",
+    "executable": "/opt/anaconda3/envs/py39/bin/python3"
+}

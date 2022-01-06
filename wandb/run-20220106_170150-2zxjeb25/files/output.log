@@ -1,0 +1,42 @@
+> /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/train_model.py(138)train()
+-> epochs = epochs
+
+(Pdb) num_val
+8000
+
+
+(Pdb) train_set.__len__()
+500
+
+
+(Pdb) Train.__len__()
+32000
+
+
+(Pdb) Val.__len__()))
+8000
+(Pdb) optimizer
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0.02
+)
+(Pdb) exirt
+*** NameError: name 'exirt' is not defined
+
+(Pdb) exit
+Traceback (most recent call last):
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/train_model.py", line 202, in <module>
+    train()
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/train_model.py", line 138, in train
+    epochs = epochs
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/train_model.py", line 138, in train
+    epochs = epochs
+  File "/opt/anaconda3/envs/py39/lib/python3.9/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/opt/anaconda3/envs/py39/lib/python3.9/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

@@ -1,6 +1,10 @@
 #config.yaml
 hyperparameters:
   batch_size: 64
+  batch_ratio_validation: 0.2
   lr: 0.001
   epochs: 20
   seed: 1234
+  optimizer: 'adam'
+  momentum: 0.9
+  weight_decay: 0

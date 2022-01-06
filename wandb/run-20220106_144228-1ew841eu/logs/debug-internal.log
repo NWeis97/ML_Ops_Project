@@ -1,0 +1,667 @@
+2022-01-06 14:42:29,797 INFO    MainThread:6131 [internal.py:wandb_internal():87] W&B internal server running at pid: 6131, started at: 2022-01-06 14:42:29.797671
+2022-01-06 14:42:29,800 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: check_version
+2022-01-06 14:42:29,800 INFO    WriterThread:6131 [datastore.py:open_for_write():77] open: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/run-1ew841eu.wandb
+2022-01-06 14:42:29,802 DEBUG   SenderThread:6131 [sender.py:send():234] send: header
+2022-01-06 14:42:29,802 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: check_version
+2022-01-06 14:42:29,897 DEBUG   SenderThread:6131 [sender.py:send():234] send: run
+2022-01-06 14:42:30,150 INFO    SenderThread:6131 [dir_watcher.py:__init__():169] watching files in: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files
+2022-01-06 14:42:30,151 INFO    SenderThread:6131 [sender.py:_start_run_threads():804] run started: 1ew841eu with start time 1641476548
+2022-01-06 14:42:30,151 DEBUG   SenderThread:6131 [sender.py:send():234] send: summary
+2022-01-06 14:42:30,151 INFO    SenderThread:6131 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-06 14:42:30,153 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: run_start
+2022-01-06 14:42:30,155 DEBUG   HandlerThread:6131 [meta.py:__init__():40] meta init
+2022-01-06 14:42:30,155 DEBUG   HandlerThread:6131 [meta.py:__init__():54] meta init done
+2022-01-06 14:42:30,155 DEBUG   HandlerThread:6131 [meta.py:probe():214] probe
+2022-01-06 14:42:30,162 DEBUG   HandlerThread:6131 [meta.py:_setup_git():204] setup git
+2022-01-06 14:42:30,197 DEBUG   HandlerThread:6131 [meta.py:_setup_git():211] setup git done
+2022-01-06 14:42:30,198 DEBUG   HandlerThread:6131 [meta.py:_save_pip():58] save pip
+2022-01-06 14:42:30,200 DEBUG   HandlerThread:6131 [meta.py:_save_pip():72] save pip done
+2022-01-06 14:42:30,200 DEBUG   HandlerThread:6131 [meta.py:_save_conda():79] save conda
+2022-01-06 14:42:31,158 INFO    Thread-8  :6131 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/conda-environment.yaml
+2022-01-06 14:42:31,159 INFO    Thread-8  :6131 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/requirements.txt
+2022-01-06 14:42:31,159 INFO    Thread-8  :6131 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/wandb-summary.json
+2022-01-06 14:42:34,100 DEBUG   HandlerThread:6131 [meta.py:_save_conda():89] save conda done
+2022-01-06 14:42:34,100 DEBUG   HandlerThread:6131 [meta.py:probe():252] probe done
+2022-01-06 14:42:34,106 DEBUG   SenderThread:6131 [sender.py:send():234] send: files
+2022-01-06 14:42:34,107 INFO    SenderThread:6131 [sender.py:_save_file():939] saving file wandb-metadata.json with policy now
+2022-01-06 14:42:34,115 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-06 14:42:34,116 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: stop_status
+2022-01-06 14:42:34,168 INFO    Thread-8  :6131 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/conda-environment.yaml
+2022-01-06 14:42:34,169 INFO    Thread-8  :6131 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/wandb-metadata.json
+2022-01-06 14:42:34,169 INFO    Thread-8  :6131 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/output.log
+2022-01-06 14:42:34,721 INFO    Thread-11 :6131 [upload_job.py:push():137] Uploaded file /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T/tmpkxrvsi1gwandb/2csv8zie-wandb-metadata.json
+2022-01-06 14:42:36,176 INFO    Thread-8  :6131 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/output.log
+2022-01-06 14:42:36,437 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: log_artifact
+2022-01-06 14:42:36,438 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: log_artifact
+2022-01-06 14:42:37,179 INFO    Thread-8  :6131 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/media/table/mnist_predictions_first500_0_c6465744f514eeb4460f.table.json
+2022-01-06 14:42:37,180 INFO    Thread-8  :6131 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/media
+2022-01-06 14:42:37,180 INFO    Thread-8  :6131 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/media/table
+2022-01-06 14:42:38,184 INFO    Thread-8  :6131 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/output.log
+2022-01-06 14:42:38,270 INFO    Thread-63 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/11/71f1c2564cfda8a991e716490b771e
+2022-01-06 14:42:38,280 INFO    Thread-65 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/11/c7a574c19522c54eef57f02092dc7e
+2022-01-06 14:42:38,280 INFO    Thread-37 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/08/924422f72c3305d162b2509fa8b683
+2022-01-06 14:42:38,282 INFO    Thread-73 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/15/353f0e7781939f86e77cbad6e54a1b
+2022-01-06 14:42:38,286 INFO    Thread-66 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/11/e995de633d6e5bd3939bfaca90b631
+2022-01-06 14:42:38,290 INFO    Thread-75 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/15/ffc8d335007e796ef876d171954848
+2022-01-06 14:42:38,290 INFO    Thread-41 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/09/7e72b694fb1c3557620573dbe838f4
+2022-01-06 14:42:38,291 INFO    Thread-51 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0e/382ee4db6dd0172647b76ad65d4911
+2022-01-06 14:42:38,292 INFO    Thread-76 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/16/3ba6f0d8ae2358d4cc07a48c2e3cdd
+2022-01-06 14:42:38,297 INFO    Thread-50 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0d/039b6ca9a251cd9223f9e5403ea0eb
+2022-01-06 14:42:38,297 INFO    Thread-55 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0f/1a64df89ac0f5dcf09be002bdafade
+2022-01-06 14:42:38,304 INFO    Thread-60 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/10/856e29f530d9f0f76d0a0adc9dffa5
+2022-01-06 14:42:38,305 INFO    Thread-30 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/07/96a2d99f483a9dc5114d342c9d2e0b
+2022-01-06 14:42:38,306 INFO    Thread-62 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/11/67673a5f6b5bff3fb220f7493806d3
+2022-01-06 14:42:38,307 INFO    Thread-43 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0a/063d730aafd485ef9b9902b0ecdaf6
+2022-01-06 14:42:38,307 INFO    Thread-64 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/11/730099cc9ba248922d0dac3d76ac3a
+2022-01-06 14:42:38,309 INFO    Thread-44 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0a/a2563ec6d362b4c34d964a6c126a78
+2022-01-06 14:42:38,313 INFO    Thread-13 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/00/d8a6951a0551cf38d0bd88ace9697a
+2022-01-06 14:42:38,318 INFO    Thread-70 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/14/d718158181cc61bd94177feb1cf324
+2022-01-06 14:42:38,327 INFO    Thread-32 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/07/cb72f4a79c9ec9d4971259c6226161
+2022-01-06 14:42:38,394 INFO    Thread-39 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/08/e22d37661f3343a5ff111bc5fc0620
+2022-01-06 14:42:38,419 INFO    Thread-58 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0f/d5194ca83610261c435233ebfc6a51
+2022-01-06 14:42:38,423 INFO    Thread-42 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/09/7faa8e5fbed1a70febba3670ffed7a
+2022-01-06 14:42:38,479 INFO    Thread-45 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0a/f2c8692a3bee734b0e428fcd57cd57
+2022-01-06 14:42:38,486 INFO    Thread-57 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0f/7010dcc6fbce8deb2cd0d6919400c7
+2022-01-06 14:42:38,507 INFO    Thread-48 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0c/bf1cc78ebd72777d9ffaa48c9394e4
+2022-01-06 14:42:38,508 INFO    Thread-46 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0c/86fe43990e903d9c1abcb8d45adb4f
+2022-01-06 14:42:38,519 INFO    Thread-56 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0f/3ee9be14a2a31b2d16ab68d4ffb9f1
+2022-01-06 14:42:38,522 INFO    Thread-53 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0e/b9486f17dec683d222e96c79ab72a3
+2022-01-06 14:42:38,527 INFO    Thread-49 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0c/c5c823b7d741a99468745ba4292bc2
+2022-01-06 14:42:38,539 INFO    Thread-52 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0e/86a54d2c8076ec71e2a9a325bb28c5
+2022-01-06 14:42:38,548 INFO    Thread-36 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/08/4b7c81058f558cb910cbb08742c72e
+2022-01-06 14:42:38,552 INFO    Thread-67 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/12/74495eaa3aa47991ef77bd076aaf8a
+2022-01-06 14:42:38,564 INFO    Thread-61 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/11/595b9ce8e783947e7e9c88d555aed4
+2022-01-06 14:42:38,568 INFO    Thread-31 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/07/b3325cb1bee598565aeea2a35ae908
+2022-01-06 14:42:38,573 INFO    Thread-68 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/13/6cb74a8454ad62f947d961c05bcc11
+2022-01-06 14:42:38,577 INFO    Thread-59 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/10/4bf0784235a64254fe531a3eabc37e
+2022-01-06 14:42:38,583 INFO    Thread-40 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/09/466e274f7dcbe0e2a4988acafc2640
+2022-01-06 14:42:38,593 INFO    Thread-71 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/14/eca683f3b7963311cccf3f9d64216b
+2022-01-06 14:42:38,602 INFO    Thread-15 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/00/f08c4a9d00a1e6b8b4882a11c939b0
+2022-01-06 14:42:38,603 INFO    Thread-47 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0c/9decab9bb609678163b555ff655321
+2022-01-06 14:42:38,607 INFO    Thread-69 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/13/aa48b1888b394c7c76c7938c2c26dc
+2022-01-06 14:42:38,621 INFO    Thread-25 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/03/6499b6ae198ba74f7a00ad4f17fbf2
+2022-01-06 14:42:38,626 INFO    Thread-34 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/07/e0c419a430a07b84dddc3a508823e9
+2022-01-06 14:42:38,627 INFO    Thread-29 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/06/2a0543f44c444fff8d3471d60b3151
+2022-01-06 14:42:38,635 INFO    Thread-19 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/01/d42ad8fb8e134e9b338ff442fdd2b4
+2022-01-06 14:42:38,638 INFO    Thread-23 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/02/9a2686e34dbd451bf2ce7a9b8bdaf2
+2022-01-06 14:42:38,642 INFO    Thread-35 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/08/07958e69dbf6519a489d0ec1f36a02
+2022-01-06 14:42:38,651 INFO    Thread-21 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/02/43f0a1132080d3090e7bb2949f0c33
+2022-01-06 14:42:38,652 INFO    Thread-16 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/01/1ebaca913b07952025a263ed941c18
+2022-01-06 14:42:38,652 INFO    Thread-72 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/15/347ba87cac7ae96beb937f94c5ae72
+2022-01-06 14:42:38,665 INFO    Thread-14 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/00/e38617ed5a2487eecf81a7e4db2c74
+2022-01-06 14:42:38,679 INFO    Thread-20 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/02/106e63d40aea5b454d9ab7bd450c33
+2022-01-06 14:42:38,680 INFO    Thread-74 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/15/92451e36dd4cee650eedc117e9eb7e
+2022-01-06 14:42:38,685 INFO    Thread-24 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/02/f8e0b685afced775f2442308626dde
+2022-01-06 14:42:38,686 INFO    Thread-38 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/08/be04c00a7a342c1a8d565acedeb7a5
+2022-01-06 14:42:38,708 INFO    Thread-26 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/04/b161eab62701167933bcb0e906da6d
+2022-01-06 14:42:38,709 INFO    Thread-18 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/01/8f7739f85e879d50a236cbb10f5b37
+2022-01-06 14:42:38,709 INFO    Thread-28 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/05/4b7ab6345f880e8db1f8eaf813fda5
+2022-01-06 14:42:38,710 INFO    Thread-22 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/02/95e0a9c1142497ffc7a8975a98fc01
+2022-01-06 14:42:38,710 INFO    Thread-17 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/01/8c2cffd45f5f69a16cc3a5dde7174c
+2022-01-06 14:42:38,717 INFO    Thread-54 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/0e/cbf1a5fd92c557ce67e39095b6d898
+2022-01-06 14:42:38,717 INFO    Thread-27 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/05/1b5b156a0d62f70131f55d5387125e
+2022-01-06 14:42:38,717 INFO    Thread-33 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/07/d61ff366d5a7d427550e024fcdea99
+2022-01-06 14:42:39,116 INFO    Thread-89 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/1d/4ca47f28940a97c71b75b97b57693a
+2022-01-06 14:42:39,128 INFO    Thread-92 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/1e/e9775aad99edc465655d4706c5f7ac
+2022-01-06 14:42:39,144 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-06 14:42:39,148 INFO    Thread-90 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/1e/773675cad90db12e945fae47bc2d1e
+2022-01-06 14:42:39,155 INFO    Thread-85 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/1b/620eecebe33ce1115026a4a84132d1
+2022-01-06 14:42:39,158 INFO    Thread-79 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/18/1ae04cf1af99bae60ac87f1fdca174
+2022-01-06 14:42:39,165 INFO    Thread-95 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/20/0325cab5c4348308c948e1b1b9c2b5
+2022-01-06 14:42:39,187 INFO    Thread-77 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/17/140a86dd755de3c2e9d1cf4612da28
+2022-01-06 14:42:39,188 INFO    Thread-8  :6131 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/output.log
+2022-01-06 14:42:39,207 INFO    Thread-87 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/1b/e2103118ff8a593c7767f066245087
+2022-01-06 14:42:39,241 INFO    Thread-82 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/19/3b4e5f719bfe1be39446f55b271f5a
+2022-01-06 14:42:39,245 INFO    Thread-80 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/18/5a96bea4f5d77f109b4ec892e6edec
+2022-01-06 14:42:39,258 INFO    Thread-81 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/19/2d0dea81b4d35e55132a7d93670ebb
+2022-01-06 14:42:39,267 INFO    Thread-84 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/1a/c6a69ed0e9cf4820919116fee6d67f
+2022-01-06 14:42:39,271 INFO    Thread-91 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/1e/c9d2244e256f1fceecb8f8e7bb388b
+2022-01-06 14:42:39,282 INFO    Thread-83 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/19/5d71b3598e27d6adb9709e0b3659c2
+2022-01-06 14:42:39,293 INFO    Thread-88 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/1c/dd504ba79d3e7c6e2f556e3127b633
+2022-01-06 14:42:39,308 INFO    Thread-86 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/1b/844797b438111e1325dc18b9d81081
+2022-01-06 14:42:39,309 INFO    Thread-94 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/1f/8295f82fcd1c197a310b901ca9f737
+2022-01-06 14:42:39,324 INFO    Thread-93 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/1e/f758a5735f554239480361f23eb1e9
+2022-01-06 14:42:39,335 INFO    Thread-78 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/17/fc1fb6aac01e098005b87d3ea34390
+2022-01-06 14:42:39,356 INFO    Thread-96 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/20/808433e35e6e5aac7d6152281948a2
+2022-01-06 14:42:39,730 INFO    Thread-119:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/2a/4425a0e8b67e0504a8cc99caa4be15
+2022-01-06 14:42:39,737 INFO    Thread-101:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/22/d9e822983e3fafc6543ef2add12bc6
+2022-01-06 14:42:39,749 INFO    Thread-98 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/21/34f06b33eab39b4b1bf86ebfc59107
+2022-01-06 14:42:39,752 INFO    Thread-131:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/32/d63b27d15ecb8d78d9de0348a77181
+2022-01-06 14:42:39,753 INFO    Thread-99 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/22/4ff20ce89b69989436bcbbf1c8724f
+2022-01-06 14:42:39,756 INFO    Thread-102:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/24/527931d3d1075e299b0e46db0a4630
+2022-01-06 14:42:39,763 INFO    Thread-108:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/25/2c8136663ec8fbbc83c8ce64898392
+2022-01-06 14:42:39,772 INFO    Thread-125:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/2c/b69275294a50fc57004d1dbb85c40e
+2022-01-06 14:42:39,773 INFO    Thread-106:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/25/0fb21cdeec3245539c73a721f2c895
+2022-01-06 14:42:39,774 INFO    Thread-117:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/29/f017982e51785cd37a2da6eab4e367
+2022-01-06 14:42:39,786 INFO    Thread-100:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/22/8eedcda9137ab3d8bf0c11422b01e8
+2022-01-06 14:42:39,787 INFO    Thread-116:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/29/1474c35a6ed53a4a4c4e027375e57c
+2022-01-06 14:42:39,788 INFO    Thread-103:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/24/c67d201e3b1523f85ba0cd93446bd8
+2022-01-06 14:42:39,792 INFO    Thread-110:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/26/634d10a302a04d0c1c2e612d22d53a
+2022-01-06 14:42:39,800 INFO    Thread-136:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/35/37ca55de83823d9dbceb1fd955d118
+2022-01-06 14:42:39,807 INFO    Thread-122:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/2b/abd818f6ab8c9618f9176090e222b3
+2022-01-06 14:42:39,820 INFO    Thread-97 :6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/21/2fb94fbd8389e3d27fee067592778a
+2022-01-06 14:42:39,882 INFO    Thread-137:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/36/33cf1b8d14959604d263049ae26331
+2022-01-06 14:42:39,925 INFO    Thread-113:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/28/1139ee734e77ff56c8b3134208a1a2
+2022-01-06 14:42:39,934 INFO    Thread-134:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/34/2868bc41f0ef13e49f1ffd3cbf4310
+2022-01-06 14:42:39,942 INFO    Thread-126:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/2d/b4016b03d7813a013fe5ec3297796d
+2022-01-06 14:42:39,956 INFO    Thread-124:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/2b/fc1d5418ce8e3097f217d2adf13de3
+2022-01-06 14:42:39,959 INFO    Thread-133:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/33/d7b44e831a93f340b69570c0f7a4a6
+2022-01-06 14:42:39,963 INFO    Thread-121:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/2a/e792cc48b042266ae319310b65b2e7
+2022-01-06 14:42:39,966 INFO    Thread-138:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/36/764501d1184ac1b9722b79aaadfa3b
+2022-01-06 14:42:39,968 INFO    Thread-105:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/25/01a3f3d585e757f6156042cdbb1c3e
+2022-01-06 14:42:39,970 INFO    Thread-123:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/2b/bc1f282dc81a775289ea1f542672d2
+2022-01-06 14:42:39,972 INFO    Thread-114:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/28/31c6eb7d42b717ab76803503911b97
+2022-01-06 14:42:39,978 INFO    Thread-111:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/27/76cfc56ef0c106eaf458522ba7c2d1
+2022-01-06 14:42:39,983 INFO    Thread-120:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/2a/69eb4b20776c73772319d3c06af562
+2022-01-06 14:42:39,986 INFO    Thread-130:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/30/66b62b31d086612c2de309c0f6d07e
+2022-01-06 14:42:39,994 INFO    Thread-109:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/25/a1c8d52b8619322b5076a6b0c4592c
+2022-01-06 14:42:39,995 INFO    Thread-140:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/37/31290458cf76d96ebdc4832930f65c
+2022-01-06 14:42:39,995 INFO    Thread-129:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/2f/d0e0c4a13d6c65846b15a54ecd3abf
+2022-01-06 14:42:39,996 INFO    Thread-104:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/24/e2bbee1f5b734f8709d31c0163e059
+2022-01-06 14:42:40,003 INFO    Thread-112:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/27/9c89509bab76b8e5c305a52129b489
+2022-01-06 14:42:40,006 INFO    Thread-118:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/2a/33672b86900d6a2f3fb9c5745e7410
+2022-01-06 14:42:40,010 INFO    Thread-115:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/28/eae6b178e04e2b0d541caba72653a5
+2022-01-06 14:42:40,010 INFO    Thread-107:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/25/11f3b450115cd6340838970e4af268
+2022-01-06 14:42:40,010 INFO    Thread-132:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/33/6c4f010ed09aed69636b32fea40f0d
+2022-01-06 14:42:40,011 INFO    Thread-139:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/36/77c3b0af6db42b058596df54852c1f
+2022-01-06 14:42:40,014 INFO    Thread-128:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/2e/907aa02f20044d94dee9181ccd9ce3
+2022-01-06 14:42:40,022 INFO    Thread-127:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/2d/f2d483e21f2c5523f31a444862c12e
+2022-01-06 14:42:40,032 INFO    Thread-141:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/37/3c64156dd4e0de37d3528841ed470e
+2022-01-06 14:42:40,045 INFO    Thread-144:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/39/f81bac9252e5be857737e55523b2fb
+2022-01-06 14:42:40,050 INFO    Thread-143:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/39/3c55e52031b81c0ea4b930babfa2bd
+2022-01-06 14:42:40,056 INFO    Thread-142:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/37/cea7358421151a4a0f6b49c69f8090
+2022-01-06 14:42:40,057 INFO    Thread-146:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/3b/d248f35f17f2e5b42e4b2bfb331ecd
+2022-01-06 14:42:40,081 INFO    Thread-145:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/3b/00f9c1262231c8f6e99dd4ab98d2ae
+2022-01-06 14:42:40,096 INFO    Thread-147:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/3c/29626a96aaef9e9874eeb2d2e82d02
+2022-01-06 14:42:40,347 INFO    Thread-135:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/34/b8305b9602da602c5976733c36e80e
+2022-01-06 14:42:40,455 INFO    Thread-150:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/3e/edc2c579331c13ced6e86fd244e8f0
+2022-01-06 14:42:40,469 INFO    Thread-159:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/45/d85efc8ca8b80687fe743ac0787840
+2022-01-06 14:42:40,470 INFO    Thread-152:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/40/4b2adf05ec94a5bc643cfd53eeb5e2
+2022-01-06 14:42:40,477 INFO    Thread-160:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/45/e0f1652d7e1a4aae830cfc7c668c83
+2022-01-06 14:42:40,487 INFO    Thread-149:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/3d/5de5a8774425b525731aa7bfa279e9
+2022-01-06 14:42:40,517 INFO    Thread-154:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/41/8b94ea46cb74d9fe0a7fc0b00c4a8c
+2022-01-06 14:42:40,583 INFO    Thread-151:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/3f/8ce51402e4c9a910b9ddae197413cf
+2022-01-06 14:42:40,589 INFO    Thread-157:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/43/67faab186c539249883bbe926aafd1
+2022-01-06 14:42:40,592 INFO    Thread-158:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/43/eaccfc3a6050020a9416f6aaac440e
+2022-01-06 14:42:40,610 INFO    Thread-155:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/42/a60bfe5d7bfd91037a4dced3448d9c
+2022-01-06 14:42:40,613 INFO    Thread-148:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/3c/c0e9f48409fe56992041d5b1694f33
+2022-01-06 14:42:40,629 INFO    Thread-156:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/43/662161f0ae1cd7f1319780b5b370f2
+2022-01-06 14:42:40,632 INFO    Thread-153:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/41/8529f78ea462a807f07d7adca7f1f0
+2022-01-06 14:42:41,098 INFO    Thread-163:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/48/049313f8fe41234db97ea73be8e8ef
+2022-01-06 14:42:41,106 INFO    Thread-182:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/51/b3e6de1d7ff1668de8399695691330
+2022-01-06 14:42:41,107 INFO    Thread-166:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/49/dad69900f318a6868af9f5bfa1e341
+2022-01-06 14:42:41,115 INFO    Thread-183:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/51/f45c7ab97f49e1cd6c9a90ce72f13d
+2022-01-06 14:42:41,116 INFO    Thread-178:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/4f/38589f0d1d3c20a03ea7a496efe393
+2022-01-06 14:42:41,121 INFO    Thread-164:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/48/472e22d6c607658c6d067460a696db
+2022-01-06 14:42:41,123 INFO    Thread-195:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/58/660cb3913d6cb08289d02fa498d044
+2022-01-06 14:42:41,125 INFO    Thread-205:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/61/a7926870d3961e5345b4b5a58ffc60
+2022-01-06 14:42:41,129 INFO    Thread-203:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/5d/560765c6c76bbf7f1a07ef7026ef28
+2022-01-06 14:42:41,140 INFO    Thread-176:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/4e/35854c1fb142d5ffd46f60a72fa95a
+2022-01-06 14:42:41,144 INFO    Thread-177:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/4e/bd089d28159890b2add4ab97708f97
+2022-01-06 14:42:41,158 INFO    Thread-188:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/54/7aa5845cc5f03138feffee90c2bb39
+2022-01-06 14:42:41,194 INFO    Thread-8  :6131 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/media
+2022-01-06 14:42:41,195 INFO    Thread-8  :6131 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/media/table
+2022-01-06 14:42:41,209 INFO    Thread-161:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/46/38064fb4d2ef65f211ddcca3b47190
+2022-01-06 14:42:41,218 INFO    Thread-169:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/4b/1155b506ae103bca52f281057605f3
+2022-01-06 14:42:41,310 INFO    Thread-170:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/4b/8b9bfefa8e3dee532978f1e98103d2
+2022-01-06 14:42:41,313 INFO    Thread-196:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/58/66a1628852522a0270a31842bc88d5
+2022-01-06 14:42:41,388 INFO    Thread-165:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/49/17a00de47d6f30e49a9caefd163178
+2022-01-06 14:42:41,399 INFO    Thread-181:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/51/a0f23262e00b9c88766601e85c40ea
+2022-01-06 14:42:41,404 INFO    Thread-197:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/58/9a96f1def93ce5f0654365b1e29e75
+2022-01-06 14:42:41,404 INFO    Thread-202:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/5c/e1e638b71d88c99bb28f6bc6da5fbb
+2022-01-06 14:42:41,409 INFO    Thread-209:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/63/ab6bad634e9e247fda3a59fa2f8909
+2022-01-06 14:42:41,412 INFO    Thread-189:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/54/81cb163ec9402f6673a7613a6d39a6
+2022-01-06 14:42:41,421 INFO    Thread-174:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/4d/b0f5ede8112ae7e6d2ca2dc12f65b1
+2022-01-06 14:42:41,423 INFO    Thread-210:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/64/a721c9ac610087a0c8a06703a6b1a2
+2022-01-06 14:42:41,430 INFO    Thread-179:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/4f/d5b9830913ea668fce5b55b8a5c439
+2022-01-06 14:42:41,438 INFO    Thread-192:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/56/1cdefa33f5ceff149c0d0a0476e25f
+2022-01-06 14:42:41,445 INFO    Thread-171:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/4b/b04b468eec53858fb3fb8b0192d9a6
+2022-01-06 14:42:41,446 INFO    Thread-173:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/4d/962c60b3a9f3d4b571c3648487ad87
+2022-01-06 14:42:41,446 INFO    Thread-175:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/4d/dd4b5abec31eabc42758c6a8900857
+2022-01-06 14:42:41,446 INFO    Thread-208:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/63/9281f29367602141bc704c0638ee2c
+2022-01-06 14:42:41,450 INFO    Thread-193:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/57/575dff9719432ffcf79c621c2bf47f
+2022-01-06 14:42:41,454 INFO    Thread-201:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/5c/a3e743894f66308df822c05c095f3e
+2022-01-06 14:42:41,455 INFO    Thread-198:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/59/502aeff32f70f86f1fb378a6a421fb
+2022-01-06 14:42:41,458 INFO    Thread-172:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/4c/f0f830d3a7e8ef47544aabc8d313fe
+2022-01-06 14:42:41,463 INFO    Thread-204:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/5e/b47be5448a80bc5a47e2a97492a8d6
+2022-01-06 14:42:41,465 INFO    Thread-212:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/65/2e789a8a14684a1aa30228aaf67fae
+2022-01-06 14:42:41,468 INFO    Thread-207:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/62/b0b74cc38a0e24d3729b5bfc949f90
+2022-01-06 14:42:41,471 INFO    Thread-215:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/65/dac2398b7a7d3ac8466a8f94ca062c
+2022-01-06 14:42:41,471 INFO    Thread-206:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/61/b772be5b9fcfa02c8e20ca6e2a9f9e
+2022-01-06 14:42:41,471 INFO    Thread-185:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/52/60da45b652e26032af89cdcc257e14
+2022-01-06 14:42:41,471 INFO    Thread-186:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/52/dd5d3aaa5830dc40368bf09ccfc0cf
+2022-01-06 14:42:41,471 INFO    Thread-200:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/59/db83a3318611cd859a220743996209
+2022-01-06 14:42:41,474 INFO    Thread-190:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/55/96d75bd662bd318ce88b26e6804fc0
+2022-01-06 14:42:41,488 INFO    Thread-187:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/52/f5d3a7989d3446e6aec3235a6ba3c0
+2022-01-06 14:42:41,494 INFO    Thread-213:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/65/458cb37c1656a4fd8fbd8f2faa6ce5
+2022-01-06 14:42:41,502 INFO    Thread-180:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/50/b2fc46eec5ef6375482f89a4e1ab0d
+2022-01-06 14:42:41,502 INFO    Thread-168:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/4a/78b8b60e5f5e7c09f6db3606702863
+2022-01-06 14:42:41,507 INFO    Thread-199:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/59/5a3cd7d5e51c66cdc39fcbc235d073
+2022-01-06 14:42:41,507 INFO    Thread-162:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/46/c820895e3fa2f325a0430cf1569873
+2022-01-06 14:42:41,507 INFO    Thread-191:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/55/d5d4c6890a8d48bbb57b7ba8a82f54
+2022-01-06 14:42:41,510 INFO    Thread-211:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/64/bbe08a96ef508d3bf87ddc3bf09180
+2022-01-06 14:42:41,526 INFO    Thread-217:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/66/f9fdebeeb44b7a7181838a6fe2a559
+2022-01-06 14:42:41,526 INFO    Thread-184:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/52/1678840abff2e54117ae260e5ad09b
+2022-01-06 14:42:41,526 INFO    Thread-167:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/4a/0c402c3bd9afa5e5e586899befa652
+2022-01-06 14:42:41,530 INFO    Thread-194:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/58/184b9cb439af925e65b64f71f72e4d
+2022-01-06 14:42:41,530 INFO    Thread-216:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/66/d9218a2680a34cbea13dc5a420e6fb
+2022-01-06 14:42:41,579 INFO    Thread-214:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/65/76facf3e32d653b5bb0c746c8f2e2c
+2022-01-06 14:42:41,854 INFO    Thread-224:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/6a/6aaf4295461bf13eda4db7baf29e37
+2022-01-06 14:42:41,973 INFO    Thread-218:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/67/321f9854c7879bad175c3d7d2a29e7
+2022-01-06 14:42:41,997 INFO    Thread-221:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/68/c6ca999b47e350311f2a259d15b7f4
+2022-01-06 14:42:41,997 INFO    Thread-219:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/68/92428fc1ef00732d3d668a0566714f
+2022-01-06 14:42:41,998 INFO    Thread-222:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/68/d7b1be545c696b147338a48acd4c41
+2022-01-06 14:42:41,999 INFO    Thread-223:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/6a/65a76896b905befdfc7fe6c4f57bb7
+2022-01-06 14:42:42,040 INFO    Thread-220:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/68/c25e297730c2d0bfdcd31d23588499
+2022-01-06 14:42:42,311 INFO    Thread-230:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/6e/0e3f4c7cb1ef5eb99d83121b7e89f8
+2022-01-06 14:42:42,317 INFO    Thread-239:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/71/f2b46dc9733722c3343187066d1ab5
+2022-01-06 14:42:42,319 INFO    Thread-229:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/6c/f113b779341328bcb2aeb939ebda45
+2022-01-06 14:42:42,326 INFO    Thread-240:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/72/1b9f5515d2378f1704f54462895971
+2022-01-06 14:42:42,326 INFO    Thread-235:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/70/9b9847a6e4b24dfd883ded396cd396
+2022-01-06 14:42:42,381 INFO    Thread-226:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/6a/acf0f843941dfbbd84b98c62796937
+2022-01-06 14:42:42,383 INFO    Thread-228:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/6b/f3a32f8956b9dc9894e93d2cfc7d77
+2022-01-06 14:42:42,385 INFO    Thread-225:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/6a/97c0ac743fbd6fbbbdf1f98d387037
+2022-01-06 14:42:42,393 INFO    Thread-237:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/71/be90cd2f275920397213bb780f4972
+2022-01-06 14:42:42,394 INFO    Thread-231:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/6e/2e249691a410962a7029356ba195fb
+2022-01-06 14:42:42,395 INFO    Thread-236:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/71/11d1915bc9f1924faa6301ae50ab70
+2022-01-06 14:42:42,407 INFO    Thread-233:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/70/117e298155b1eb5b1e0fa64e87f789
+2022-01-06 14:42:42,411 INFO    Thread-234:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/70/5a114d158ceb1817f223733e47aaee
+2022-01-06 14:42:42,434 INFO    Thread-238:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/71/f2006e3bdedfe39f883645df7abf62
+2022-01-06 14:42:42,435 INFO    Thread-227:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/6a/d99db8a2741abe1c25468150b276d7
+2022-01-06 14:42:42,436 INFO    Thread-232:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/6e/3420411cef3e5836d748222837afa3
+2022-01-06 14:42:42,798 INFO    Thread-244:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/73/f12f9dcbbea4811afbe410c461a300
+2022-01-06 14:42:42,846 INFO    Thread-262:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7b/5cf4caacd3a56abb20c6e8c2964d0b
+2022-01-06 14:42:42,847 INFO    Thread-246:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/74/03a8c73d131fe5154cfff6b078a9d3
+2022-01-06 14:42:42,852 INFO    Thread-241:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/72/4f9cc4d7b8a37be254674fa1b52806
+2022-01-06 14:42:42,854 INFO    Thread-272:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7e/52e31a86694bbac68e188abb984dfc
+2022-01-06 14:42:42,858 INFO    Thread-245:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/74/02b440fbffd4fa7c5006163075561c
+2022-01-06 14:42:42,859 INFO    Thread-265:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7b/b330dd0639b4192cd98e89bd5e9ac0
+2022-01-06 14:42:42,878 INFO    Thread-280:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/81/8b0c479260f6fb5d905fc98cf44394
+2022-01-06 14:42:42,901 INFO    Thread-257:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/78/540bfaa4cdef0c89f05592550a25ca
+2022-01-06 14:42:42,937 INFO    Thread-259:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/79/64e5b6a70e458ce0d8a17def2d3558
+2022-01-06 14:42:42,948 INFO    Thread-248:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/74/6d8318ca11bde6baa475ab7497c72a
+2022-01-06 14:42:42,975 INFO    Thread-253:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/76/53b836b2caee86f4ab968e5717543d
+2022-01-06 14:42:42,979 INFO    Thread-264:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7b/8b57bb8fc131fb10bf4c4ed4952b4b
+2022-01-06 14:42:42,983 INFO    Thread-261:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7b/0c6132669eb470c3ce72c240450c74
+2022-01-06 14:42:42,995 INFO    Thread-250:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/75/7afed08dfdbe74e662fb6585709d81
+2022-01-06 14:42:42,996 INFO    Thread-243:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/73/842188a0f9845db85dac01bba68003
+2022-01-06 14:42:43,007 INFO    Thread-263:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7b/6b286189f0eea4a1f177f6a89305da
+2022-01-06 14:42:43,010 INFO    Thread-247:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/74/3aeda1ad404db4ce4e3304352eb93e
+2022-01-06 14:42:43,010 INFO    Thread-281:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/82/2a4186927024ddce9f0cc5f8da2a0b
+2022-01-06 14:42:43,011 INFO    Thread-260:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7a/cad185d12604b0e9144f39c983f7e1
+2022-01-06 14:42:43,011 INFO    Thread-252:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/75/a981ad75a826942f596dbf553cea93
+2022-01-06 14:42:43,013 INFO    Thread-258:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/78/a30e3e0dc0e5f80992d1c8f2adb46c
+2022-01-06 14:42:43,047 INFO    Thread-266:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7b/df78f1f81700854e66785b3d4154d3
+2022-01-06 14:42:43,050 INFO    Thread-269:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7c/97483ca690db849af3ca1dec51ac6f
+2022-01-06 14:42:43,054 INFO    Thread-268:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7c/0acec32ad9eec94b716b7cdce9e5d6
+2022-01-06 14:42:43,062 INFO    Thread-242:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/73/115cd586e9182d283bfcdd2d5656d9
+2022-01-06 14:42:43,076 INFO    Thread-249:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/75/0b91968efc9297ae4a82bc4d2382f5
+2022-01-06 14:42:43,079 INFO    Thread-273:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7e/c17fa90ea467d26b00d030df60ea7b
+2022-01-06 14:42:43,079 INFO    Thread-267:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7b/dfa48ed915153fedc603759014c4d2
+2022-01-06 14:42:43,084 INFO    Thread-279:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/80/b51ecc923f7f30edf896e143eead92
+2022-01-06 14:42:43,087 INFO    Thread-256:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/78/3709801fe076bf7c91a52cd2f5584e
+2022-01-06 14:42:43,087 INFO    Thread-276:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7f/1c61778e1b6eb850dab50127f84ae1
+2022-01-06 14:42:43,094 INFO    Thread-251:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/75/8eecdb14c14d54d31fc158baa30aa3
+2022-01-06 14:42:43,096 INFO    Thread-270:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7d/16a55ec345ade6af70b00b8f650bda
+2022-01-06 14:42:43,096 INFO    Thread-271:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7d/74d5a48469182e926dbf9e366b3727
+2022-01-06 14:42:43,096 INFO    Thread-278:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/80/77739e435ef88805f91e73f63a83ae
+2022-01-06 14:42:43,096 INFO    Thread-277:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7f/470a84a03a8bdf55e680985edf9155
+2022-01-06 14:42:43,105 INFO    Thread-274:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7e/eff6e3d0d9817763d50ed2c0b61ecc
+2022-01-06 14:42:43,113 INFO    Thread-255:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/78/2e66e220b71292e80a976ebb3ef742
+2022-01-06 14:42:43,114 INFO    Thread-254:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/76/ac87862c27472ec0ceace7bdc7f21a
+2022-01-06 14:42:43,114 INFO    Thread-275:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/7f/125f1b17472e4fad1d55f0e9e7a504
+2022-01-06 14:42:43,148 INFO    Thread-285:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/84/e51871b9a265fa9244bffe41f08ded
+2022-01-06 14:42:43,154 INFO    Thread-291:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/89/a98d15cf836425c238b4218e642e4a
+2022-01-06 14:42:43,164 INFO    Thread-283:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/84/77f2238e861aad69e6896bb7059c76
+2022-01-06 14:42:43,170 INFO    Thread-293:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/8a/26707bc5142992c76e613b5be55658
+2022-01-06 14:42:43,176 INFO    Thread-286:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/86/f03d7d8ba23d0d2e32ce7be3c792c5
+2022-01-06 14:42:43,179 INFO    Thread-292:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/89/db46f4bcace2ac4abb0992f6434ad1
+2022-01-06 14:42:43,183 INFO    Thread-288:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/87/df72e9bbb43ddd6b4045952de94dde
+2022-01-06 14:42:43,192 INFO    Thread-284:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/84/debfc29de633f8b79571bbf7e37f42
+2022-01-06 14:42:43,192 INFO    Thread-282:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/84/749c13b4ef07f5a6d6ec122df98583
+2022-01-06 14:42:43,193 INFO    Thread-289:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/88/b32d2cf611a08b8949e7e50f9390bb
+2022-01-06 14:42:43,199 INFO    Thread-290:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/89/1fc5632bc5680dab7d0eedd884eb19
+2022-01-06 14:42:43,206 INFO    Thread-287:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/87/949b3d2af09abb1eed433a5a9d98ab
+2022-01-06 14:42:43,522 INFO    Thread-302:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/8f/b5ec7fe43fbac143434a1373d90d8a
+2022-01-06 14:42:43,522 INFO    Thread-296:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/8b/7d4ab6c942402ae23383d80eb65530
+2022-01-06 14:42:43,524 INFO    Thread-299:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/8d/bcc2480a38b0caba0013491da23f14
+2022-01-06 14:42:43,528 INFO    Thread-295:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/8a/b2e3d8bb07c5e77d7ca16de0a514ea
+2022-01-06 14:42:43,542 INFO    Thread-301:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/8f/b0500d524b503aa24dddd1383346fe
+2022-01-06 14:42:43,547 INFO    Thread-297:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/8c/c3922cc1242ea9653497d92a8da440
+2022-01-06 14:42:43,551 INFO    Thread-304:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/90/f2eda97c82350f9277495ec2cd20c7
+2022-01-06 14:42:43,556 INFO    Thread-298:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/8d/899e7e3d9ad614e5c245a904c8cb7a
+2022-01-06 14:42:43,573 INFO    Thread-303:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/8f/d6fc9257f94048e1ab4d2026679b80
+2022-01-06 14:42:43,580 INFO    Thread-294:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/8a/8c09fc479d5d61fb72f593c2b92099
+2022-01-06 14:42:43,615 INFO    Thread-300:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/8d/c1a092c584cd0ee3d4be37602c5af5
+2022-01-06 14:42:44,026 INFO    Thread-307:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/91/66aa052b63153e4622f05c17c3fe84
+2022-01-06 14:42:44,052 INFO    Thread-313:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/96/c3c4a98ca4f835697355c054d3e214
+2022-01-06 14:42:44,052 INFO    Thread-337:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a2/5516c198885168b05e81b6da5a5308
+2022-01-06 14:42:44,052 INFO    Thread-334:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a1/0a6535e1d0fe773e601204f1d343d0
+2022-01-06 14:42:44,060 INFO    Thread-343:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a4/4d68b69464604ee6f53519596bf50e
+2022-01-06 14:42:44,064 INFO    Thread-320:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/99/4e2b044cfdeb63a85fe2db4e584b6b
+2022-01-06 14:42:44,064 INFO    Thread-308:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/92/2ef851dd386580c0a233028d648e67
+2022-01-06 14:42:44,071 INFO    Thread-335:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a1/87905e1cf0c5158eb622736c994b3a
+2022-01-06 14:42:44,072 INFO    Thread-341:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a3/f5eaf1b4328330dddfab40ee18b714
+2022-01-06 14:42:44,142 INFO    Thread-310:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/93/3643dd59c20b1b9614aa591adaec60
+2022-01-06 14:42:44,143 INFO    Thread-315:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/97/287593ab9da972fa6a39adcf8fe7ea
+2022-01-06 14:42:44,143 INFO    Thread-305:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/91/1b73e0233112b1d3931a2072748caa
+2022-01-06 14:42:44,143 INFO    Thread-309:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/93/122d02693cbcc1f45dd21cba161c4d
+2022-01-06 14:42:44,143 INFO    Thread-326:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/9e/20647ec1e16ef8b9f6801131b63d40
+2022-01-06 14:42:44,147 INFO    Thread-322:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/9a/b5276ea361919efff37d5656202ef0
+2022-01-06 14:42:44,153 INFO    Thread-328:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/9f/3c0faf1a4eaf642b4ed2dc5dc211a5
+2022-01-06 14:42:44,156 INFO    Thread-321:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/99/5b104c9337d1910e9da855ada69400
+2022-01-06 14:42:44,162 INFO    Thread-332:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a0/d6fa0aff4b2c2c22b7d37e38b364ca
+2022-01-06 14:42:44,192 INFO    Thread-306:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/91/4786c6f7648714636c33bd183b8083
+2022-01-06 14:42:44,209 INFO    Thread-333:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a0/f55b706f1018808f72b1ae38f5989e
+2022-01-06 14:42:44,216 INFO    Thread-319:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/99/10173099584c2d107e1d14b70de609
+2022-01-06 14:42:44,219 INFO    Thread-339:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a3/48bf3dab973892929360c08046ef0c
+2022-01-06 14:42:44,219 INFO    Thread-331:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a0/c5717f3eeffbd2b2ca385f172a829a
+2022-01-06 14:42:44,225 INFO    Thread-344:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a5/91136a81fa50f354cccafd5563e45c
+2022-01-06 14:42:44,231 INFO    Thread-312:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/96/3393d3ad55517e4a5275cf63d37a5a
+2022-01-06 14:42:44,233 INFO    Thread-314:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/96/d9e8384fea1aa21f3e8a02d91b85d1
+2022-01-06 14:42:44,237 INFO    Thread-325:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/9e/01a700de11f6810b6afbfb1b3c6406
+2022-01-06 14:42:44,239 INFO    Thread-345:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a5/af32fd760977ac4ae3c4e4d95a28ba
+2022-01-06 14:42:44,239 INFO    Thread-324:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/9b/930a8db5333bbca9872b297d73d54f
+2022-01-06 14:42:44,242 INFO    Thread-311:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/93/8eebdd3a181eebd99691abb12c80d5
+2022-01-06 14:42:44,243 INFO    Thread-323:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/9a/e25e1860f6afcb9b6ea2c87521bd03
+2022-01-06 14:42:44,246 INFO    Thread-316:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/98/06b905cda8b4fe925d694a2ba5fbe2
+2022-01-06 14:42:44,248 INFO    Thread-327:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/9f/0aeafdc385401f0ab3ff6d606cff14
+2022-01-06 14:42:44,248 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-06 14:42:44,248 INFO    Thread-342:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a4/49aec27487f484019081cb55b61434
+2022-01-06 14:42:44,254 INFO    Thread-329:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/9f/d31a5cead083818712c6f5de9864aa
+2022-01-06 14:42:44,254 INFO    Thread-338:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a3/15837347ab88fca991d1ad2be49460
+2022-01-06 14:42:44,276 INFO    Thread-340:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a3/ed423bf2a11ec12fea918609a6fa63
+2022-01-06 14:42:44,276 INFO    Thread-317:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/98/33aeea9bb2a4459ef4ee2bc864758d
+2022-01-06 14:42:44,276 INFO    Thread-330:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a0/05e98b16b34c2a44c2f48826e173c1
+2022-01-06 14:42:44,284 INFO    Thread-318:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/98/34987edb18f490658a46f6dd63cb68
+2022-01-06 14:42:44,285 INFO    Thread-336:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a2/358366f0cc95681e43017abd251311
+2022-01-06 14:42:44,432 INFO    Thread-356:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ac/0a85bd5cdb26eb646d977f12756b31
+2022-01-06 14:42:44,446 INFO    Thread-346:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a6/575af83cbc509412f7a7585fc18161
+2022-01-06 14:42:44,448 INFO    Thread-352:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/aa/3bf168a5d519bd6276f3be56652ea1
+2022-01-06 14:42:44,451 INFO    Thread-360:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ae/3cd2c85bf2aa48567c0bc398e14316
+2022-01-06 14:42:44,452 INFO    Thread-353:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/aa/4471f8889ac41bed484969226b5cf5
+2022-01-06 14:42:44,458 INFO    Thread-355:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ab/827c8e16735df3aa83f9ae9a6351c5
+2022-01-06 14:42:44,458 INFO    Thread-358:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ad/90ce5b9d0ee9c91cff4017e1242cd8
+2022-01-06 14:42:44,459 INFO    Thread-347:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a7/0e3c4c5070ab96ab742c296af85b05
+2022-01-06 14:42:44,465 INFO    Thread-348:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a7/25cf2e0df70f8fb3addb99ce65c131
+2022-01-06 14:42:44,467 INFO    Thread-359:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ad/fbf20d8fb5abeca6109303fe05fe99
+2022-01-06 14:42:44,471 INFO    Thread-350:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a9/09279020a6f959e326e5907626db2c
+2022-01-06 14:42:44,474 INFO    Thread-361:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ae/5422efc611f9dde51665a85e3b1986
+2022-01-06 14:42:44,477 INFO    Thread-351:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a9/a4394c33b7afba32af4cfe581b0943
+2022-01-06 14:42:44,483 INFO    Thread-349:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/a8/ffc3e8bb8cef2f8ae9329025223be6
+2022-01-06 14:42:44,483 INFO    Thread-357:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ac/dc5b2e4477e9a685eb5bfd2dd746dd
+2022-01-06 14:42:44,489 INFO    Thread-362:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/af/62e79dc360fabaaa4e87a9654fded1
+2022-01-06 14:42:44,490 INFO    Thread-354:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/aa/5ac1c28db8ebea5e273432ff182e48
+2022-01-06 14:42:44,731 INFO    Thread-368:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/b2/e3fdac3d2f298c8d9ed90d6dd5f0ae
+2022-01-06 14:42:44,731 INFO    Thread-364:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/b1/6e3fd533f6cc7f765ed954efb59ce9
+2022-01-06 14:42:44,743 INFO    Thread-363:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/b1/22ed74f32b2a5ee7c190ad4a121074
+2022-01-06 14:42:44,758 INFO    Thread-367:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/b2/abb1c3dae52e76024457e76c812676
+2022-01-06 14:42:44,766 INFO    Thread-366:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/b2/46a3fddfb33fab4702212b94fb4e3d
+2022-01-06 14:42:44,788 INFO    Thread-365:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/b2/43756c7315efd8eff57107d0d2b193
+2022-01-06 14:42:45,184 INFO    Thread-382:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/bd/f87099089c55c764eab85af46cd69b
+2022-01-06 14:42:45,192 INFO    Thread-380:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/bd/3ac68fe4b11998d0adefb3c4696510
+2022-01-06 14:42:45,198 INFO    Thread-403:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c9/6f5b346d7b17bf98a57679736fac88
+2022-01-06 14:42:45,217 INFO    Thread-378:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/bd/0a8afac878fd66f96207a7a37c04e6
+2022-01-06 14:42:45,229 INFO    Thread-373:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/b9/a440911ab77c2001ec9fefe1402fed
+2022-01-06 14:42:45,257 INFO    Thread-389:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c1/42fcd6b3a476fd2296666df202eaf2
+2022-01-06 14:42:45,261 INFO    Thread-386:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c0/7c07dbe84ce1885a048270d49510b2
+2022-01-06 14:42:45,288 INFO    Thread-372:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/b7/9e9ec9df6890b5cfda9953bb26455a
+2022-01-06 14:42:45,292 INFO    Thread-394:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c3/aab0284d3594fa84c5362ac218c059
+2022-01-06 14:42:45,307 INFO    Thread-376:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/bb/9ad27db892c1372201e15c9557b79b
+2022-01-06 14:42:45,396 INFO    Thread-393:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c2/55243e2d7b46217013ff777fdc9be8
+2022-01-06 14:42:45,401 INFO    Thread-406:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ca/e4c4854ee889266dabecbdfb7002ef
+2022-01-06 14:42:45,405 INFO    Thread-374:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ba/62d6cb7ae4c485efbb80ad1518102a
+2022-01-06 14:42:45,408 INFO    Thread-387:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c0/e7a9e1109dbe0425d4908e507bb10c
+2022-01-06 14:42:45,410 INFO    Thread-381:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/bd/4a775f20bc2251f5a34ce36bcc59b4
+2022-01-06 14:42:45,417 INFO    Thread-404:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c9/b0019cc37153b4ce8877c8c0cf1e0c
+2022-01-06 14:42:45,422 INFO    Thread-384:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/be/fdc21ad8c152b7bf75b4af2c4a99e3
+2022-01-06 14:42:45,429 INFO    Thread-369:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/b3/5f031b7198776296d626aa69225e55
+2022-01-06 14:42:45,430 INFO    Thread-375:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ba/df450b05cd34c3a465c1530b7c0ff8
+2022-01-06 14:42:45,442 INFO    Thread-379:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/bd/2268481b9fb1357eaa685782a66474
+2022-01-06 14:42:45,445 INFO    Thread-395:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c4/84be3a5499fb86aae9fb4ff5f9a1c0
+2022-01-06 14:42:45,445 INFO    Thread-388:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c1/2c9d12f63ff3c7009ded0fdaca6d4c
+2022-01-06 14:42:45,452 INFO    Thread-400:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c7/7d1b026939f8c91eaaa315f3090fb1
+2022-01-06 14:42:45,455 INFO    Thread-398:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c6/8440b973a5504d984e2450d3887180
+2022-01-06 14:42:45,456 INFO    Thread-385:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/bf/51cd165bd36f4beafb73d5f3c6f425
+2022-01-06 14:42:45,463 INFO    Thread-390:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c1/bdc3d3368b7d7b062188bb2834a2dd
+2022-01-06 14:42:45,478 INFO    Thread-383:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/be/01611b90a441d1600445212fb26621
+2022-01-06 14:42:45,479 INFO    Thread-408:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/cb/24df4e07782bc79dac31b96c33e660
+2022-01-06 14:42:45,482 INFO    Thread-396:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c4/e0110b8d4b4ec6c0e02cca9d474987
+2022-01-06 14:42:45,489 INFO    Thread-391:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c1/d5ac0dec05cb3d96981575edbe178f
+2022-01-06 14:42:45,489 INFO    Thread-370:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/b5/323f0ac17c09d91232959599d283dd
+2022-01-06 14:42:45,492 INFO    Thread-377:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/bb/febccde01a7658ae3b67860e0bcc92
+2022-01-06 14:42:45,503 INFO    Thread-407:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/cb/00d1052d3694c3a2b2f13aa122a7d8
+2022-01-06 14:42:45,503 INFO    Thread-405:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ca/1f5b880c8fca642caec83de93bb2b4
+2022-01-06 14:42:45,504 INFO    Thread-371:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/b7/335aacaded5c72e91b5e9021839114
+2022-01-06 14:42:45,513 INFO    Thread-392:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c2/08ea77da1b8094ddf2c8586095d75b
+2022-01-06 14:42:45,517 INFO    Thread-397:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c5/b3b800092996d37102b6df6c6285a2
+2022-01-06 14:42:45,522 INFO    Thread-401:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c7/bb7966ea05bf582d1050624eca324a
+2022-01-06 14:42:45,524 INFO    Thread-409:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/cc/d932e9e6156b81a38bb850311ff0b0
+2022-01-06 14:42:45,525 INFO    Thread-399:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c7/710b6db92b7cd9c8ea6556181f047c
+2022-01-06 14:42:45,540 INFO    Thread-402:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/c9/026f264984be5ccb2d1d298900289f
+2022-01-06 14:42:45,863 INFO    Thread-411:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ce/00bcd823cc290616f8c06ff0903c71
+2022-01-06 14:42:45,872 INFO    Thread-419:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/d2/e46ce586e1a29e540a4b4aad53fc42
+2022-01-06 14:42:45,875 INFO    Thread-423:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/d7/0f7855992b649d57d08001466f4715
+2022-01-06 14:42:45,908 INFO    Thread-414:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/cf/15e691b4a05b15757a10d447b8d208
+2022-01-06 14:42:45,908 INFO    Thread-416:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/d1/f0611aad962ef3b4bd8a1a96382130
+2022-01-06 14:42:45,909 INFO    Thread-429:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/da/c41a4f48419f8c531fb5f315a08c5f
+2022-01-06 14:42:45,915 INFO    Thread-420:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/d3/a49f2eb90c1eb31d367c3c3ba81af3
+2022-01-06 14:42:45,926 INFO    Thread-426:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/d8/cbfbd3cbbb292b3b39e07288e11012
+2022-01-06 14:42:45,929 INFO    Thread-417:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/d2/46c9e77cd5181ea5f96c40654a78a8
+2022-01-06 14:42:45,937 INFO    Thread-427:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/d9/953eba8902b9cfe3bbe8e706daf809
+2022-01-06 14:42:45,939 INFO    Thread-428:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/d9/c7c8aa5a8f9797b7801fa7edb2f0db
+2022-01-06 14:42:45,941 INFO    Thread-413:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ce/df07077272695284d00ba6d923ac02
+2022-01-06 14:42:45,946 INFO    Thread-410:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/cd/2c3c230c7af89239f4abfeca638ce5
+2022-01-06 14:42:45,949 INFO    Thread-424:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/d7/adf58c891d9a0009fdd6e5e6b9d8bd
+2022-01-06 14:42:45,953 INFO    Thread-425:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/d8/7b420cfc31fe9ceb2bc5b4c5541dbf
+2022-01-06 14:42:45,959 INFO    Thread-421:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/d5/9853549f79e998be3c1cbc15e7c76a
+2022-01-06 14:42:45,963 INFO    Thread-412:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ce/37a08f5541eeb26a515979a58f6e62
+2022-01-06 14:42:45,964 INFO    Thread-418:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/d2/bb7e16ed79c16bc0676208ddfd7c93
+2022-01-06 14:42:45,966 INFO    Thread-422:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/d6/01b2126ad2ace721be13927b30ad95
+2022-01-06 14:42:45,987 INFO    Thread-415:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/d1/c2116b63c2019cbf454666c003df12
+2022-01-06 14:42:46,207 INFO    Thread-430:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/db/b699ca625ff10d520280acd4142242
+2022-01-06 14:42:46,227 INFO    Thread-431:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/db/e20bebd8a54bfbefaef38db067186c
+2022-01-06 14:42:46,230 INFO    Thread-434:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/dd/d796718bf08e63792455e1a784d431
+2022-01-06 14:42:46,236 INFO    Thread-442:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e0/9e79d52edabfa07acb6ed538b3fa47
+2022-01-06 14:42:46,239 INFO    Thread-438:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/df/fa22ff0da0b75a78fefc085d170c8e
+2022-01-06 14:42:46,248 INFO    Thread-436:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/de/798fe8bbb8a5a87483e03c51e3d0ce
+2022-01-06 14:42:46,256 INFO    Thread-437:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/df/50bf6dd1d087bde5325f48b0f592d4
+2022-01-06 14:42:46,256 INFO    Thread-432:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/dd/5af9f418477a0d3c907ba91b4915f5
+2022-01-06 14:42:46,273 INFO    Thread-439:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e0/032543f5b410de75aee84cb49822b3
+2022-01-06 14:42:46,274 INFO    Thread-440:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e0/70d7448b3a661225f7d5757bb24ef8
+2022-01-06 14:42:46,275 INFO    Thread-435:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/de/0b01218e204156d00653df8db2a126
+2022-01-06 14:42:46,292 INFO    Thread-441:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e0/7d9753d0da07ed5f094229520866ae
+2022-01-06 14:42:46,315 INFO    Thread-433:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/dd/5c204d94790915773b7ec12687a5d3
+2022-01-06 14:42:46,591 INFO    Thread-471:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f0/a3f9ce3cdb6ae4e316248d9c70bf1d
+2022-01-06 14:42:46,602 INFO    Thread-473:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f1/fef17feb1609b6402f5d0c62cb56e4
+2022-01-06 14:42:46,602 INFO    Thread-447:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e4/276fe65652a2adfeec992b9edc4ff6
+2022-01-06 14:42:46,611 INFO    Thread-462:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ec/1fe040b3317b4a5018f90826d937bd
+2022-01-06 14:42:46,616 INFO    Thread-466:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ee/16857a74fabf0616de4b271c4001e4
+2022-01-06 14:42:46,616 INFO    Thread-445:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e2/bead3ba6c69acdb4d2da271520962b
+2022-01-06 14:42:46,617 INFO    Thread-454:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e8/c73d2c565f756b8541d8b906cac15a
+2022-01-06 14:42:46,620 INFO    Thread-444:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e0/d72118c276b7b9be1abe82ebd4ffe5
+2022-01-06 14:42:46,629 INFO    Thread-452:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e7/efd7710bd6727df97a61ca0f427759
+2022-01-06 14:42:46,630 INFO    Thread-446:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e3/22bcc2420377758fb7f1e3db1efc02
+2022-01-06 14:42:46,672 INFO    Thread-460:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/eb/9f61ea81f9d277bd3249e0ced686bb
+2022-01-06 14:42:46,674 INFO    Thread-450:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e5/3e8e21c6b9523ec5a70662db87ee97
+2022-01-06 14:42:46,677 INFO    Thread-456:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e9/8d9706fdf57b4816b0b16d8cc30142
+2022-01-06 14:42:46,680 INFO    Thread-463:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ec/8ba9963abcb039c46b2c690932c31e
+2022-01-06 14:42:46,683 INFO    Thread-468:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ef/0343a679caa395a3e772e91cd3a350
+2022-01-06 14:42:46,691 INFO    Thread-472:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f0/fbe172e29c95703d2f6281cd5f3311
+2022-01-06 14:42:46,696 INFO    Thread-467:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ee/87cc83d97b45123777be58d7c5e8ef
+2022-01-06 14:42:46,704 INFO    Thread-448:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e4/5e740e66cbdb858e6637b2c54833be
+2022-01-06 14:42:46,713 INFO    Thread-455:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e9/0c4060dd1e9e7b2459a49eafaae2dd
+2022-01-06 14:42:46,713 INFO    Thread-458:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ea/2b5f3df0a2d8918b7b44bd0f20f4c6
+2022-01-06 14:42:46,718 INFO    Thread-443:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e0/bc330b09835a46a025d69d7bbd09cd
+2022-01-06 14:42:46,718 INFO    Thread-469:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f0/0a8f467b4aeba00b8f6bf1d41d2f73
+2022-01-06 14:42:46,723 INFO    Thread-457:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e9/b7d9ddf4fa29a12e33db2864010906
+2022-01-06 14:42:46,727 INFO    Thread-453:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e8/71b48fb807ce17a998456f8236b02f
+2022-01-06 14:42:46,727 INFO    Thread-465:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ed/bab5e87551387701eecd88909963e0
+2022-01-06 14:42:46,728 INFO    Thread-451:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e6/78f24ba45e6edf5715193ad330eedd
+2022-01-06 14:42:46,728 INFO    Thread-461:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/eb/c61406eb10a0dc781928da93d15c2a
+2022-01-06 14:42:46,736 INFO    Thread-459:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ea/b468b074355f524128ae0ddaa1f1cc
+2022-01-06 14:42:46,739 INFO    Thread-449:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/e5/3a04b41883dd7e48e816a59b9fe600
+2022-01-06 14:42:46,740 INFO    Thread-470:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f0/a2969877d8eca6c39646100b3f8529
+2022-01-06 14:42:46,742 INFO    Thread-464:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ec/bc54995c0baecce67f5c7d517ceea5
+2022-01-06 14:42:47,128 INFO    Thread-474:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f2/8ce373ee154f6c91d3aac12ba97472
+2022-01-06 14:42:47,141 INFO    Thread-475:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f3/8f30efacd0e3f3aca3e651d21cb786
+2022-01-06 14:42:47,147 INFO    Thread-480:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f4/e335d787a3a5d0e8ef81a72a86ab4f
+2022-01-06 14:42:47,217 INFO    Thread-478:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f4/4692771111ec6d06a5dcd6f25d37a1
+2022-01-06 14:42:47,220 INFO    Thread-487:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f7/75754e21b42a2ba185a8531cdb9346
+2022-01-06 14:42:47,220 INFO    Thread-490:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f8/6e934bab20331a33dfc1574725c87c
+2022-01-06 14:42:47,226 INFO    Thread-484:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f7/192adf5d04f481c1546997e5d3094b
+2022-01-06 14:42:47,231 INFO    Thread-483:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f6/5b4717892395ebd63b957357327f39
+2022-01-06 14:42:47,233 INFO    Thread-492:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f9/2bc0e749e4e60afea9be16105206d8
+2022-01-06 14:42:47,235 INFO    Thread-477:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f4/1f01e4bed5542573ec5ea92c440346
+2022-01-06 14:42:47,236 INFO    Thread-489:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f7/cd471da8471937535a4ca5b507f70e
+2022-01-06 14:42:47,237 INFO    Thread-476:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f3/ecb705214a3b8ffd6a46ca60638efd
+2022-01-06 14:42:47,238 INFO    Thread-479:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f4/4d888fce7aff87900ebbb81cdb92fa
+2022-01-06 14:42:47,241 INFO    Thread-482:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f5/ab43ddf1609ac72bd624f4bb9f2d72
+2022-01-06 14:42:47,244 INFO    Thread-481:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f5/771c6d69fa61d861d46f262a2d32f7
+2022-01-06 14:42:47,249 INFO    Thread-486:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f7/695c83db2f0f74b3fe1605f31ead1e
+2022-01-06 14:42:47,249 INFO    Thread-488:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f7/856407a991757019b0171db9b58a38
+2022-01-06 14:42:47,252 INFO    Thread-485:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f7/3216a36ac862915009d33647a2cb0b
+2022-01-06 14:42:47,253 INFO    Thread-491:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f8/ad4b8c38ff7ff3a2ebc8a9eaff15a0
+2022-01-06 14:42:47,253 INFO    Thread-493:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/f9/5c56941417edbe5d275793d33a8245
+2022-01-06 14:42:47,529 INFO    Thread-500:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fc/8011cab945fd4f19f52c0b4abe1ac3
+2022-01-06 14:42:47,530 INFO    Thread-496:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fb/250f5877829891d384a3a4f4c708e1
+2022-01-06 14:42:47,538 INFO    Thread-506:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fe/5ca021b1160ede1dc0bfffde013836
+2022-01-06 14:42:47,544 INFO    Thread-498:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fc/506c1dfdaf313498c4c94a415a87b5
+2022-01-06 14:42:47,549 INFO    Thread-509:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fe/e79fe4c3734fe1f640a0816e087741
+2022-01-06 14:42:47,551 INFO    Thread-503:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fd/c946d9fde00a8891d96526695150c5
+2022-01-06 14:42:47,553 INFO    Thread-499:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fc/7b04ecef3cacd517f6e60882fea6ab
+2022-01-06 14:42:47,555 INFO    Thread-508:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fe/dae3722414a64e089f4ab92a6dec0f
+2022-01-06 14:42:47,559 INFO    Thread-511:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ff/03941ed859025244a9dfc808ffd314
+2022-01-06 14:42:47,562 INFO    Thread-501:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fc/843cd0e018ad4b1feb984fcbdd8580
+2022-01-06 14:42:47,565 INFO    Thread-495:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fb/0b0af6aacc2e0c90f26e12ec7f6356
+2022-01-06 14:42:47,567 INFO    Thread-502:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fd/68417f2c5a3eb6af564ab26483e3e3
+2022-01-06 14:42:47,570 INFO    Thread-512:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/ff/971172c4ea3ac47988f8cb56d36b2d
+2022-01-06 14:42:47,573 INFO    Thread-507:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fe/a31e36b553c1358c7a76fce4f49b45
+2022-01-06 14:42:47,579 INFO    Thread-494:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fa/fc0849650eeee54276c207a2b18b6e
+2022-01-06 14:42:47,579 INFO    Thread-497:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fb/8f02a8710f7950a20df7727c6ec014
+2022-01-06 14:42:47,586 INFO    Thread-510:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fe/f4f96de009f7b491876f9c504331f3
+2022-01-06 14:42:47,598 INFO    Thread-505:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fe/335830d525cd508847a28140d16299
+2022-01-06 14:42:47,624 INFO    Thread-504:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/fe/2615d486ad9a841b6e5df9ee54ccbc
+2022-01-06 14:42:47,937 INFO    Thread-513:6131 [upload_job.py:push():95] Uploaded file /Users/weis/.cache/wandb/artifacts/obj/md5/8c/9b2b2199ca4ee91d61d643bb5a5d15
+2022-01-06 14:42:49,350 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-06 14:42:49,469 INFO    SenderThread:6131 [sender.py:send_request_log_artifact():968] logged artifact run-1ew841eu-mnist_predictions_first500 - {'id': 'QXJ0aWZhY3Q6NTg5OTQyMzk=', 'digest': 'e211055756d203334868e2563dbcaa47', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjg4MjIzMjY=', 'latestArtifact': None}, 'version': 'latest'}
+2022-01-06 14:42:49,470 DEBUG   SenderThread:6131 [sender.py:send():234] send: files
+2022-01-06 14:42:49,470 INFO    SenderThread:6131 [sender.py:_save_file():939] saving file media/table/mnist_predictions_first500_0_c6465744f514eeb4460f.table.json with policy now
+2022-01-06 14:42:49,471 DEBUG   SenderThread:6131 [sender.py:send():234] send: history
+2022-01-06 14:42:49,471 DEBUG   SenderThread:6131 [sender.py:send():234] send: summary
+2022-01-06 14:42:49,473 INFO    SenderThread:6131 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-06 14:42:49,473 DEBUG   SenderThread:6131 [sender.py:send():234] send: telemetry
+2022-01-06 14:42:49,474 DEBUG   SenderThread:6131 [sender.py:send():234] send: exit
+2022-01-06 14:42:49,474 INFO    SenderThread:6131 [sender.py:send_exit():366] handling exit code: 0
+2022-01-06 14:42:49,474 INFO    SenderThread:6131 [sender.py:send_exit():368] handling runtime: 8
+2022-01-06 14:42:49,476 INFO    SenderThread:6131 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-06 14:42:49,476 INFO    SenderThread:6131 [sender.py:send_exit():374] send defer
+2022-01-06 14:42:49,476 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: poll_exit
+2022-01-06 14:42:49,477 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: defer
+2022-01-06 14:42:49,477 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: poll_exit
+2022-01-06 14:42:49,478 INFO    HandlerThread:6131 [handler.py:handle_request_defer():147] handle defer: 0
+2022-01-06 14:42:49,479 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: poll_exit
+2022-01-06 14:42:49,482 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: defer
+2022-01-06 14:42:49,483 INFO    SenderThread:6131 [sender.py:send_request_defer():383] handle sender defer: 0
+2022-01-06 14:42:49,483 INFO    SenderThread:6131 [sender.py:transition_state():387] send defer: 1
+2022-01-06 14:42:49,484 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: defer
+2022-01-06 14:42:49,484 INFO    HandlerThread:6131 [handler.py:handle_request_defer():147] handle defer: 1
+2022-01-06 14:42:49,527 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: defer
+2022-01-06 14:42:49,527 INFO    SenderThread:6131 [sender.py:send_request_defer():383] handle sender defer: 1
+2022-01-06 14:42:49,527 INFO    SenderThread:6131 [sender.py:transition_state():387] send defer: 2
+2022-01-06 14:42:49,528 DEBUG   SenderThread:6131 [sender.py:send():234] send: stats
+2022-01-06 14:42:49,529 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: defer
+2022-01-06 14:42:49,529 INFO    HandlerThread:6131 [handler.py:handle_request_defer():147] handle defer: 2
+2022-01-06 14:42:49,529 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: defer
+2022-01-06 14:42:49,530 INFO    SenderThread:6131 [sender.py:send_request_defer():383] handle sender defer: 2
+2022-01-06 14:42:49,530 INFO    SenderThread:6131 [sender.py:transition_state():387] send defer: 3
+2022-01-06 14:42:49,530 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: defer
+2022-01-06 14:42:49,531 INFO    HandlerThread:6131 [handler.py:handle_request_defer():147] handle defer: 3
+2022-01-06 14:42:49,531 DEBUG   SenderThread:6131 [sender.py:send():234] send: summary
+2022-01-06 14:42:49,532 INFO    SenderThread:6131 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-06 14:42:49,533 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: defer
+2022-01-06 14:42:49,533 INFO    SenderThread:6131 [sender.py:send_request_defer():383] handle sender defer: 3
+2022-01-06 14:42:49,533 INFO    SenderThread:6131 [sender.py:transition_state():387] send defer: 4
+2022-01-06 14:42:49,533 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: defer
+2022-01-06 14:42:49,534 INFO    HandlerThread:6131 [handler.py:handle_request_defer():147] handle defer: 4
+2022-01-06 14:42:49,534 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: defer
+2022-01-06 14:42:49,534 INFO    SenderThread:6131 [sender.py:send_request_defer():383] handle sender defer: 4
+2022-01-06 14:42:49,588 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-06 14:42:49,752 INFO    SenderThread:6131 [sender.py:transition_state():387] send defer: 5
+2022-01-06 14:42:49,752 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: poll_exit
+2022-01-06 14:42:49,753 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: defer
+2022-01-06 14:42:49,753 INFO    HandlerThread:6131 [handler.py:handle_request_defer():147] handle defer: 5
+2022-01-06 14:42:49,753 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: defer
+2022-01-06 14:42:49,753 INFO    SenderThread:6131 [sender.py:send_request_defer():383] handle sender defer: 5
+2022-01-06 14:42:49,754 INFO    SenderThread:6131 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-01-06 14:42:49,855 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-06 14:42:50,109 INFO    Thread-514:6131 [upload_job.py:push():137] Uploaded file /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T/tmpkxrvsi1gwandb/1vmsk9ho-media/table/mnist_predictions_first500_0_c6465744f514eeb4460f.table.json
+2022-01-06 14:42:50,258 INFO    SenderThread:6131 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/config.yaml
+2022-01-06 14:42:50,258 INFO    SenderThread:6131 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/wandb-summary.json
+2022-01-06 14:42:50,259 INFO    SenderThread:6131 [dir_watcher.py:finish():313] scan: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files
+2022-01-06 14:42:50,259 INFO    SenderThread:6131 [dir_watcher.py:finish():327] scan save: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/requirements.txt requirements.txt
+2022-01-06 14:42:50,260 INFO    SenderThread:6131 [dir_watcher.py:finish():327] scan save: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/output.log output.log
+2022-01-06 14:42:50,263 INFO    SenderThread:6131 [dir_watcher.py:finish():327] scan save: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/config.yaml config.yaml
+2022-01-06 14:42:50,264 INFO    SenderThread:6131 [dir_watcher.py:finish():327] scan save: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/wandb-summary.json wandb-summary.json
+2022-01-06 14:42:50,269 INFO    SenderThread:6131 [dir_watcher.py:finish():327] scan save: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/conda-environment.yaml conda-environment.yaml
+2022-01-06 14:42:50,275 INFO    SenderThread:6131 [dir_watcher.py:finish():327] scan save: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/wandb-metadata.json wandb-metadata.json
+2022-01-06 14:42:50,281 INFO    SenderThread:6131 [dir_watcher.py:finish():327] scan save: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/media/table/mnist_predictions_first500_0_c6465744f514eeb4460f.table.json media/table/mnist_predictions_first500_0_c6465744f514eeb4460f.table.json
+2022-01-06 14:42:50,281 INFO    SenderThread:6131 [sender.py:transition_state():387] send defer: 6
+2022-01-06 14:42:50,281 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: poll_exit
+2022-01-06 14:42:50,283 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: defer
+2022-01-06 14:42:50,283 INFO    HandlerThread:6131 [handler.py:handle_request_defer():147] handle defer: 6
+2022-01-06 14:42:50,284 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: defer
+2022-01-06 14:42:50,284 INFO    SenderThread:6131 [sender.py:send_request_defer():383] handle sender defer: 6
+2022-01-06 14:42:50,285 INFO    SenderThread:6131 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-06 14:42:50,388 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-06 14:42:50,388 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: poll_exit
+2022-01-06 14:42:50,491 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-06 14:42:50,491 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: poll_exit
+2022-01-06 14:42:50,593 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-06 14:42:50,594 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: poll_exit
+2022-01-06 14:42:50,700 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-06 14:42:50,701 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: poll_exit
+2022-01-06 14:42:50,805 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-06 14:42:50,805 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: poll_exit
+2022-01-06 14:42:50,901 INFO    Thread-515:6131 [upload_job.py:push():137] Uploaded file /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/requirements.txt
+2022-01-06 14:42:50,911 INFO    Thread-518:6131 [upload_job.py:push():137] Uploaded file /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/wandb-summary.json
+2022-01-06 14:42:50,911 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-06 14:42:50,913 INFO    Thread-516:6131 [upload_job.py:push():137] Uploaded file /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/output.log
+2022-01-06 14:42:50,914 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: poll_exit
+2022-01-06 14:42:50,925 INFO    Thread-519:6131 [upload_job.py:push():137] Uploaded file /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/conda-environment.yaml
+2022-01-06 14:42:50,927 INFO    Thread-517:6131 [upload_job.py:push():137] Uploaded file /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/files/config.yaml
+2022-01-06 14:42:51,019 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-06 14:42:51,020 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: poll_exit
+2022-01-06 14:42:51,126 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-06 14:42:51,126 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: poll_exit
+2022-01-06 14:42:51,129 INFO    Thread-7  :6131 [sender.py:transition_state():387] send defer: 7
+2022-01-06 14:42:51,130 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: defer
+2022-01-06 14:42:51,130 INFO    HandlerThread:6131 [handler.py:handle_request_defer():147] handle defer: 7
+2022-01-06 14:42:51,130 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: defer
+2022-01-06 14:42:51,130 INFO    SenderThread:6131 [sender.py:send_request_defer():383] handle sender defer: 7
+2022-01-06 14:42:51,231 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-06 14:42:51,646 INFO    SenderThread:6131 [sender.py:transition_state():387] send defer: 8
+2022-01-06 14:42:51,646 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: poll_exit
+2022-01-06 14:42:51,647 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: defer
+2022-01-06 14:42:51,647 INFO    HandlerThread:6131 [handler.py:handle_request_defer():147] handle defer: 8
+2022-01-06 14:42:51,647 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: defer
+2022-01-06 14:42:51,648 INFO    SenderThread:6131 [sender.py:send_request_defer():383] handle sender defer: 8
+2022-01-06 14:42:51,648 INFO    SenderThread:6131 [sender.py:transition_state():387] send defer: 9
+2022-01-06 14:42:51,649 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: defer
+2022-01-06 14:42:51,649 INFO    HandlerThread:6131 [handler.py:handle_request_defer():147] handle defer: 9
+2022-01-06 14:42:51,649 DEBUG   SenderThread:6131 [sender.py:send():234] send: final
+2022-01-06 14:42:51,649 DEBUG   SenderThread:6131 [sender.py:send():234] send: footer
+2022-01-06 14:42:51,649 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: defer
+2022-01-06 14:42:51,649 INFO    SenderThread:6131 [sender.py:send_request_defer():383] handle sender defer: 9
+2022-01-06 14:42:51,752 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-06 14:42:51,753 DEBUG   SenderThread:6131 [sender.py:send_request():248] send_request: poll_exit
+2022-01-06 14:42:51,753 INFO    SenderThread:6131 [file_pusher.py:join():182] waiting for file pusher
+2022-01-06 14:42:52,048 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: get_summary
+2022-01-06 14:42:52,049 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: sampled_history
+2022-01-06 14:42:52,052 DEBUG   HandlerThread:6131 [handler.py:handle_request():130] handle_request: shutdown
+2022-01-06 14:42:52,052 INFO    HandlerThread:6131 [handler.py:finish():731] shutting down handler
+2022-01-06 14:42:52,654 INFO    WriterThread:6131 [datastore.py:close():281] close: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/wandb/run-20220106_144228-1ew841eu/run-1ew841eu.wandb
+2022-01-06 14:42:53,046 INFO    SenderThread:6131 [sender.py:finish():1070] shutting down sender
+2022-01-06 14:42:53,046 INFO    SenderThread:6131 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-06 14:42:53,047 INFO    SenderThread:6131 [file_pusher.py:join():182] waiting for file pusher
+2022-01-06 14:42:53,047 INFO    MainThread:6131 [internal.py:handle_exit():77] Internal process exited

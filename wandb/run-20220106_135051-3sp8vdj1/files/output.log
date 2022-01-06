@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/train_model.py", line 184, in <module>
+    train()
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/train_model.py", line 119, in train
+    images, labels = iter(train_set)
+ValueError: too many values to unpack (expected 2)

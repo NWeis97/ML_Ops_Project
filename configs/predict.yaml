@@ -1,0 +1,4 @@
+#config.yaml
+hyperparameters:
+  path_to_model: '2022-01-06/14-20-57/'
+  modelName: 'CNNModuleVar.pth'

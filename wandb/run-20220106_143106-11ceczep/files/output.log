@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/predict_model.py", line 127, in <module>
+    main()
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/predict_model.py", line 115, in main
+    my_table.add_column("image", images[0:500])
+  File "/opt/anaconda3/envs/py39/lib/python3.9/site-packages/wandb/data_types.py", line 759, in add_column
+    assert isinstance(data, list) or is_np
+AssertionError
+Test accuracy is: 95.8800048828125%

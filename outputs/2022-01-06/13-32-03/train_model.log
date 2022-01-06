@@ -1,0 +1,93 @@
+INFO:root:configuration: 
+ hyperparameters:
+  input_channel: 1
+  conv_to_linear_dim: 144
+  output_dim: 10
+  hidden_channel_array:
+  - 4
+  - 8
+  - 16
+  hidden_kernel_array:
+  - 3
+  - 3
+  - 3
+  hidden_stride_array:
+  - 1
+  - 1
+  - 1
+  hidden_padding_array:
+  - 1
+  - 1
+  - 1
+  hidden_dim_array:
+  - 50
+  non_linear_function_array: []
+  regularization_array: []
+
+INFO:root:configuration: 
+ hyperparameters:
+  batch_size: 64
+  lr: 0.001
+  epochs: 20
+  seed: 1234
+
+INFO:root:epoch: 0/20
+INFO:root:Training_loss: 0.7038843705296517
+INFO:root:
+INFO:root:epoch: 1/20
+INFO:root:Training_loss: 0.2580589556515217
+INFO:root:
+INFO:root:epoch: 2/20
+INFO:root:Training_loss: 0.20051145413815974
+INFO:root:
+INFO:root:epoch: 3/20
+INFO:root:Training_loss: 0.17273738189339638
+INFO:root:
+INFO:root:epoch: 4/20
+INFO:root:Training_loss: 0.15266855899095536
+INFO:root:
+INFO:root:epoch: 5/20
+INFO:root:Training_loss: 0.13729344653487205
+INFO:root:
+INFO:root:epoch: 6/20
+INFO:root:Training_loss: 0.12770721623003484
+INFO:root:
+INFO:root:epoch: 7/20
+INFO:root:Training_loss: 0.11983541351109743
+INFO:root:
+INFO:root:epoch: 8/20
+INFO:root:Training_loss: 0.11343122108131647
+INFO:root:
+INFO:root:epoch: 9/20
+INFO:root:Training_loss: 0.1039539147913456
+INFO:root:
+INFO:root:epoch: 10/20
+INFO:root:Training_loss: 0.09787685502171517
+INFO:root:
+INFO:root:epoch: 11/20
+INFO:root:Training_loss: 0.09282087625861168
+INFO:root:
+INFO:root:epoch: 12/20
+INFO:root:Training_loss: 0.08483612035885453
+INFO:root:
+INFO:root:epoch: 13/20
+INFO:root:Training_loss: 0.0820986810207367
+INFO:root:
+INFO:root:epoch: 14/20
+INFO:root:Training_loss: 0.07879480800144374
+INFO:root:
+INFO:root:epoch: 15/20
+INFO:root:Training_loss: 0.07714962665177881
+INFO:root:
+INFO:root:epoch: 16/20
+INFO:root:Training_loss: 0.07081821082942187
+INFO:root:
+INFO:root:epoch: 17/20
+INFO:root:Training_loss: 0.07248767437078059
+INFO:root:
+INFO:root:epoch: 18/20
+INFO:root:Training_loss: 0.06474752682372928
+INFO:root:
+INFO:root:epoch: 19/20
+INFO:root:Training_loss: 0.06599198760911823
+INFO:root:

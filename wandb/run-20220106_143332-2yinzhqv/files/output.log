@@ -1,0 +1,112 @@
+Test accuracy is: 95.8800048828125%
+> /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/predict_model.py(116)main()
+-> my_table = wandb.Table()
+(Pdb) n
+> /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/predict_model.py(117)main()
+-> my_table.add_column("image", images[0:500])
+
+(Pdb) my_table.add_column("image", images[0:500])
+*** AssertionError
+
+
+
+
+(Pdb) my_table.add_column("image", images[0:500])[wandb.Image(im) for im in images[1:500]]
+*** SyntaxError: invalid syntax
+
+
+(Pdb) my_table.add_column("image", images[0:500])[wandb.Image(im) for im in )mages[1:500]]
+*** AssertionError: Expected length 0, found 499
+
+
+
+
+(Pdb) my_table.add_column("image", images))))))))))
+*** AssertionError
+
+(Pdb) my_table.add_column("image", images.t)
+*** AssertionError
+
+(Pdb) my_table.add_column("image", images)))
+*** AssertionError
+(Pdb) images
+tensor([[[0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.]],
+        [[0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.]],
+        [[0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.]],
+        ...,
+        [[0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.]],
+        [[0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.]],
+        [[0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.]]])
+(Pdb) my_table.add_column("Predictions", np.array(res['Predictions'][0:500]))
+*** AssertionError: Expected length 0, found 500
+
+
+(Pdb) my_table = wandb.Table(rows=500)
+*** AssertionError: data argument expects a `list` object
+
+(Pdb) my_table = wandb.Table(res)
+*** AssertionError: columns argument expects a `list` object
+
+
+
+(Pdb) my_table = wandb.Table(dataframe=res)
+
+
+(Pdb) my_table.add_column("image", images[0:500])
+*** AssertionError
+
+
+
+(Pdb) my_table.add_column("image", [wandb.Image(im) for im in images[1:500]])
+*** AssertionError: Expected length 5000, found 499
+
+
+(Pdb) exit
+Traceback (most recent call last):
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/predict_model.py", line 129, in <module>
+    main()
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/predict_model.py", line 117, in main
+    my_table.add_column("image", images[0:500])
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/predict_model.py", line 117, in main
+    my_table.add_column("image", images[0:500])
+  File "/opt/anaconda3/envs/py39/lib/python3.9/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/opt/anaconda3/envs/py39/lib/python3.9/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

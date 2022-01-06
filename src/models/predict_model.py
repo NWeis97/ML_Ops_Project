@@ -9,8 +9,12 @@ import seaborn as sns
 import torch
 from torch import nn, optim
 import os
-
+import wandb
 sns.set_style("whitegrid")
+import hydra
+from hydra import compose, initialize
+from omegaconf import OmegaConf,DictConfig
+import numpy as np
 
 import pdb
 
@@ -19,33 +23,30 @@ def main():
     #################### Arguments ####################
     ###################################################
     # Arguments to be called
-    parser = argparse.ArgumentParser(description="Training arguments")
-    parser.add_argument("--load_model_from", default="models/fits/")
-    parser.add_argument("--modelName", default="ConvolutionModel_v1_lr0.003_e30_bs64.pth")
+    initialize(config_path="../../configs/", job_name="predict")
+    cfg = compose(config_name="predict.yaml")
+    configs = cfg['hyperparameters']
+    
+    path_to_model = configs['path_to_model']
+    modelName = configs['modelName']
 
-    # Save arguments in args
-    args = parser.parse_args(sys.argv[1:])
-    print(args)
-
+    # Set up wandb magic
+    wandb.init(config={'predict':configs}, job_type='Predict')
 
     ###################################################
     ############### Load model and data ###############
     ###################################################
     # Load model
-    model = torch.load(args.load_model_from + args.modelName)
+    model = torch.load('models/' + path_to_model + modelName)
     model.eval()
 
-    # Extract batch_size
-    result = re.search("(.*)_bs(.*).pth", args.modelName)
-    batch_size = int(result.group(2))
-
     # Extract model name
-    result2 = re.search("(.*).pth", args.modelName)
+    result2 = re.search("(.*).pth", modelName)
     modelName = result2.group(1)
 
     # Load data
     Test = torch.load("data/processed/test_dataset.pt")
-    test_set = torch.utils.data.DataLoader(Test, batch_size=batch_size, shuffle=False)
+    test_set = torch.utils.data.DataLoader(Test, batch_size=Test.__len__(), shuffle=False)
 
 
     ###################################################
@@ -82,8 +83,6 @@ def main():
                     "Labels": all_labels,
                 }
             )
-            os.makedirs("reports/predictions/", exist_ok=True) #Create if not already exist
-            res.to_csv("reports/predictions/" + modelName + ".csv")
 
             # Print scores
             running_acc = running_acc / len(test_set)
@@ -107,11 +106,18 @@ def main():
                     "Labels": all_labels,
                 }
             )
-            os.makedirs("reports/predictions/", exist_ok=True) #Create if not already exist
-            res.to_csv("reports/predictions/" + modelName + ".csv")
 
+    # Save resulting table
+    os.makedirs("reports/predictions/"+ path_to_model, exist_ok=True) #Create if not already exist
+    res.to_csv("reports/predictions/" + path_to_model + modelName + ".csv")
+    
+    # Save table to wandb
+    my_table = wandb.Table(dataframe=res.iloc[0:500])
+    my_table.add_column("image", [wandb.Image(im) for im in images[0:500]])
+    # Log your Table to W&B
+    wandb.log({"mnist_predictions_first500": my_table})
 
-    print('See predictions in "' + "reports/predictions/" + modelName + '.csv"')
+    print('See predictions in "' + "reports/predictions/" + path_to_model + modelName + '.csv"')
     print("Done!\n")
 
 

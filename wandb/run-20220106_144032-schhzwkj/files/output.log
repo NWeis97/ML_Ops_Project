@@ -1,0 +1,18 @@
+Test accuracy is: 95.8800048828125%
+> /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/predict_model.py(116)main()
+-> my_table = wandb.Table(dataframe=res.iloc[0:500])
+
+
+(Pdb) exit
+Traceback (most recent call last):
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/predict_model.py", line 126, in <module>
+    main()
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/predict_model.py", line 116, in main
+    my_table = wandb.Table(dataframe=res.iloc[0:500])
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/predict_model.py", line 116, in main
+    my_table = wandb.Table(dataframe=res.iloc[0:500])
+  File "/opt/anaconda3/envs/py39/lib/python3.9/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/opt/anaconda3/envs/py39/lib/python3.9/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

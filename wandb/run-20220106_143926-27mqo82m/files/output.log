@@ -1,0 +1,59 @@
+Test accuracy is: 95.8800048828125%
+> /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/predict_model.py(116)main()
+-> my_table = wandb.Table(dataframe=res[0:500,])
+
+(Pdb) my_table = wandb.Table(dataframe=res[0:500,])
+*** TypeError: '(slice(0, 500, None),)' is an invalid key
+(Pdb) res
+      Predictions  Probabilities  Labels
+0               7       0.999784       7
+1               2       0.999990       2
+2               1       0.999956       1
+3               0       0.999933       0
+4               4       0.999913       4
+...           ...            ...     ...
+4995            2       0.998176       2
+4996            3       1.000000       3
+4997            2       0.999256       2
+4998            4       0.999996       4
+4999            0       1.000000       0
+[5000 rows x 3 columns]
+
+
+
+
+
+
+(Pdb) res.iloc[0:500]
+     Predictions  Probabilities  Labels
+0              7       0.999784       7
+1              2       0.999990       2
+2              1       0.999956       1
+3              0       0.999933       0
+4              4       0.999913       4
+..           ...            ...     ...
+495            0       0.988271       8
+496            9       0.999999       9
+497            8       0.658576       4
+498            0       0.999698       0
+499            6       0.998586       6
+[500 rows x 3 columns]
+
+
+
+(Pdb) my_table = wandb.Table(dataframe=res.iloc[0:500]))
+
+
+(Pdb) exit
+Traceback (most recent call last):
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/predict_model.py", line 126, in <module>
+    main()
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/predict_model.py", line 116, in main
+    my_table = wandb.Table(dataframe=res[0:500,])
+  File "/Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/src/models/predict_model.py", line 116, in main
+    my_table = wandb.Table(dataframe=res[0:500,])
+  File "/opt/anaconda3/envs/py39/lib/python3.9/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/opt/anaconda3/envs/py39/lib/python3.9/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

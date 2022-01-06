@@ -32,16 +32,17 @@ from hydra import compose, initialize
 from omegaconf import OmegaConf,DictConfig
 import datetime
 import wandb
+import numpy as np
 
 
 
 import logging
 #log = logging.getLogger(__name__)
-logfp = 'outputs/' + str(datetime.datetime.now().date()) + '/' + str(datetime.datetime.now().strftime("%H-%M-%S")) + '/'
-os.makedirs(logfp, exist_ok = True)
+logfp =  str(datetime.datetime.now().date()) + '/' + str(datetime.datetime.now().strftime("%H-%M-%S")) + '/'
+os.makedirs('outputs/'+logfp, exist_ok = True)
 result = re.search("(.*).py", os.path.basename(__file__))
 fileName = result.group(1)
-logging.basicConfig(filename=logfp+fileName+'.log', encoding='utf-8', level=logging.INFO)
+logging.basicConfig(filename='outputs/'+logfp+fileName+'.log', encoding='utf-8', level=logging.INFO)
 
 
 def build_model():
@@ -114,6 +115,11 @@ def train():
     optimizer = optim.Adam(model.parameters(), lr=lr)
 
 
+    # See examples of test-data in wandb
+    (images, labels) = next(iter(train_set))
+    wandb.log({"examples" : [wandb.Image(im) for im in images]})
+
+
     ###################################################
     ################## Run training ###################
     ###################################################
@@ -134,7 +140,7 @@ def train():
             optimizer.step()
 
             running_loss += loss.item()
-
+            wandb.log({"batch_loss": loss.item()})
         else:
             train_losses.append(running_loss / len(train_set))
             wandb.log({"loss": train_losses[e]})
@@ -142,35 +148,28 @@ def train():
             logging.info("Training_loss: " + str(train_losses[e]))
             logging.info("")
 
+    # Save name of model to wandb
+    wandb.log({"modelLocation": 'models/' + logfp + modelType})
+
     # Save model
-    os.makedirs("./models/fits/", exist_ok=True) #Create if not already exist
+    os.makedirs("./models/" + logfp, exist_ok=True) #Create if not already exist
     torch.save(
         model,
-        "models/fits/"
+        "models/"
+        + logfp
         + modelType
-        + "_lr"
-        + str(lr)
-        + "_e"
-        + str(epochs)
-        + "_bs"
-        + str(batch_size)
         + ".pth",
     )
 
     # Plot training loss
     sns.set_theme()
     plt.plot(train_losses)
-    os.makedirs("./reports/figures/training_loss/", exist_ok=True) #Create if not already exist
+    os.makedirs("./reports/figures/training_loss/" + logfp, exist_ok=True) #Create if not already exist
     plt.savefig(
         "reports/figures/training_loss/"
+        + logfp
         + modelType
-        + "_lr"
-        + str(lr)
-        + "_e"
-        + str(epochs)
-        + "_bs"
-        + str(batch_size)
-        + ".png"
+        + ".png",
     )
 
 

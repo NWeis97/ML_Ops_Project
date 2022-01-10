@@ -4,7 +4,8 @@ setup(
     name="src",
     packages=find_packages(),
     version="0.1.0",
-    description="This project contains the final exercise of S1, in which we will continue to build upon",
+    description="This project contains the final exercise of S1, "
+    + "in which we will continue to build upon",
     author="Nicolai Weisbjerg",
     license="MIT",
 )

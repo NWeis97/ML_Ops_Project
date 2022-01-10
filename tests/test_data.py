@@ -1,11 +1,16 @@
-import torch
-import pdb
 import os.path
+
 import pytest
+import torch
 
 
-@pytest.mark.skipif(not (os.path.exists("data/processed/train_dataset.pt") or 
-                         os.path.exists("data/processed/test_dataset.pt")), reason="Data files not found")
+@pytest.mark.skipif(
+    not (
+        os.path.exists("data/processed/train_dataset.pt")
+        or os.path.exists("data/processed/test_dataset.pt")
+    ),
+    reason="Data files not found",
+)
 def test_num_obs():
     # content of test_sample.py
     Train = torch.load("data/processed/train_dataset.pt")
@@ -13,11 +18,17 @@ def test_num_obs():
     N_Train = 40000
     N_Test = 5000
 
-    assert len(Train) == N_Train 
+    assert len(Train) == N_Train
     assert len(Test) == N_Test
 
-@pytest.mark.skipif(not (os.path.exists("data/processed/train_dataset.pt") or 
-                         os.path.exists("data/processed/test_dataset.pt")), reason="Data files not found")
+
+@pytest.mark.skipif(
+    not (
+        os.path.exists("data/processed/train_dataset.pt")
+        or os.path.exists("data/processed/test_dataset.pt")
+    ),
+    reason="Data files not found",
+)
 def test_image_shape():
     # content of test_sample.py
     Train = torch.load("data/processed/train_dataset.pt")
@@ -31,8 +42,14 @@ def test_image_shape():
         assert Test.__getitem__(i)[0].shape[0] == 28
         assert Test.__getitem__(i)[0].shape[1] == 28
 
-@pytest.mark.skipif(not (os.path.exists("data/processed/train_dataset.pt") or 
-                         os.path.exists("data/processed/test_dataset.pt")), reason="Data files not found")
+
+@pytest.mark.skipif(
+    not (
+        os.path.exists("data/processed/train_dataset.pt")
+        or os.path.exists("data/processed/test_dataset.pt")
+    ),
+    reason="Data files not found",
+)
 def test_labels():
     # content of test_sample.py
     Train = torch.load("data/processed/train_dataset.pt")
@@ -45,4 +62,3 @@ def test_labels():
     for i in range(len(Test)):
         assert type(Train.__getitem__(i)[1]) == torch.Tensor
         assert type(Test.__getitem__(i)[1].item()) == int
-

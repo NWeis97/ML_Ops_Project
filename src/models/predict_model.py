@@ -1,43 +1,39 @@
-import argparse
+import os
 import re
-import sys
 
 # Graphics
-import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 import torch
-from torch import nn, optim
-import os
-import wandb
-sns.set_style("whitegrid")
-import hydra
 from hydra import compose, initialize
-from omegaconf import OmegaConf,DictConfig
-import numpy as np
 
-import pdb
+import wandb
+
+sns.set_style("whitegrid")
+
 
 def main():
-    ###################################################
-    #################### Arguments ####################
-    ###################################################
+    # ##################################################
+    # ################### Arguments ####################
+    # ##################################################
     # Arguments to be called
     initialize(config_path="../../configs/", job_name="predict")
     cfg = compose(config_name="predict.yaml")
-    configs = cfg['hyperparameters']
-    
-    path_to_model = configs['path_to_model']
-    modelName = configs['modelName']
+    configs = cfg["hyperparameters"]
+
+    path_to_model = configs["path_to_model"]
+    modelName = configs["modelName"]
 
     # Set up wandb magic
-    wandb.init(config={'predict':configs}, job_type='Predict',entity='nweis97',project='ML_Ops_Project')
+    wandb.init(
+        config={"predict": configs}, job_type="Predict", entity="nweis97", project="ML_Ops_Project"
+    )
 
-    ###################################################
-    ############### Load model and data ###############
-    ###################################################
+    # ##################################################
+    # ############## Load model and data ###############
+    # ##################################################
     # Load model
-    model = torch.load('models/' + path_to_model + modelName)
+    model = torch.load("models/" + path_to_model + modelName)
     model.eval()
 
     # Extract model name
@@ -48,10 +44,9 @@ def main():
     Test = torch.load("data/processed/test_dataset.pt")
     test_set = torch.utils.data.DataLoader(Test, batch_size=Test.__len__(), shuffle=False)
 
-
-    ###################################################
-    ############## Calculate predictions ##############
-    ###################################################
+    # ##################################################
+    # ############# Calculate predictions ##############
+    # ##################################################
     # Run evaluation and write results to file
     top_classes = []
     top_probs = []
@@ -108,9 +103,11 @@ def main():
             )
 
     # Save resulting table
-    os.makedirs("reports/predictions/"+ path_to_model, exist_ok=True) #Create if not already exist
+    os.makedirs(
+        "reports/predictions/" + path_to_model, exist_ok=True
+    )  # Create if not already exist
     res.to_csv("reports/predictions/" + path_to_model + modelName + ".csv")
-    
+
     # Save table to wandb
     my_table = wandb.Table(dataframe=res.iloc[0:500])
     my_table.add_column("image", [wandb.Image(im) for im in images[0:500]])

@@ -2,29 +2,25 @@ import argparse
 import os
 import re
 import sys
-from torchsummary import summary
 
 # Graphics
 import matplotlib.pyplot as plt
 import numpy as np
-import pandas as pd
 import seaborn as sns
 import torch
+from matplotlib import cm
 from sklearn.manifold import TSNE
-from torch import nn, optim
 
 sns.set_style("whitegrid")
 sns.set_theme()
 # Debuging
-import pdb
 
-from matplotlib import cm
 
 def main():
 
-    ###################################################
-    #################### Arguments ####################
-    ###################################################
+    # ##################################################
+    # ################### Arguments ####################
+    # ##################################################
     # Arguments to be called
     parser = argparse.ArgumentParser(description="Training arguments")
     parser.add_argument("--load_model_from", default="models/fits/")
@@ -34,10 +30,9 @@ def main():
     args = parser.parse_args(sys.argv[1:])
     print(args)
 
-
-    ###################################################
-    ############### Load model and data ###############
-    ###################################################
+    # ##################################################
+    # ############## Load model and data ###############
+    # ##################################################
     # Load model
     model = torch.load(args.load_model_from + args.modelName)
     model.eval()
@@ -53,10 +48,9 @@ def main():
     Train = torch.load("data/processed/train_dataset.pt")
     train_set = torch.utils.data.DataLoader(Train, batch_size=Train.__len__(), shuffle=True)
 
-
-    ###################################################
-    ############### Visualize filters #################
-    ###################################################
+    # ##################################################
+    # ############## Visualize filters #################
+    # ##################################################
     # Make sure all number are present in batch (and find index of first number x)
     allNumber = True
     index0to9 = []
@@ -75,20 +69,16 @@ def main():
     # Extract activations from model and save in activations
     activation = {}
 
-
     def get_activation(name):
         def hook(model, input, output):
             activation[name] = output.detach()
 
         return hook
 
-
     # Extract all cnn layers
     for name, layer in model.named_modules():
         if isinstance(layer, torch.nn.Conv2d):
             layer.register_forward_hook(get_activation(name))  # use hook
-    output = model(images)
-
 
     # Get activations of conv2D layers
     for name, layer in model.named_modules():
@@ -119,15 +109,15 @@ def main():
                 # Save images
                 plt.savefig(pathToImage + "number" + str(i) + ".png")
 
-
-    ###################################################
-    ############ t-SNE plots final layer ##############
-    ###################################################
-    # Inspiration from https://towardsdatascience.com/visualizing-feature-vectors-embeddings-using-pca-and-t-sne-ef157cea3a42
+    # ##################################################
+    # ########### t-SNE plots final layer ##############
+    # ##################################################
+    # Inspiration from
+    # (https://towardsdatascience.com/visualizing-feature-vectors-
+    # embeddings-using-pca-and-t-sne-ef157cea3a42)
     # Get activations of final layer (embedding)
     layer = list(model.children())[4]
     layer.register_forward_hook(get_activation("final"))
-    output = model(images)
 
     # Extract embedding of all images with their respective predictions
     # Initialize arrays

@@ -1,22 +1,21 @@
 # -*- coding: utf-8 -*-
 import logging
-import pdb
+import os
+# import pdb
 from pathlib import Path
 
 import click
 import numpy as np
 import torch
 from dotenv import find_dotenv, load_dotenv
-import os
 
-# I mports for data prep
-from numpy.lib.npyio import load
+# Imports for data prep
+# from numpy.lib.npyio import load
 
 
 @click.command()
 @click.argument("input_filepath", type=click.Path(exists=True))
 @click.argument("output_filepath", type=click.Path())
-
 def main(input_filepath, output_filepath):
     """Runs data processing scripts to turn raw data from (../raw) into
     cleaned data ready to be analyzed (saved in ../processed).
@@ -26,12 +25,13 @@ def main(input_filepath, output_filepath):
     Test = dict(np.load(folderpath + "test.npz"))
 
     # Concatenate training datasets
-    # Inspiration from https://coderedirect.com/questions/615101/how-to-merge-very-large-numpy-arrays
+    # Inspiration from
+    # https://coderedirect.com/questions/615101/how-to-merge-very-large-numpy-arrays
 
     # Define train datasets to load and dicts
     files = os.listdir(folderpath)
-    data_files = [word for word in files if word.startswith('train')]
-  
+    data_files = [word for word in files if word.startswith("train")]
+
     n_items = {"images": 0, "labels": 0, "allow_pickle": 0}
     rows = {"images": None, "labels": None, "allow_pickle": None}
     cols = {"images": None, "labels": None, "allow_pickle": None}
@@ -79,10 +79,14 @@ def main(input_filepath, output_filepath):
         Train[i] = merged
 
     # Convert to dataloader object
-    train_images = torch.Tensor(Train['images'])
-    test_images = torch.Tensor(Test['images'])
-    Train = torch.utils.data.TensorDataset(train_images, torch.Tensor(Train['labels']).type(torch.LongTensor))
-    Test = torch.utils.data.TensorDataset(test_images, torch.Tensor(Test['labels']).type(torch.LongTensor))
+    train_images = torch.Tensor(Train["images"])
+    test_images = torch.Tensor(Test["images"])
+    Train = torch.utils.data.TensorDataset(
+        train_images, torch.Tensor(Train["labels"]).type(torch.LongTensor)
+    )
+    Test = torch.utils.data.TensorDataset(
+        test_images, torch.Tensor(Test["labels"]).type(torch.LongTensor)
+    )
 
     # Save datasets in data/processed
     torch.save(Train, output_filepath + "train_dataset.pt")

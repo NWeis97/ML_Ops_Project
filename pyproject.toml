@@ -40,8 +40,8 @@ build-backend = "setuptools.build_meta"
 #extend-ignore = "W503," # W503: Line break occurred before binary operator
 #max-line-length = 100
 [tool.flake8]
-max-line-length = 88
-extend-ignore = "E203,"
+max-line-length = 100
+extend-ignore = "E203,E722,C901,"
 max-complexity = 10
 
 # pyproject.toml

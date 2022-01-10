@@ -8,13 +8,7 @@ import pytest
 from unittest import mock
 # Importing source_code.py
 import sys
-sys.path.append("src/models/")
+sys.path.append("src")
 from src.models import train_model
 from src.models.model import ConvolutionModel_v1, CNNModuleVar
 from src.models.train_model import build_model
-
-
-@mock.patch("src.models.train_model.torch.optim.zero_grad")
-def test_run_it(method1_mock, my_fixture):
-    resp = _import.train_model(req)
-    method1_mock.assert_called_once()

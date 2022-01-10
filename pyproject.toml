@@ -35,10 +35,14 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
-[tool.flake8]
+#[tool.flake8]
 #exclude = venv
-extend-ignore = "W503," # W503: Line break occurred before binary operator
-max-line-length = 100
+#extend-ignore = "W503," # W503: Line break occurred before binary operator
+#max-line-length = 100
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203,"
+max-complexity = 10
 
 # pyproject.toml
 [tool.pytest.ini_options]

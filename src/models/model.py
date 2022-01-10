@@ -4,6 +4,7 @@ import torch.nn.functional as F
 from torch import nn, optim
 from torch.nn.modules.pooling import MaxPool2d
 from torchvision import datasets, transforms
+import pdb
 
 
 class ConvolutionModel_v1(nn.Module):
@@ -100,6 +101,12 @@ class CNNModuleVar(nn.Module):
 
 
     def forward(self, x):
+        if x.ndim != 3:
+            raise ValueError('Expected input to a 3D tensor')
+        if x.shape[1] != 28 or x.shape[2] != 28:
+            raise ValueError('Expected each sample to have shape [28, 28]')
+
+
         out = x.view(x.shape[0], 1, x.shape[1], x.shape[2])
         
         # Run convolutional layers

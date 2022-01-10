@@ -24,7 +24,7 @@ from torch import nn, optim
 
 import os
 import pdb
-from model import ConvolutionModel_v1, CNNModuleVar
+from src.models.model import ConvolutionModel_v1, CNNModuleVar
 sns.set_style("whitegrid")
 
 import hydra

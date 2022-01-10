@@ -20,7 +20,7 @@ classifiers = [
 
 # Requirements
 [dependencies]
-Click = "^7.0"
+Click = "^8.0"
 
 [dev-dependencies]
 black = { version = "^21.12b0", python = "^3.9" }
@@ -30,7 +30,7 @@ poetry = "infer_pyproject.cli:main"
 
 [build-system]
 requires = [
-    "setuptools >= 35.0.2",
+    "setuptools >= 60.2.0",
     "setuptools_scm >= 2.0.0, <3"
 ]
 build-backend = "setuptools.build_meta"
@@ -39,6 +39,15 @@ build-backend = "setuptools.build_meta"
 #exclude = venv
 extend-ignore = "W503," # W503: Line break occurred before binary operator
 max-line-length = 100
+
+# pyproject.toml
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+  #  "integration",
+]
 
 [tool.black]
 line-length = 100

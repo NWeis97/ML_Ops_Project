@@ -27,25 +27,13 @@ model.train()
 
 @pytest.mark.parametrize("batch", [20,10,90])
 def test_dim_output(batch):
-    # content of test_sample.py
-    Train = torch.load("data/processed/train_dataset.pt")
-    train_set = torch.utils.data.DataLoader(Train, batch_size=batch, shuffle=True)
-    # Get sample batch
-    images, labels = next(iter(train_set))
-
-    log_ps = model(images)
+    log_ps = model(torch.randn(batch,28,28))
     assert log_ps.shape[0] == batch, "Batch not correct size"
     assert log_ps.shape[1] == 10, "Output dimension per sample is not correct"
 
 
 
 def test_dim_input():
-    # content of test_sample.py
-    Train = torch.load("data/processed/train_dataset.pt")
-    train_set = torch.utils.data.DataLoader(Train, batch_size=20, shuffle=True)
-    # Get sample batch
-    images, labels = next(iter(train_set))
-
     with pytest.raises(ValueError, match='Expected input to a 3D tensor'):
         model(torch.randn(1,28,28,4))
 

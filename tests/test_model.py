@@ -7,7 +7,7 @@ import pytest
 
 
 import sys
-sys.path.append("src")
+sys.path.append("../")
 from src.models import train_model
 from src.models.model import ConvolutionModel_v1, CNNModuleVar
 from src.models.train_model import build_model

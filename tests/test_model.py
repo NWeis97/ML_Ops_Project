@@ -2,13 +2,15 @@ import torch
 import pdb
 from hydra import compose, initialize
 from omegaconf import OmegaConf,DictConfig
-from src.models.model import ConvolutionModel_v1, CNNModuleVar
-from src.models.train_model import build_model
 from hydra.core.global_hydra import GlobalHydra
 import pytest
 
 
-
+import sys
+sys.path.append("src/models/")
+from src.models import train_model
+from src.models.model import ConvolutionModel_v1, CNNModuleVar
+from src.models.train_model import build_model
 
 # Get model struct
 model, model_conf = build_model()
@@ -27,6 +29,8 @@ def test_dim_output(batch):
     log_ps = model(images)
     assert log_ps.shape[0] == batch, "Batch not correct size"
     assert log_ps.shape[1] == 10, "Output dimension per sample is not correct"
+
+
 
 def test_dim_input():
     # content of test_sample.py

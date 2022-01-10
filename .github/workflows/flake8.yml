@@ -39,5 +39,5 @@ jobs:
         pip install -r requirements_tests.txt
     - name: Test with flake8
       run: |
-        pip install flake8
-        flake8 -v
+        pip3 install pyproject-flake8
+        pflake8 .

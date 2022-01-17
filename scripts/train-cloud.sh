@@ -23,7 +23,7 @@ PROJECT_ID=mnist-example-project
 BUCKET_ID=mnist-bucket12
 
 # IMAGE_REPO_NAME: the image will be stored on Cloud Container Registry
-IMAGE_REPO_NAME=dockers
+IMAGE_REPO_NAME=testing
 
 # IMAGE_TAG: an easily identifiable tag for your docker image
 IMAGE_TAG=latest
@@ -32,7 +32,7 @@ IMAGE_TAG=latest
 IMAGE_URI=gcr.io/${PROJECT_ID}/${IMAGE_REPO_NAME}:${IMAGE_TAG}
 
 # JOB_NAME: the name of your job running on AI Platform.
-JOB_NAME=${PROJECT_ID}$(date +%Y%m%d_%H%M%S)
+JOB_NAME=mnistExampleProject$(date +%Y%m%d_%H%M%S)
 
 # REGION: select a region from https://cloud.google.com/ml-engine/docs/regions
 # or use the default '`us-central1`'. The region is where the model will be deployed.

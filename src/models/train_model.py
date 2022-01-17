@@ -49,6 +49,20 @@ logging.basicConfig(
     filename="outputs/" + logfp + fileName + ".log", encoding="utf-8", level=logging.INFO
 )
 
+
+def download_blob(bucket_name, source_blob_name, destination_file_name):
+        """Downloads a blob from the bucket."""
+        storage_client = storage.Client()
+        bucket = storage_client.get_bucket(bucket_name)
+        blob = bucket.blob(source_blob_name)
+
+        blob.download_to_filename(destination_file_name)
+
+        print('Blob {} downloaded to {}.'.format(
+            source_blob_name,
+            destination_file_name))
+
+
 # *************************************
 # *********** Save model **************
 # *************************************
@@ -195,9 +209,13 @@ def train():
 
     # ##################################################
     # ################## Load data #####################
-    # ##################################################
+    # ##################################################¨
+    bucket_name = args.job_dir[len(scheme):].split("/")[0]
+    download_blob(bucket_name,"data/processed/train_dataset.pt","train_dataset.pt")
+
+
     # Load data and put in DataLoader (also split into train and validation data)
-    Train = torch.load("data/processed/train_dataset.pt")
+    Train = torch.load("train_dataset.pt")
     num_val = int(batch_ratio_validation * Train.__len__())
     (Train, Val) = torch.utils.data.random_split(Train, [Train.__len__() - num_val, num_val])
     train_set = torch.utils.data.DataLoader(Train, batch_size=batch_size, shuffle=True)

@@ -1,0 +1,51 @@
+2022-01-17T10:53:23,876 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9001
+2022-01-17T10:53:23,876 [INFO ] W-9006-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9006
+2022-01-17T10:53:23,876 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9000
+2022-01-17T10:53:23,876 [INFO ] W-9004-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9004
+2022-01-17T10:53:23,876 [INFO ] W-9002-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9002
+2022-01-17T10:53:23,876 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9003
+2022-01-17T10:53:23,876 [INFO ] W-9007-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9007
+2022-01-17T10:53:23,876 [INFO ] W-9005-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9005
+2022-01-17T10:53:23,877 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40225
+2022-01-17T10:53:23,877 [INFO ] W-9007-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40221
+2022-01-17T10:53:23,877 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40226
+2022-01-17T10:53:23,878 [INFO ] W-9004-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40219
+2022-01-17T10:53:23,878 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40222
+2022-01-17T10:53:23,878 [INFO ] W-9005-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40224
+2022-01-17T10:53:23,878 [INFO ] W-9002-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40220
+2022-01-17T10:53:23,878 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,878 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,878 [INFO ] W-9006-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40223
+2022-01-17T10:53:23,878 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,878 [INFO ] W-9004-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,879 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,878 [INFO ] W-9007-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,878 [INFO ] W-9002-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,878 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,879 [INFO ] W-9007-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,878 [INFO ] W-9005-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,879 [INFO ] W-9002-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,879 [INFO ] W-9006-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,879 [INFO ] W-9005-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,880 [INFO ] W-9004-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,880 [INFO ] W-9006-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,880 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,900 [INFO ] W-9004-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9004.
+2022-01-17T10:53:23,900 [INFO ] W-9006-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9006.
+2022-01-17T10:53:23,900 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9001.
+2022-01-17T10:53:23,900 [INFO ] W-9002-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9002.
+2022-01-17T10:53:23,900 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9000.
+2022-01-17T10:53:23,900 [INFO ] W-9007-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9007.
+2022-01-17T10:53:23,900 [INFO ] W-9005-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9005.
+2022-01-17T10:53:23,900 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9003.
+2022-01-17T10:53:24,058 [INFO ] W-9002-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:53:24,058 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:53:24,059 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:53:24,059 [INFO ] W-9005-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:53:24,059 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:53:24,059 [INFO ] W-9006-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:53:24,059 [INFO ] W-9007-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:53:24,061 [INFO ] W-9004-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:54:40,546 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_LOG - Backend received inference at: 1642413280
+2022-01-17T10:56:19,796 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_LOG - Backend received inference at: 1642413379
+2022-01-17T10:57:17,478 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_LOG - Backend received inference at: 1642413437

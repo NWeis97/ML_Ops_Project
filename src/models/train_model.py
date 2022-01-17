@@ -17,6 +17,8 @@ import datetime
 import logging
 import os
 import re
+import googleapiclient
+import argparse
 
 # Graphics
 import matplotlib.pyplot as plt
@@ -26,6 +28,8 @@ from hydra import compose, initialize
 from omegaconf import OmegaConf
 from torch import nn, optim
 
+# Import the Secret Manager client library.
+from google.cloud import storage
 import wandb
 from src.models.model import CNNModuleVar
 
@@ -45,12 +49,53 @@ logging.basicConfig(
     filename="outputs/" + logfp + fileName + ".log", encoding="utf-8", level=logging.INFO
 )
 
+# *************************************
+# *********** Save model **************
+# *************************************
+def save_model(model, job_dir, model_name):
+    """Saves the model to Google Cloud Storage
+
+    Args:
+      args: contains name for saved model.
+    """
+    local_model_path = ""
+
+    scheme = "gs://"
+    bucket_name = job_dir[len(scheme):].split("/")[0]
+
+    prefix = "{}{}/".format(scheme, bucket_name)
+    bucket_path = job_dir[len(prefix):].rstrip("/")
+
+    datetime_ = datetime.datetime.now().strftime("model_%Y%m%d_%H%M%S")
+
+    if bucket_path:
+        model_path = "{}/{}/{}".format(bucket_path, datetime_, model_name)
+    else:
+        model_path = "{}/{}".format(datetime_, model_name)
+
+    # If we have a distributed model, save only the encapsulated model
+    # It is wrapped in PyTorch DistributedDataParallel or DataParallel
+    model_to_save = model.module if hasattr(model, "module") else model
+    # If you save with a pre-defined name, you can use 'from untrained' to load
+    output_model_file = os.path.join(local_model_path, 'dict_model.pt')
+
+    # Save model state_dict and configs locally
+    torch.save(model_to_save.state_dict(), output_model_file)
+
+    # Save model to bucket
+    bucket = storage.Client().bucket(bucket_name)
+    blob = bucket.blob(os.path.join(model_path, 'dict_model.pt'))
+    blob.upload_from_filename('dict_model.pt')
+
+
 
 def build_model():
     initialize(config_path="../../configs/", job_name="model")
     cfg = compose(config_name="model.yaml")
     logging.info(f"configuration: \n {OmegaConf.to_yaml(cfg)}")
     configs = cfg["hyperparameters"]
+    
+
 
     # ##################################################
     # ################ Hyperparameters #################
@@ -91,15 +136,6 @@ def train():
     logging.info(f"configuration: \n {OmegaConf.to_yaml(cfg)}")
     configs = cfg["hyperparameters"]
 
-    # Set up wandb magic
-    wandb.init(
-        config={"model": model_conf, "train": configs},
-        job_type="Train",
-        entity="nweis97",
-        project="ML_Ops_Project",
-    )
-    wandb.watch(model, log_freq=100)
-
     # ##################################################
     # ################ Hyperparameters #################
     # ##################################################
@@ -117,6 +153,45 @@ def train():
 
     # Set name
     modelType = "CNNModuleVar"
+
+    # *************************************
+    # ************ Arguments **************
+    # *************************************
+    print("Loading arguments...\n")
+
+    args_parser = argparse.ArgumentParser()
+
+    # Save to GS bucket
+    # Saved model arguments
+    args_parser.add_argument("--job-dir", help="GCS location to export models")
+    args_parser.add_argument("--project-id", help="GCS project id name")
+    args_parser.add_argument("--subset", help="Use subset of training data?")
+
+    # WandB related
+    args_parser.add_argument("--wandb-api-key", help="Your WandB API Key for login")
+    args_parser.add_argument("--entity", help="WandB project entity")
+
+    # Add arguments
+    args = args_parser.parse_args()
+
+    # *************************************
+    # *********** WandB setup *************
+    # *************************************
+    if args.wandb_api_key is not None:
+        print("Setting up WandB connection and initialization...\n")
+
+        # Get configs
+        os.environ["WANDB_API_KEY"] = args.wandb_api_key
+
+        wandb.init(
+            config={"model": model_conf, "train": configs},
+            job_type="Train",
+            entity="nweis97",
+            project="ML_Ops_Project",
+        )
+        wandb.watch(model, log_freq=100)
+
+    
 
     # ##################################################
     # ################## Load data #####################
@@ -159,10 +234,12 @@ def train():
             optimizer.step()
 
             running_loss += loss.item()
-            wandb.log({"batch_loss": loss.item()})  # Log to wandb
+            if args.wandb_api_key is not None:
+                wandb.log({"batch_loss": loss.item()})  # Log to wandb
         else:
             train_losses.append(running_loss / len(train_set))
-            wandb.log({"loss": train_losses[e]})
+            if args.wandb_api_key is not None:
+                wandb.log({"loss": train_losses[e]})
             logging.info("epoch: " + str(e) + "/" + str(epochs))
             logging.info("Training_loss: " + str(train_losses[e]))
             logging.info("")
@@ -188,18 +265,30 @@ def train():
     # ###################  WandB  ######################
     # ##################################################
     # Save name of model to wandb
-    wandb.log({"modelLocation": "models/" + logfp + modelType})
+    if args.wandb_api_key is not None:
+        wandb.log({"modelLocation": "models/" + logfp + modelType})
 
     # See examples of train-data in wandb
     (images, labels) = next(iter(train_set))
-    wandb.log({"examples": [wandb.Image(im) for im in images]})
+    if args.wandb_api_key is not None:
+        wandb.log({"examples": [wandb.Image(im) for im in images]})
 
     # Calculate validation and send to wandb
     log_ps_valid = torch.exp(model(val_images))
     top_p, top_class = log_ps_valid.topk(1, dim=1)
     equals = top_class == val_labels.view(*top_class.shape)
-    wandb.log({"validation_accuracy": torch.mean(equals)})
 
+    if args.wandb_api_key is not None:
+        wandb.log({"validation_accuracy": torch.mean(equals)})
+
+    # Save model
+    if args.job_dir is not None:
+        print("Saving model...\n")
+        save_model(model, args.job_dir, modelType)
+    else:
+        print(
+            "Job_dir not given, thus not saving model (will no save model when running locally)..."
+        )
 
 if __name__ == "__main__":
     train()

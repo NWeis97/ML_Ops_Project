@@ -1,0 +1,6 @@
+2022-01-17T10:54:40,773 - HandlerTime.Milliseconds:226.52|#ModelName:my_fancy_model,Level:Model|#hostname:nicolais-mbp-2.students.clients.local,requestID:2e8262bc-7153-41de-8e4c-2578d9127a3f,timestamp:1642413280
+2022-01-17T10:54:40,773 - PredictionTime.Milliseconds:226.61|#ModelName:my_fancy_model,Level:Model|#hostname:nicolais-mbp-2.students.clients.local,requestID:2e8262bc-7153-41de-8e4c-2578d9127a3f,timestamp:1642413280
+2022-01-17T10:56:20,050 - HandlerTime.Milliseconds:253.25|#ModelName:my_fancy_model,Level:Model|#hostname:nicolais-mbp-2.students.clients.local,requestID:8778c22a-03ea-4c11-ad37-321d632aab18,timestamp:1642413380
+2022-01-17T10:56:20,050 - PredictionTime.Milliseconds:253.35|#ModelName:my_fancy_model,Level:Model|#hostname:nicolais-mbp-2.students.clients.local,requestID:8778c22a-03ea-4c11-ad37-321d632aab18,timestamp:1642413380
+2022-01-17T10:57:18,492 - HandlerTime.Milliseconds:1013.83|#ModelName:my_fancy_model,Level:Model|#hostname:nicolais-mbp-2.students.clients.local,requestID:d6b813c9-1ee4-4a36-bf7c-fd5b15a33f3b,timestamp:1642413438
+2022-01-17T10:57:18,493 - PredictionTime.Milliseconds:1013.96|#ModelName:my_fancy_model,Level:Model|#hostname:nicolais-mbp-2.students.clients.local,requestID:d6b813c9-1ee4-4a36-bf7c-fd5b15a33f3b,timestamp:1642413438

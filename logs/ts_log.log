@@ -1,0 +1,1102 @@
+2022-01-17T09:54:26,155 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-01-17T09:54:26,155 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-01-17T09:54:26,272 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-01-17T09:54:26,272 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-01-17T09:54:26,713 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.5.2
+TS Home: /opt/anaconda3/envs/py39/lib/python3.9/site-packages
+Current directory: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo
+Temp directory: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T/
+Number of GPUs: 0
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/envs/py39/bin/python3
+Config file: N/A
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/model_store
+Initial Models: N/A
+Log dir: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/logs
+Metrics dir: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 8
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/model_store
+Model config: N/A
+2022-01-17T09:54:26,713 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.5.2
+TS Home: /opt/anaconda3/envs/py39/lib/python3.9/site-packages
+Current directory: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo
+Temp directory: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T/
+Number of GPUs: 0
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/envs/py39/bin/python3
+Config file: N/A
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/model_store
+Initial Models: N/A
+Log dir: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/logs
+Metrics dir: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 8
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/model_store
+Model config: N/A
+2022-01-17T09:54:26,741 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: KQueueServerSocketChannel.
+2022-01-17T09:54:26,741 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: KQueueServerSocketChannel.
+2022-01-17T09:54:26,835 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-01-17T09:54:26,835 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-01-17T09:54:26,836 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: KQueueServerSocketChannel.
+2022-01-17T09:54:26,836 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: KQueueServerSocketChannel.
+2022-01-17T09:54:26,837 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-01-17T09:54:26,837 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-01-17T09:54:26,837 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: KQueueServerSocketChannel.
+2022-01-17T09:54:26,837 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: KQueueServerSocketChannel.
+2022-01-17T09:54:26,838 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-01-17T09:54:26,838 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-01-17T09:54:27,331 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409667
+2022-01-17T09:54:27,332 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.68218231201172|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409667
+2022-01-17T09:54:27,332 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409667
+2022-01-17T09:54:27,332 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409667
+2022-01-17T09:54:27,332 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6130.82421875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409667
+2022-01-17T09:54:27,333 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8425.375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409667
+2022-01-17T09:54:27,333 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:62.6|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409667
+2022-01-17T09:55:27,344 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409727
+2022-01-17T09:55:27,345 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.671123504638672|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409727
+2022-01-17T09:55:27,345 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409727
+2022-01-17T09:55:27,345 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409727
+2022-01-17T09:55:27,345 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6181.28515625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409727
+2022-01-17T09:55:27,346 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8386.9296875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409727
+2022-01-17T09:55:27,346 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:62.3|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409727
+2022-01-17T09:56:27,398 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409787
+2022-01-17T09:56:27,399 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:23.67816162109375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409787
+2022-01-17T09:56:27,399 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409787
+2022-01-17T09:56:27,399 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409787
+2022-01-17T09:56:27,400 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6038.5078125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409787
+2022-01-17T09:56:27,400 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8545.97265625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409787
+2022-01-17T09:56:27,400 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:63.1|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409787
+2022-01-17T09:57:27,403 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409847
+2022-01-17T09:57:27,404 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:23.67559051513672|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409847
+2022-01-17T09:57:27,404 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409847
+2022-01-17T09:57:27,404 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409847
+2022-01-17T09:57:27,404 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6047.9765625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409847
+2022-01-17T09:57:27,404 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8539.26953125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409847
+2022-01-17T09:57:27,404 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:63.1|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409847
+2022-01-17T09:58:27,408 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409907
+2022-01-17T09:58:27,409 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:23.674705505371094|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409907
+2022-01-17T09:58:27,409 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409907
+2022-01-17T09:58:27,410 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409907
+2022-01-17T09:58:27,410 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6044.96875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409907
+2022-01-17T09:58:27,410 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8541.625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409907
+2022-01-17T09:58:27,410 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:63.1|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409907
+2022-01-17T09:59:27,398 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409967
+2022-01-17T09:59:27,399 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.677467346191406|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409967
+2022-01-17T09:59:27,399 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409967
+2022-01-17T09:59:27,399 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409967
+2022-01-17T09:59:27,399 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5987.06640625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409967
+2022-01-17T09:59:27,399 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8600.6640625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409967
+2022-01-17T09:59:27,399 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:63.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642409967
+2022-01-17T10:00:27,553 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410027
+2022-01-17T10:00:27,555 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.67434310913086|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410027
+2022-01-17T10:00:27,555 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410027
+2022-01-17T10:00:27,555 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410027
+2022-01-17T10:00:27,555 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5725.125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410027
+2022-01-17T10:00:27,555 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8830.92578125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410027
+2022-01-17T10:00:27,555 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:65.1|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410027
+2022-01-17T10:01:27,464 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410087
+2022-01-17T10:01:27,465 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.666030883789062|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410087
+2022-01-17T10:01:27,465 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410087
+2022-01-17T10:01:27,465 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410087
+2022-01-17T10:01:27,465 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5674.71875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410087
+2022-01-17T10:01:27,465 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8794.66015625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410087
+2022-01-17T10:01:27,466 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:65.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410087
+2022-01-17T10:02:27,427 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410147
+2022-01-17T10:02:27,428 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.673076629638672|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410147
+2022-01-17T10:02:27,428 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410147
+2022-01-17T10:02:27,428 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410147
+2022-01-17T10:02:27,428 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5963.9296875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410147
+2022-01-17T10:02:27,428 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8511.81640625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410147
+2022-01-17T10:02:27,428 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:63.6|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410147
+2022-01-17T10:03:27,403 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410207
+2022-01-17T10:03:27,403 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.671058654785156|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410207
+2022-01-17T10:03:27,403 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410207
+2022-01-17T10:03:27,404 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410207
+2022-01-17T10:03:27,404 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5914.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410207
+2022-01-17T10:03:27,404 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8564.20703125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410207
+2022-01-17T10:03:27,404 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:63.9|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410207
+2022-01-17T10:04:27,412 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410267
+2022-01-17T10:04:27,412 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.669822692871094|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410267
+2022-01-17T10:04:27,412 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410267
+2022-01-17T10:04:27,413 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410267
+2022-01-17T10:04:27,413 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5946.62109375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410267
+2022-01-17T10:04:27,413 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8531.3125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410267
+2022-01-17T10:04:27,413 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:63.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410267
+2022-01-17T10:05:27,415 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410327
+2022-01-17T10:05:27,416 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.674026489257812|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410327
+2022-01-17T10:05:27,417 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410327
+2022-01-17T10:05:27,417 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410327
+2022-01-17T10:05:27,417 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6098.54296875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410327
+2022-01-17T10:05:27,417 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8209.82421875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410327
+2022-01-17T10:05:27,417 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:62.8|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410327
+2022-01-17T10:06:27,453 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410387
+2022-01-17T10:06:27,455 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:23.622371673583984|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410387
+2022-01-17T10:06:27,455 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410387
+2022-01-17T10:06:27,455 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410387
+2022-01-17T10:06:27,455 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5811.6640625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410387
+2022-01-17T10:06:27,455 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8497.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410387
+2022-01-17T10:06:27,455 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:64.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410387
+2022-01-17T10:07:27,442 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410447
+2022-01-17T10:07:27,443 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:23.6240234375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410447
+2022-01-17T10:07:27,443 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410447
+2022-01-17T10:07:27,444 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410447
+2022-01-17T10:07:27,444 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5853.48046875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410447
+2022-01-17T10:07:27,444 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8488.4609375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410447
+2022-01-17T10:07:27,444 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:64.3|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410447
+2022-01-17T10:08:27,517 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410507
+2022-01-17T10:08:27,518 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:23.640499114990234|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410507
+2022-01-17T10:08:27,518 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410507
+2022-01-17T10:08:27,519 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410507
+2022-01-17T10:08:27,519 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5553.4609375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410507
+2022-01-17T10:08:27,519 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8723.8515625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410507
+2022-01-17T10:08:27,519 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.1|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410507
+2022-01-17T10:09:27,436 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410567
+2022-01-17T10:09:27,437 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.638038635253906|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410567
+2022-01-17T10:09:27,437 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410567
+2022-01-17T10:09:27,437 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410567
+2022-01-17T10:09:27,437 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5869.85546875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410567
+2022-01-17T10:09:27,437 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8391.68359375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410567
+2022-01-17T10:09:27,438 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:64.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410567
+2022-01-17T10:10:27,436 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410627
+2022-01-17T10:10:27,437 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:23.606365203857422|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410627
+2022-01-17T10:10:27,437 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410627
+2022-01-17T10:10:27,437 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:44.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410627
+2022-01-17T10:10:27,437 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5903.72265625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410627
+2022-01-17T10:10:27,438 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8346.65625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410627
+2022-01-17T10:10:27,438 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:64.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410627
+2022-01-17T10:11:27,426 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410687
+2022-01-17T10:11:27,426 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.602088928222656|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410687
+2022-01-17T10:11:27,426 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410687
+2022-01-17T10:11:27,426 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410687
+2022-01-17T10:11:27,426 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5850.58984375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410687
+2022-01-17T10:11:27,426 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8406.85546875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410687
+2022-01-17T10:11:27,426 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:64.3|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410687
+2022-01-17T10:12:27,448 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:100.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410747
+2022-01-17T10:12:27,449 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.600982666015625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410747
+2022-01-17T10:12:27,449 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410747
+2022-01-17T10:12:27,449 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410747
+2022-01-17T10:12:27,449 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5744.90234375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410747
+2022-01-17T10:12:27,450 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8477.75|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410747
+2022-01-17T10:12:27,450 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:64.9|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410747
+2022-01-17T10:13:27,414 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410807
+2022-01-17T10:13:27,414 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.602928161621094|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410807
+2022-01-17T10:13:27,414 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410807
+2022-01-17T10:13:27,414 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410807
+2022-01-17T10:13:27,414 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5824.06640625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410807
+2022-01-17T10:13:27,414 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8400.3671875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410807
+2022-01-17T10:13:27,414 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:64.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410807
+2022-01-17T10:14:27,476 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410867
+2022-01-17T10:14:27,477 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.58736801147461|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410867
+2022-01-17T10:14:27,477 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410867
+2022-01-17T10:14:27,477 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410867
+2022-01-17T10:14:27,477 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5688.2421875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410867
+2022-01-17T10:14:27,477 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8411.7734375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410867
+2022-01-17T10:14:27,477 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:65.3|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410867
+2022-01-17T10:15:27,421 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410927
+2022-01-17T10:15:27,422 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.590045928955078|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410927
+2022-01-17T10:15:27,422 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410927
+2022-01-17T10:15:27,422 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410927
+2022-01-17T10:15:27,422 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5625.06640625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410927
+2022-01-17T10:15:27,423 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8486.76953125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410927
+2022-01-17T10:15:27,423 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:65.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410927
+2022-01-17T10:16:27,468 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:50.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410987
+2022-01-17T10:16:27,469 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.573226928710938|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410987
+2022-01-17T10:16:27,469 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410987
+2022-01-17T10:16:27,469 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410987
+2022-01-17T10:16:27,469 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5613.9140625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410987
+2022-01-17T10:16:27,469 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8266.21875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410987
+2022-01-17T10:16:27,469 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:65.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642410987
+2022-01-17T10:17:27,515 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411047
+2022-01-17T10:17:27,516 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.595481872558594|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411047
+2022-01-17T10:17:27,516 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411047
+2022-01-17T10:17:27,516 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411047
+2022-01-17T10:17:27,516 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5649.6484375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411047
+2022-01-17T10:17:27,517 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8081.59375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411047
+2022-01-17T10:17:27,517 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:65.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411047
+2022-01-17T10:18:27,534 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411107
+2022-01-17T10:18:27,535 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.579402923583984|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411107
+2022-01-17T10:18:27,535 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411107
+2022-01-17T10:18:27,535 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411107
+2022-01-17T10:18:27,535 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5462.19140625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411107
+2022-01-17T10:18:27,535 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8137.83984375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411107
+2022-01-17T10:18:27,535 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:66.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411107
+2022-01-17T10:19:27,465 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411167
+2022-01-17T10:19:27,466 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.56713104248047|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411167
+2022-01-17T10:19:27,466 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411167
+2022-01-17T10:19:27,466 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411167
+2022-01-17T10:19:27,467 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5398.38671875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411167
+2022-01-17T10:19:27,467 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8145.58984375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411167
+2022-01-17T10:19:27,467 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:67.1|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411167
+2022-01-17T10:20:27,505 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411227
+2022-01-17T10:20:27,506 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:23.506378173828125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411227
+2022-01-17T10:20:27,506 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411227
+2022-01-17T10:20:27,507 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:44.6|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411227
+2022-01-17T10:20:27,507 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5400.30078125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411227
+2022-01-17T10:20:27,507 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8082.390625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411227
+2022-01-17T10:20:27,507 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:67.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411227
+2022-01-17T10:21:27,474 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:100.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411287
+2022-01-17T10:21:27,475 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:23.439598083496094|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411287
+2022-01-17T10:21:27,475 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411287
+2022-01-17T10:21:27,475 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:44.6|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411287
+2022-01-17T10:21:27,476 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5437.0390625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411287
+2022-01-17T10:21:27,476 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8056.4296875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411287
+2022-01-17T10:21:27,476 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.8|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411287
+2022-01-17T10:22:27,465 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411347
+2022-01-17T10:22:27,466 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:23.36357879638672|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411347
+2022-01-17T10:22:27,466 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411347
+2022-01-17T10:22:27,466 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:44.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411347
+2022-01-17T10:22:27,466 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5431.89453125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411347
+2022-01-17T10:22:27,466 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8078.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411347
+2022-01-17T10:22:27,466 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.8|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411347
+2022-01-17T10:23:27,487 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411407
+2022-01-17T10:23:27,488 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.381729125976562|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411407
+2022-01-17T10:23:27,488 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411407
+2022-01-17T10:23:27,489 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411407
+2022-01-17T10:23:27,489 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5452.38671875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411407
+2022-01-17T10:23:27,489 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8061.6953125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411407
+2022-01-17T10:23:27,489 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:66.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411407
+2022-01-17T10:24:27,500 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411467
+2022-01-17T10:24:27,501 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:23.24338150024414|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411467
+2022-01-17T10:24:27,501 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411467
+2022-01-17T10:24:27,501 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:44.8|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411467
+2022-01-17T10:24:27,501 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5823.30078125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411467
+2022-01-17T10:24:27,502 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:7774.62890625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411467
+2022-01-17T10:24:27,502 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:64.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411467
+2022-01-17T10:25:27,421 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411527
+2022-01-17T10:25:27,421 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:23.144481658935547|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411527
+2022-01-17T10:25:27,421 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411527
+2022-01-17T10:25:27,421 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411527
+2022-01-17T10:25:27,421 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5681.61328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411527
+2022-01-17T10:25:27,421 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7941.7890625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411527
+2022-01-17T10:25:27,421 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:65.3|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411527
+2022-01-17T10:26:27,395 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411587
+2022-01-17T10:26:27,397 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.910797119140625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411587
+2022-01-17T10:26:27,397 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411587
+2022-01-17T10:26:27,397 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411587
+2022-01-17T10:26:27,397 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5905.19921875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411587
+2022-01-17T10:26:27,397 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7982.9375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411587
+2022-01-17T10:26:27,397 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:64.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411587
+2022-01-17T10:27:27,770 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411647
+2022-01-17T10:27:27,772 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.906574249267578|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411647
+2022-01-17T10:27:27,772 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411647
+2022-01-17T10:27:27,772 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411647
+2022-01-17T10:27:27,772 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5549.03125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411647
+2022-01-17T10:27:27,772 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8260.52734375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411647
+2022-01-17T10:27:27,773 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.1|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411647
+2022-01-17T10:28:27,432 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411707
+2022-01-17T10:28:27,432 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.914405822753906|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411707
+2022-01-17T10:28:27,433 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411707
+2022-01-17T10:28:27,433 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411707
+2022-01-17T10:28:27,433 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6095.93359375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411707
+2022-01-17T10:28:27,433 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7687.83203125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411707
+2022-01-17T10:28:27,433 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:62.8|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411707
+2022-01-17T10:29:27,376 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411767
+2022-01-17T10:29:27,376 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.911224365234375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411767
+2022-01-17T10:29:27,377 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411767
+2022-01-17T10:29:27,377 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411767
+2022-01-17T10:29:27,377 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5918.515625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411767
+2022-01-17T10:29:27,378 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7889.0859375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411767
+2022-01-17T10:29:27,378 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:63.9|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411767
+2022-01-17T10:30:27,408 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411827
+2022-01-17T10:30:27,409 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:22.91449737548828|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411827
+2022-01-17T10:30:27,409 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411827
+2022-01-17T10:30:27,409 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411827
+2022-01-17T10:30:27,409 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5761.2890625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411827
+2022-01-17T10:30:27,409 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8155.828125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411827
+2022-01-17T10:30:27,410 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:64.8|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411827
+2022-01-17T10:31:27,377 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411887
+2022-01-17T10:31:27,377 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:22.916736602783203|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411887
+2022-01-17T10:31:27,377 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411887
+2022-01-17T10:31:27,377 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411887
+2022-01-17T10:31:27,377 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5678.4765625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411887
+2022-01-17T10:31:27,377 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8244.97265625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411887
+2022-01-17T10:31:27,377 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:65.3|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411887
+2022-01-17T10:32:27,365 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411947
+2022-01-17T10:32:27,365 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:22.912818908691406|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411947
+2022-01-17T10:32:27,365 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411947
+2022-01-17T10:32:27,365 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411947
+2022-01-17T10:32:27,365 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5624.81640625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411947
+2022-01-17T10:32:27,366 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8304.99609375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411947
+2022-01-17T10:32:27,366 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:65.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642411947
+2022-01-17T10:33:27,444 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412007
+2022-01-17T10:33:27,446 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.88869857788086|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412007
+2022-01-17T10:33:27,446 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412007
+2022-01-17T10:33:27,446 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412007
+2022-01-17T10:33:27,446 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5668.85546875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412007
+2022-01-17T10:33:27,446 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8127.28125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412007
+2022-01-17T10:33:27,446 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:65.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412007
+2022-01-17T10:34:27,487 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:100.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412067
+2022-01-17T10:34:27,488 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.879379272460938|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412067
+2022-01-17T10:34:27,488 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412067
+2022-01-17T10:34:27,489 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412067
+2022-01-17T10:34:27,489 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5378.79296875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412067
+2022-01-17T10:34:27,489 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8368.72265625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412067
+2022-01-17T10:34:27,489 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:67.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412067
+2022-01-17T10:35:27,401 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412127
+2022-01-17T10:35:27,402 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.87258529663086|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412127
+2022-01-17T10:35:27,402 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412127
+2022-01-17T10:35:27,402 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412127
+2022-01-17T10:35:27,402 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5225.24609375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412127
+2022-01-17T10:35:27,402 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8344.1484375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412127
+2022-01-17T10:35:27,402 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:68.1|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412127
+2022-01-17T10:36:27,396 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412187
+2022-01-17T10:36:27,397 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:22.872634887695312|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412187
+2022-01-17T10:36:27,398 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412187
+2022-01-17T10:36:27,398 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412187
+2022-01-17T10:36:27,398 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5228.71875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412187
+2022-01-17T10:36:27,398 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8185.671875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412187
+2022-01-17T10:36:27,398 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:68.1|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412187
+2022-01-17T10:37:27,354 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412247
+2022-01-17T10:37:27,354 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.877735137939453|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412247
+2022-01-17T10:37:27,354 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412247
+2022-01-17T10:37:27,354 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412247
+2022-01-17T10:37:27,354 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5260.71875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412247
+2022-01-17T10:37:27,354 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8168.8359375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412247
+2022-01-17T10:37:27,354 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:67.9|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412247
+2022-01-17T10:38:27,359 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412307
+2022-01-17T10:38:27,359 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.873149871826172|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412307
+2022-01-17T10:38:27,359 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412307
+2022-01-17T10:38:27,359 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412307
+2022-01-17T10:38:27,360 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5289.30078125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412307
+2022-01-17T10:38:27,360 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8144.4609375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412307
+2022-01-17T10:38:27,360 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:67.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412307
+2022-01-17T10:39:27,359 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412367
+2022-01-17T10:39:27,360 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:22.889808654785156|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412367
+2022-01-17T10:39:27,360 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412367
+2022-01-17T10:39:27,360 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412367
+2022-01-17T10:39:27,360 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5374.1015625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412367
+2022-01-17T10:39:27,360 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8145.14453125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412367
+2022-01-17T10:39:27,360 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:67.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412367
+2022-01-17T10:40:27,415 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412427
+2022-01-17T10:40:27,416 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:22.888309478759766|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412427
+2022-01-17T10:40:27,416 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412427
+2022-01-17T10:40:27,416 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412427
+2022-01-17T10:40:27,416 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5372.3359375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412427
+2022-01-17T10:40:27,416 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8095.71484375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412427
+2022-01-17T10:40:27,416 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:67.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412427
+2022-01-17T10:41:27,493 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412487
+2022-01-17T10:41:27,494 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:22.88506317138672|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412487
+2022-01-17T10:41:27,494 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412487
+2022-01-17T10:41:27,494 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412487
+2022-01-17T10:41:27,494 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5324.1484375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412487
+2022-01-17T10:41:27,494 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8146.3984375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412487
+2022-01-17T10:41:27,494 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:67.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412487
+2022-01-17T10:42:27,393 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412547
+2022-01-17T10:42:27,394 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:22.899898529052734|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412547
+2022-01-17T10:42:27,394 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412547
+2022-01-17T10:42:27,394 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412547
+2022-01-17T10:42:27,394 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5322.22265625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412547
+2022-01-17T10:42:27,394 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8146.01171875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412547
+2022-01-17T10:42:27,394 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:67.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412547
+2022-01-17T10:43:27,367 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412607
+2022-01-17T10:43:27,367 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:22.89873504638672|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412607
+2022-01-17T10:43:27,367 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412607
+2022-01-17T10:43:27,367 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412607
+2022-01-17T10:43:27,367 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5348.296875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412607
+2022-01-17T10:43:27,367 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8148.4921875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412607
+2022-01-17T10:43:27,367 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:67.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412607
+2022-01-17T10:44:27,450 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412667
+2022-01-17T10:44:27,451 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:22.874164581298828|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412667
+2022-01-17T10:44:27,451 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412667
+2022-01-17T10:44:27,451 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412667
+2022-01-17T10:44:27,451 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5384.4296875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412667
+2022-01-17T10:44:27,451 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8115.40625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412667
+2022-01-17T10:44:27,451 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:67.1|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412667
+2022-01-17T10:45:27,443 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412727
+2022-01-17T10:45:27,444 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:22.877269744873047|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412727
+2022-01-17T10:45:27,444 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412727
+2022-01-17T10:45:27,444 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412727
+2022-01-17T10:45:27,444 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5366.8203125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412727
+2022-01-17T10:45:27,444 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8134.97265625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412727
+2022-01-17T10:45:27,445 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:67.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412727
+2022-01-17T10:46:27,476 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412787
+2022-01-17T10:46:27,477 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:22.884361267089844|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412787
+2022-01-17T10:46:27,478 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412787
+2022-01-17T10:46:27,478 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412787
+2022-01-17T10:46:27,478 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5692.67578125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412787
+2022-01-17T10:46:27,478 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:7965.296875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412787
+2022-01-17T10:46:27,478 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:65.3|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412787
+2022-01-17T10:47:27,483 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412847
+2022-01-17T10:47:27,484 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.885417938232422|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412847
+2022-01-17T10:47:27,484 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412847
+2022-01-17T10:47:27,484 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412847
+2022-01-17T10:47:27,484 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5496.765625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412847
+2022-01-17T10:47:27,485 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8164.41015625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412847
+2022-01-17T10:47:27,485 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412847
+2022-01-17T10:48:27,359 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412907
+2022-01-17T10:48:27,359 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.880599975585938|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412907
+2022-01-17T10:48:27,359 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412907
+2022-01-17T10:48:27,359 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412907
+2022-01-17T10:48:27,360 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5535.83984375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412907
+2022-01-17T10:48:27,360 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8126.96484375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412907
+2022-01-17T10:48:27,360 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412907
+2022-01-17T10:49:27,366 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412967
+2022-01-17T10:49:27,366 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.878883361816406|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412967
+2022-01-17T10:49:27,366 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412967
+2022-01-17T10:49:27,366 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412967
+2022-01-17T10:49:27,366 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5591.2265625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412967
+2022-01-17T10:49:27,366 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8071.2578125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412967
+2022-01-17T10:49:27,366 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:65.9|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642412967
+2022-01-17T10:50:27,372 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413027
+2022-01-17T10:50:27,373 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.876998901367188|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413027
+2022-01-17T10:50:27,373 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413027
+2022-01-17T10:50:27,373 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413027
+2022-01-17T10:50:27,373 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5574.984375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413027
+2022-01-17T10:50:27,373 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8090.71484375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413027
+2022-01-17T10:50:27,373 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413027
+2022-01-17T10:51:27,356 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413087
+2022-01-17T10:51:27,356 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.877487182617188|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413087
+2022-01-17T10:51:27,356 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413087
+2022-01-17T10:51:27,356 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413087
+2022-01-17T10:51:27,356 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5577.203125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413087
+2022-01-17T10:51:27,356 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8089.78515625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413087
+2022-01-17T10:51:27,356 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413087
+2022-01-17T10:52:27,376 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413147
+2022-01-17T10:52:27,377 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.80510711669922|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413147
+2022-01-17T10:52:27,377 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413147
+2022-01-17T10:52:27,377 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.3|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413147
+2022-01-17T10:52:27,377 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5425.7265625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413147
+2022-01-17T10:52:27,377 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8216.9453125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413147
+2022-01-17T10:52:27,377 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.9|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413147
+2022-01-17T10:53:19,360 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-01-17T10:53:19,360 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-01-17T10:53:19,705 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.5.2
+TS Home: /opt/anaconda3/envs/py39/lib/python3.9/site-packages
+Current directory: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo
+Temp directory: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T/
+Number of GPUs: 0
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/envs/py39/bin/python3
+Config file: N/A
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/model_store
+Initial Models: my_fancy_model=my_fancy_model.mar
+Log dir: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/logs
+Metrics dir: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 8
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/model_store
+Model config: N/A
+2022-01-17T10:53:19,705 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.5.2
+TS Home: /opt/anaconda3/envs/py39/lib/python3.9/site-packages
+Current directory: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo
+Temp directory: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T/
+Number of GPUs: 0
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/envs/py39/bin/python3
+Config file: N/A
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/model_store
+Initial Models: my_fancy_model=my_fancy_model.mar
+Log dir: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/logs
+Metrics dir: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 8
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: /Users/weis/Documents/Skole/DTU/10_semester/ML_Ops/ML_Ops_Project_Repo/model_store
+Model config: N/A
+2022-01-17T10:53:19,720 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-01-17T10:53:19,720 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-01-17T10:53:19,750 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: my_fancy_model.mar
+2022-01-17T10:53:19,750 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: my_fancy_model.mar
+2022-01-17T10:53:20,811 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model my_fancy_model
+2022-01-17T10:53:20,811 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model my_fancy_model
+2022-01-17T10:53:20,811 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model my_fancy_model
+2022-01-17T10:53:20,811 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model my_fancy_model
+2022-01-17T10:53:20,811 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model my_fancy_model loaded.
+2022-01-17T10:53:20,811 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model my_fancy_model loaded.
+2022-01-17T10:53:20,812 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: my_fancy_model, count: 8
+2022-01-17T10:53:20,812 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: my_fancy_model, count: 8
+2022-01-17T10:53:20,831 [DEBUG] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9001]
+2022-01-17T10:53:20,831 [DEBUG] W-9002-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9002]
+2022-01-17T10:53:20,831 [DEBUG] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9003]
+2022-01-17T10:53:20,831 [DEBUG] W-9006-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9006]
+2022-01-17T10:53:20,831 [DEBUG] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9000]
+2022-01-17T10:53:20,831 [DEBUG] W-9005-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9005]
+2022-01-17T10:53:20,831 [DEBUG] W-9004-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9004]
+2022-01-17T10:53:20,831 [DEBUG] W-9007-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9007]
+2022-01-17T10:53:20,831 [DEBUG] W-9002-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9002]
+2022-01-17T10:53:20,831 [DEBUG] W-9004-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9004]
+2022-01-17T10:53:20,831 [DEBUG] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9003]
+2022-01-17T10:53:20,831 [DEBUG] W-9007-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9007]
+2022-01-17T10:53:20,831 [DEBUG] W-9006-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9006]
+2022-01-17T10:53:20,831 [DEBUG] W-9005-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9005]
+2022-01-17T10:53:20,831 [DEBUG] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9000]
+2022-01-17T10:53:20,831 [DEBUG] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/opt/anaconda3/envs/py39/bin/python3, /opt/anaconda3/envs/py39/lib/python3.9/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9001]
+2022-01-17T10:53:20,836 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: KQueueServerSocketChannel.
+2022-01-17T10:53:20,836 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: KQueueServerSocketChannel.
+2022-01-17T10:53:20,960 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-01-17T10:53:20,960 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-01-17T10:53:20,960 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: KQueueServerSocketChannel.
+2022-01-17T10:53:20,960 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: KQueueServerSocketChannel.
+2022-01-17T10:53:20,961 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-01-17T10:53:20,961 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-01-17T10:53:20,962 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: KQueueServerSocketChannel.
+2022-01-17T10:53:20,962 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: KQueueServerSocketChannel.
+2022-01-17T10:53:20,964 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-01-17T10:53:20,964 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-01-17T10:53:21,304 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2022-01-17T10:53:21,304 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2022-01-17T10:53:21,501 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413201
+2022-01-17T10:53:21,503 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:22.78177261352539|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413201
+2022-01-17T10:53:21,504 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413201
+2022-01-17T10:53:21,504 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:45.3|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413201
+2022-01-17T10:53:21,505 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5464.671875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413201
+2022-01-17T10:53:21,505 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8197.75|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413201
+2022-01-17T10:53:21,506 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:66.6|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413201
+2022-01-17T10:53:23,876 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9001
+2022-01-17T10:53:23,876 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9000
+2022-01-17T10:53:23,876 [INFO ] W-9007-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9007
+2022-01-17T10:53:23,876 [INFO ] W-9004-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9004
+2022-01-17T10:53:23,877 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40225
+2022-01-17T10:53:23,876 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9003
+2022-01-17T10:53:23,877 [INFO ] W-9007-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40221
+2022-01-17T10:53:23,876 [INFO ] W-9005-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9005
+2022-01-17T10:53:23,876 [INFO ] W-9002-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9002
+2022-01-17T10:53:23,878 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40222
+2022-01-17T10:53:23,878 [INFO ] W-9004-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40219
+2022-01-17T10:53:23,878 [INFO ] W-9005-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40224
+2022-01-17T10:53:23,878 [INFO ] W-9002-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40220
+2022-01-17T10:53:23,876 [INFO ] W-9006-my_fancy_model_1.0-stdout MODEL_LOG - Listening on port: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9006
+2022-01-17T10:53:23,878 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,877 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40226
+2022-01-17T10:53:23,878 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,878 [DEBUG] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,878 [INFO ] W-9006-my_fancy_model_1.0-stdout MODEL_LOG - [PID]40223
+2022-01-17T10:53:23,878 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,879 [DEBUG] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9003-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,879 [DEBUG] W-9004-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9004-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,878 [INFO ] W-9007-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,879 [DEBUG] W-9007-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9007-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,878 [INFO ] W-9002-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,879 [DEBUG] W-9002-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9002-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,879 [DEBUG] W-9005-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9005-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,879 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,879 [INFO ] W-9007-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,879 [DEBUG] W-9007-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9007-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,878 [INFO ] W-9005-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,879 [DEBUG] W-9004-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9004-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,879 [INFO ] W-9002-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,879 [DEBUG] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9003-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,879 [INFO ] W-9006-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,878 [DEBUG] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,879 [DEBUG] W-9006-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9006-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,879 [INFO ] W-9005-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,878 [INFO ] W-9004-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,878 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_LOG - Torch worker started.
+2022-01-17T10:53:23,879 [DEBUG] W-9005-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9005-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,879 [DEBUG] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9001-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,880 [INFO ] W-9004-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,879 [DEBUG] W-9002-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9002-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,879 [DEBUG] W-9006-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9006-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,880 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,879 [DEBUG] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9001-my_fancy_model_1.0 State change null -> WORKER_STARTED
+2022-01-17T10:53:23,880 [INFO ] W-9006-my_fancy_model_1.0-stdout MODEL_LOG - Python runtime: 3.9.7
+2022-01-17T10:53:23,886 [INFO ] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9001
+2022-01-17T10:53:23,886 [INFO ] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9003
+2022-01-17T10:53:23,886 [INFO ] W-9006-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9006
+2022-01-17T10:53:23,886 [INFO ] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9000
+2022-01-17T10:53:23,886 [INFO ] W-9004-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9004
+2022-01-17T10:53:23,886 [INFO ] W-9006-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9006
+2022-01-17T10:53:23,886 [INFO ] W-9005-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9005
+2022-01-17T10:53:23,886 [INFO ] W-9007-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9007
+2022-01-17T10:53:23,886 [INFO ] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9000
+2022-01-17T10:53:23,886 [INFO ] W-9002-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9002
+2022-01-17T10:53:23,886 [INFO ] W-9004-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9004
+2022-01-17T10:53:23,886 [INFO ] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9001
+2022-01-17T10:53:23,886 [INFO ] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9003
+2022-01-17T10:53:23,886 [INFO ] W-9007-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9007
+2022-01-17T10:53:23,886 [INFO ] W-9002-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9002
+2022-01-17T10:53:23,886 [INFO ] W-9005-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9005
+2022-01-17T10:53:23,900 [INFO ] W-9004-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9004.
+2022-01-17T10:53:23,900 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9001.
+2022-01-17T10:53:23,900 [INFO ] W-9002-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9002.
+2022-01-17T10:53:23,900 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9000.
+2022-01-17T10:53:23,900 [INFO ] W-9007-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9007.
+2022-01-17T10:53:23,900 [INFO ] W-9005-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9005.
+2022-01-17T10:53:23,900 [INFO ] W-9006-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9006.
+2022-01-17T10:53:23,900 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_LOG - Connection accepted: /var/folders/30/3_qzr1qj6wx5gv6t9ns1rbc80000gn/T//.ts.sock.9003.
+2022-01-17T10:53:23,903 [INFO ] W-9005-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203903
+2022-01-17T10:53:23,903 [INFO ] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203903
+2022-01-17T10:53:23,903 [INFO ] W-9006-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203903
+2022-01-17T10:53:23,903 [INFO ] W-9002-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203903
+2022-01-17T10:53:23,903 [INFO ] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203903
+2022-01-17T10:53:23,903 [INFO ] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203903
+2022-01-17T10:53:23,903 [INFO ] W-9006-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203903
+2022-01-17T10:53:23,903 [INFO ] W-9005-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203903
+2022-01-17T10:53:23,903 [INFO ] W-9007-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203903
+2022-01-17T10:53:23,903 [INFO ] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203903
+2022-01-17T10:53:23,903 [INFO ] W-9002-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203903
+2022-01-17T10:53:23,904 [INFO ] W-9004-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203904
+2022-01-17T10:53:23,903 [INFO ] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203903
+2022-01-17T10:53:23,903 [INFO ] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203903
+2022-01-17T10:53:23,903 [INFO ] W-9007-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203903
+2022-01-17T10:53:23,904 [INFO ] W-9004-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413203904
+2022-01-17T10:53:24,058 [INFO ] W-9002-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:53:24,059 [INFO ] W-9005-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:53:24,059 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:53:24,058 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:53:24,059 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:53:24,059 [INFO ] W-9006-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:53:24,059 [INFO ] W-9007-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:53:24,061 [INFO ] W-9004-my_fancy_model_1.0-stdout MODEL_LOG - model_name: my_fancy_model, batchSize: 1
+2022-01-17T10:53:28,972 [INFO ] W-9004-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,972 [INFO ] W-9005-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,972 [INFO ] W-9002-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,972 [INFO ] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,972 [INFO ] W-9007-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,972 [INFO ] W-9006-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,972 [INFO ] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,972 [INFO ] W-9002-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,972 [INFO ] W-9004-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,972 [INFO ] W-9005-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,972 [INFO ] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,972 [INFO ] W-9006-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,972 [INFO ] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,972 [INFO ] W-9007-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,972 [INFO ] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,972 [INFO ] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 4912
+2022-01-17T10:53:28,974 [DEBUG] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9003-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [DEBUG] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [DEBUG] W-9005-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9005-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [DEBUG] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9001-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [DEBUG] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [DEBUG] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9003-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [DEBUG] W-9004-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9004-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [DEBUG] W-9006-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9006-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [DEBUG] W-9007-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9007-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [DEBUG] W-9002-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9002-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [DEBUG] W-9004-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9004-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [DEBUG] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9001-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [DEBUG] W-9002-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9002-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [DEBUG] W-9007-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9007-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [DEBUG] W-9006-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9006-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [DEBUG] W-9005-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - W-9005-my_fancy_model_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-01-17T10:53:28,974 [INFO ] W-9000-my_fancy_model_1.0 TS_METRICS - W-9000-my_fancy_model_1.0.ms:8149|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413208
+2022-01-17T10:53:28,974 [INFO ] W-9003-my_fancy_model_1.0 TS_METRICS - W-9003-my_fancy_model_1.0.ms:8146|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413208
+2022-01-17T10:53:28,974 [INFO ] W-9004-my_fancy_model_1.0 TS_METRICS - W-9004-my_fancy_model_1.0.ms:8146|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413208
+2022-01-17T10:53:28,975 [INFO ] W-9000-my_fancy_model_1.0 TS_METRICS - WorkerThreadTime.ms:160|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:53:28,974 [INFO ] W-9001-my_fancy_model_1.0 TS_METRICS - W-9001-my_fancy_model_1.0.ms:8146|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413208
+2022-01-17T10:53:28,974 [INFO ] W-9002-my_fancy_model_1.0 TS_METRICS - W-9002-my_fancy_model_1.0.ms:8146|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413208
+2022-01-17T10:53:28,975 [INFO ] W-9003-my_fancy_model_1.0 TS_METRICS - WorkerThreadTime.ms:160|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:53:28,975 [INFO ] W-9005-my_fancy_model_1.0 TS_METRICS - W-9005-my_fancy_model_1.0.ms:8146|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413208
+2022-01-17T10:53:28,975 [INFO ] W-9007-my_fancy_model_1.0 TS_METRICS - W-9007-my_fancy_model_1.0.ms:8146|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413208
+2022-01-17T10:53:28,975 [INFO ] W-9001-my_fancy_model_1.0 TS_METRICS - WorkerThreadTime.ms:160|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:53:28,975 [INFO ] W-9006-my_fancy_model_1.0 TS_METRICS - W-9006-my_fancy_model_1.0.ms:8146|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413208
+2022-01-17T10:53:28,975 [INFO ] W-9004-my_fancy_model_1.0 TS_METRICS - WorkerThreadTime.ms:159|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:53:28,975 [INFO ] W-9002-my_fancy_model_1.0 TS_METRICS - WorkerThreadTime.ms:160|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:53:28,975 [INFO ] W-9005-my_fancy_model_1.0 TS_METRICS - WorkerThreadTime.ms:160|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:53:28,975 [INFO ] W-9007-my_fancy_model_1.0 TS_METRICS - WorkerThreadTime.ms:160|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:53:28,975 [INFO ] W-9006-my_fancy_model_1.0 TS_METRICS - WorkerThreadTime.ms:160|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:54:21,457 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413261
+2022-01-17T10:54:21,458 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:22.772869110107422|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413261
+2022-01-17T10:54:21,458 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413261
+2022-01-17T10:54:21,459 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:45.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413261
+2022-01-17T10:54:21,459 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5200.26171875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413261
+2022-01-17T10:54:21,459 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:7967.4140625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413261
+2022-01-17T10:54:21,459 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:68.3|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413261
+2022-01-17T10:54:40,545 [INFO ] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413280544
+2022-01-17T10:54:40,545 [INFO ] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413280544
+2022-01-17T10:54:40,546 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_LOG - Backend received inference at: 1642413280
+2022-01-17T10:54:40,773 [INFO ] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 228
+2022-01-17T10:54:40,773 [INFO ] W-9000-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 228
+2022-01-17T10:54:40,773 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:226.52|#ModelName:my_fancy_model,Level:Model|#hostname:nicolais-mbp-2.students.clients.local,requestID:2e8262bc-7153-41de-8e4c-2578d9127a3f,timestamp:1642413280
+2022-01-17T10:54:40,773 [INFO ] W-9000-my_fancy_model_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:226.61|#ModelName:my_fancy_model,Level:Model|#hostname:nicolais-mbp-2.students.clients.local,requestID:2e8262bc-7153-41de-8e4c-2578d9127a3f,timestamp:1642413280
+2022-01-17T10:54:40,774 [INFO ] W-9000-my_fancy_model_1.0 ACCESS_LOG - /127.0.0.1:62574 "PUT /predictions/my_fancy_model HTTP/1.1" 200 241
+2022-01-17T10:54:40,774 [INFO ] W-9000-my_fancy_model_1.0 TS_METRICS - Requests2XX.Count:1|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:54:40,775 [DEBUG] W-9000-my_fancy_model_1.0 org.pytorch.serve.job.Job - Waiting time ns: 192573, Backend time ns: 230666175
+2022-01-17T10:54:40,775 [DEBUG] W-9000-my_fancy_model_1.0 org.pytorch.serve.job.Job - Waiting time ns: 192573, Backend time ns: 230666175
+2022-01-17T10:54:40,775 [INFO ] W-9000-my_fancy_model_1.0 TS_METRICS - QueueTime.ms:0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:54:40,776 [INFO ] W-9000-my_fancy_model_1.0 TS_METRICS - WorkerThreadTime.ms:4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:55:21,457 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413321
+2022-01-17T10:55:21,459 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:22.773303985595703|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413321
+2022-01-17T10:55:21,459 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413321
+2022-01-17T10:55:21,459 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:45.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413321
+2022-01-17T10:55:21,459 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5251.83984375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413321
+2022-01-17T10:55:21,459 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7926.578125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413321
+2022-01-17T10:55:21,459 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:67.9|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413321
+2022-01-17T10:56:19,791 [INFO ] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413379791
+2022-01-17T10:56:19,791 [INFO ] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413379791
+2022-01-17T10:56:19,796 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_LOG - Backend received inference at: 1642413379
+2022-01-17T10:56:20,050 [INFO ] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 255
+2022-01-17T10:56:20,050 [INFO ] W-9003-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 255
+2022-01-17T10:56:20,050 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:253.25|#ModelName:my_fancy_model,Level:Model|#hostname:nicolais-mbp-2.students.clients.local,requestID:8778c22a-03ea-4c11-ad37-321d632aab18,timestamp:1642413380
+2022-01-17T10:56:20,050 [INFO ] W-9003-my_fancy_model_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:253.35|#ModelName:my_fancy_model,Level:Model|#hostname:nicolais-mbp-2.students.clients.local,requestID:8778c22a-03ea-4c11-ad37-321d632aab18,timestamp:1642413380
+2022-01-17T10:56:20,050 [INFO ] W-9003-my_fancy_model_1.0 ACCESS_LOG - /127.0.0.1:62644 "PUT /predictions/my_fancy_model HTTP/1.1" 200 259
+2022-01-17T10:56:20,050 [INFO ] W-9003-my_fancy_model_1.0 TS_METRICS - Requests2XX.Count:1|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:56:20,051 [DEBUG] W-9003-my_fancy_model_1.0 org.pytorch.serve.job.Job - Waiting time ns: 123780, Backend time ns: 260041266
+2022-01-17T10:56:20,051 [DEBUG] W-9003-my_fancy_model_1.0 org.pytorch.serve.job.Job - Waiting time ns: 123780, Backend time ns: 260041266
+2022-01-17T10:56:20,052 [INFO ] W-9003-my_fancy_model_1.0 TS_METRICS - QueueTime.ms:0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:56:20,052 [INFO ] W-9003-my_fancy_model_1.0 TS_METRICS - WorkerThreadTime.ms:6|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:56:21,523 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413381
+2022-01-17T10:56:21,523 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:21.767051696777344|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413381
+2022-01-17T10:56:21,524 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413381
+2022-01-17T10:56:21,524 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413381
+2022-01-17T10:56:21,524 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5389.765625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413381
+2022-01-17T10:56:21,524 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:7962.12890625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413381
+2022-01-17T10:56:21,524 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:67.1|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413381
+2022-01-17T10:57:17,475 [INFO ] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413437475
+2022-01-17T10:57:17,475 [INFO ] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1642413437475
+2022-01-17T10:57:17,478 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_LOG - Backend received inference at: 1642413437
+2022-01-17T10:57:18,492 [INFO ] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 1015
+2022-01-17T10:57:18,492 [INFO ] W-9001-my_fancy_model_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 1015
+2022-01-17T10:57:18,492 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_METRICS - HandlerTime.Milliseconds:1013.83|#ModelName:my_fancy_model,Level:Model|#hostname:nicolais-mbp-2.students.clients.local,requestID:d6b813c9-1ee4-4a36-bf7c-fd5b15a33f3b,timestamp:1642413438
+2022-01-17T10:57:18,492 [INFO ] W-9001-my_fancy_model_1.0 ACCESS_LOG - /127.0.0.1:62684 "PUT /predictions/my_fancy_model HTTP/1.1" 200 1017
+2022-01-17T10:57:18,493 [INFO ] W-9001-my_fancy_model_1.0-stdout MODEL_METRICS - PredictionTime.Milliseconds:1013.96|#ModelName:my_fancy_model,Level:Model|#hostname:nicolais-mbp-2.students.clients.local,requestID:d6b813c9-1ee4-4a36-bf7c-fd5b15a33f3b,timestamp:1642413438
+2022-01-17T10:57:18,493 [INFO ] W-9001-my_fancy_model_1.0 TS_METRICS - Requests2XX.Count:1|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:57:18,494 [DEBUG] W-9001-my_fancy_model_1.0 org.pytorch.serve.job.Job - Waiting time ns: 127038, Backend time ns: 1018798124
+2022-01-17T10:57:18,494 [DEBUG] W-9001-my_fancy_model_1.0 org.pytorch.serve.job.Job - Waiting time ns: 127038, Backend time ns: 1018798124
+2022-01-17T10:57:18,494 [INFO ] W-9001-my_fancy_model_1.0 TS_METRICS - QueueTime.ms:0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:57:18,494 [INFO ] W-9001-my_fancy_model_1.0 TS_METRICS - WorkerThreadTime.ms:4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:null
+2022-01-17T10:57:21,603 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413441
+2022-01-17T10:57:21,604 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.760223388671875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413441
+2022-01-17T10:57:21,604 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413441
+2022-01-17T10:57:21,604 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413441
+2022-01-17T10:57:21,604 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5292.3828125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413441
+2022-01-17T10:57:21,604 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7948.2109375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413441
+2022-01-17T10:57:21,604 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:67.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413441
+2022-01-17T10:58:21,510 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413501
+2022-01-17T10:58:21,510 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.75775146484375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413501
+2022-01-17T10:58:21,511 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413501
+2022-01-17T10:58:21,511 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413501
+2022-01-17T10:58:21,511 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5465.9609375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413501
+2022-01-17T10:58:21,511 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7780.5859375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413501
+2022-01-17T10:58:21,511 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.6|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413501
+2022-01-17T10:59:21,514 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413561
+2022-01-17T10:59:21,515 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.757610321044922|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413561
+2022-01-17T10:59:21,515 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413561
+2022-01-17T10:59:21,515 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413561
+2022-01-17T10:59:21,515 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5422.71484375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413561
+2022-01-17T10:59:21,515 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7830.9921875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413561
+2022-01-17T10:59:21,515 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.9|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413561
+2022-01-17T11:00:21,515 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413621
+2022-01-17T11:00:21,515 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.760234832763672|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413621
+2022-01-17T11:00:21,516 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413621
+2022-01-17T11:00:21,516 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413621
+2022-01-17T11:00:21,516 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5413.234375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413621
+2022-01-17T11:00:21,516 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7839.828125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413621
+2022-01-17T11:00:21,516 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:67.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413621
+2022-01-17T11:01:21,532 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:100.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413681
+2022-01-17T11:01:21,532 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.760089874267578|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413681
+2022-01-17T11:01:21,533 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413681
+2022-01-17T11:01:21,533 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413681
+2022-01-17T11:01:21,533 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5409.265625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413681
+2022-01-17T11:01:21,533 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7864.30859375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413681
+2022-01-17T11:01:21,533 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:67.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413681
+2022-01-17T11:02:21,523 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413741
+2022-01-17T11:02:21,524 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.759849548339844|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413741
+2022-01-17T11:02:21,524 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413741
+2022-01-17T11:02:21,524 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413741
+2022-01-17T11:02:21,524 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:6058.46875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413741
+2022-01-17T11:02:21,524 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7370.59765625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413741
+2022-01-17T11:02:21,524 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:63.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413741
+2022-01-17T11:03:21,519 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413801
+2022-01-17T11:03:21,519 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.759246826171875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413801
+2022-01-17T11:03:21,519 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413801
+2022-01-17T11:03:21,520 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413801
+2022-01-17T11:03:21,520 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5813.1171875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413801
+2022-01-17T11:03:21,520 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7630.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413801
+2022-01-17T11:03:21,520 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:64.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413801
+2022-01-17T11:04:21,520 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:100.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413861
+2022-01-17T11:04:21,520 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.764617919921875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413861
+2022-01-17T11:04:21,520 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413861
+2022-01-17T11:04:21,520 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413861
+2022-01-17T11:04:21,520 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5815.5859375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413861
+2022-01-17T11:04:21,520 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7634.4609375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413861
+2022-01-17T11:04:21,521 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:64.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413861
+2022-01-17T11:05:21,527 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413921
+2022-01-17T11:05:21,528 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.761157989501953|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413921
+2022-01-17T11:05:21,528 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413921
+2022-01-17T11:05:21,528 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413921
+2022-01-17T11:05:21,528 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5746.83984375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413921
+2022-01-17T11:05:21,528 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7724.11328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413921
+2022-01-17T11:05:21,528 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:64.9|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413921
+2022-01-17T11:06:21,675 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413981
+2022-01-17T11:06:21,676 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.569652557373047|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413981
+2022-01-17T11:06:21,676 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413981
+2022-01-17T11:06:21,676 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413981
+2022-01-17T11:06:21,676 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5581.7421875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413981
+2022-01-17T11:06:21,676 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7825.359375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413981
+2022-01-17T11:06:21,677 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:65.9|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642413981
+2022-01-17T11:07:21,566 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414041
+2022-01-17T11:07:21,566 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.579505920410156|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414041
+2022-01-17T11:07:21,567 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414041
+2022-01-17T11:07:21,567 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414041
+2022-01-17T11:07:21,567 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5501.9921875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414041
+2022-01-17T11:07:21,567 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7905.828125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414041
+2022-01-17T11:07:21,567 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414041
+2022-01-17T11:08:21,584 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414101
+2022-01-17T11:08:21,585 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.573699951171875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414101
+2022-01-17T11:08:21,585 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414101
+2022-01-17T11:08:21,585 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414101
+2022-01-17T11:08:21,585 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5439.2109375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414101
+2022-01-17T11:08:21,585 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8088.10546875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414101
+2022-01-17T11:08:21,585 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.8|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414101
+2022-01-17T11:09:21,554 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414161
+2022-01-17T11:09:21,555 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:21.568065643310547|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414161
+2022-01-17T11:09:21,555 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414161
+2022-01-17T11:09:21,555 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:46.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414161
+2022-01-17T11:09:21,555 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5528.4453125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414161
+2022-01-17T11:09:21,556 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8013.80859375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414161
+2022-01-17T11:09:21,556 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:66.3|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414161
+2022-01-17T11:10:21,564 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414221
+2022-01-17T11:10:21,565 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:21.57223129272461|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414221
+2022-01-17T11:10:21,565 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414221
+2022-01-17T11:10:21,565 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:46.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414221
+2022-01-17T11:10:21,565 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5480.9375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414221
+2022-01-17T11:10:21,565 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8080.96484375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414221
+2022-01-17T11:10:21,565 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:66.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414221
+2022-01-17T11:11:21,608 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414281
+2022-01-17T11:11:21,609 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:21.57143783569336|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414281
+2022-01-17T11:11:21,609 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414281
+2022-01-17T11:11:21,609 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:46.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414281
+2022-01-17T11:11:21,609 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5454.62109375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414281
+2022-01-17T11:11:21,609 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8089.47265625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414281
+2022-01-17T11:11:21,609 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:66.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414281
+2022-01-17T11:12:21,593 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414341
+2022-01-17T11:12:21,594 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.571147918701172|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414341
+2022-01-17T11:12:21,594 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414341
+2022-01-17T11:12:21,594 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414341
+2022-01-17T11:12:21,594 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5438.953125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414341
+2022-01-17T11:12:21,594 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8081.08984375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414341
+2022-01-17T11:12:21,594 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.8|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414341
+2022-01-17T11:13:21,566 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414401
+2022-01-17T11:13:21,567 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:21.57107925415039|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414401
+2022-01-17T11:13:21,567 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414401
+2022-01-17T11:13:21,567 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:46.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414401
+2022-01-17T11:13:21,567 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5427.1796875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414401
+2022-01-17T11:13:21,567 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:8101.40234375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414401
+2022-01-17T11:13:21,567 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:66.9|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414401
+2022-01-17T11:14:21,597 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414461
+2022-01-17T11:14:21,598 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.748210906982422|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414461
+2022-01-17T11:14:21,598 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414461
+2022-01-17T11:14:21,598 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414461
+2022-01-17T11:14:21,598 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5335.19921875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414461
+2022-01-17T11:14:21,598 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8203.26953125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414461
+2022-01-17T11:14:21,598 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:67.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414461
+2022-01-17T11:15:21,546 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414521
+2022-01-17T11:15:21,547 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.74567413330078|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414521
+2022-01-17T11:15:21,547 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414521
+2022-01-17T11:15:21,547 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414521
+2022-01-17T11:15:21,547 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5573.04296875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414521
+2022-01-17T11:15:21,547 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7963.93359375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414521
+2022-01-17T11:15:21,547 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414521
+2022-01-17T11:16:21,548 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414581
+2022-01-17T11:16:21,548 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.745513916015625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414581
+2022-01-17T11:16:21,548 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414581
+2022-01-17T11:16:21,548 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414581
+2022-01-17T11:16:21,548 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5558.25390625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414581
+2022-01-17T11:16:21,548 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7980.7890625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414581
+2022-01-17T11:16:21,549 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.1|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414581
+2022-01-17T11:17:21,901 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414641
+2022-01-17T11:17:21,906 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.750598907470703|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414641
+2022-01-17T11:17:21,906 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414641
+2022-01-17T11:17:21,906 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414641
+2022-01-17T11:17:21,906 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5477.97265625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414641
+2022-01-17T11:17:21,906 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8112.859375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414641
+2022-01-17T11:17:21,907 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.6|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414641
+2022-01-17T11:18:21,611 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414701
+2022-01-17T11:18:21,612 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.74923324584961|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414701
+2022-01-17T11:18:21,612 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414701
+2022-01-17T11:18:21,612 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414701
+2022-01-17T11:18:21,612 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5565.921875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414701
+2022-01-17T11:18:21,612 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8030.26171875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414701
+2022-01-17T11:18:21,612 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414701
+2022-01-17T11:19:21,563 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414761
+2022-01-17T11:19:21,563 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.74826431274414|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414761
+2022-01-17T11:19:21,563 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414761
+2022-01-17T11:19:21,563 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414761
+2022-01-17T11:19:21,563 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5577.9609375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414761
+2022-01-17T11:19:21,563 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8019.62109375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414761
+2022-01-17T11:19:21,563 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414761
+2022-01-17T11:21:45,159 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414905
+2022-01-17T11:21:45,160 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.74706268310547|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414905
+2022-01-17T11:21:45,160 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414905
+2022-01-17T11:21:45,160 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414905
+2022-01-17T11:21:45,160 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5503.828125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414905
+2022-01-17T11:21:45,161 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8132.62109375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414905
+2022-01-17T11:21:45,161 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414905
+2022-01-17T11:22:44,132 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414964
+2022-01-17T11:22:44,132 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.741413116455078|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414964
+2022-01-17T11:22:44,132 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414964
+2022-01-17T11:22:44,133 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414964
+2022-01-17T11:22:44,133 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5443.125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414964
+2022-01-17T11:22:44,133 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8100.57421875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414964
+2022-01-17T11:22:44,133 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.8|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642414964
+2022-01-17T11:23:44,040 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415024
+2022-01-17T11:23:44,041 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.736228942871094|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415024
+2022-01-17T11:23:44,041 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415024
+2022-01-17T11:23:44,041 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415024
+2022-01-17T11:23:44,041 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5488.328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415024
+2022-01-17T11:23:44,041 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:8055.80078125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415024
+2022-01-17T11:23:44,041 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415024
+2022-01-17T11:24:44,119 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415084
+2022-01-17T11:24:44,120 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.73422622680664|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415084
+2022-01-17T11:24:44,120 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415084
+2022-01-17T11:24:44,120 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415084
+2022-01-17T11:24:44,120 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5468.02734375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415084
+2022-01-17T11:24:44,120 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7700.2578125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415084
+2022-01-17T11:24:44,120 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:66.6|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415084
+2022-01-17T11:25:44,141 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415144
+2022-01-17T11:25:44,141 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.72814178466797|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415144
+2022-01-17T11:25:44,141 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415144
+2022-01-17T11:25:44,142 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415144
+2022-01-17T11:25:44,142 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5284.5234375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415144
+2022-01-17T11:25:44,142 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7926.59375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415144
+2022-01-17T11:25:44,142 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:67.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415144
+2022-01-17T11:26:44,046 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415204
+2022-01-17T11:26:44,046 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.727806091308594|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415204
+2022-01-17T11:26:44,046 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415204
+2022-01-17T11:26:44,046 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415204
+2022-01-17T11:26:44,046 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5336.69140625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415204
+2022-01-17T11:26:44,046 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7912.0390625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415204
+2022-01-17T11:26:44,046 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:67.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415204
+2022-01-17T11:27:44,122 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415264
+2022-01-17T11:27:44,123 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.749217987060547|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415264
+2022-01-17T11:27:44,123 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415264
+2022-01-17T11:27:44,123 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415264
+2022-01-17T11:27:44,123 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5117.125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415264
+2022-01-17T11:27:44,123 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7851.66015625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415264
+2022-01-17T11:27:44,123 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:68.8|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415264
+2022-01-17T11:28:44,139 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415324
+2022-01-17T11:28:44,140 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.729347229003906|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415324
+2022-01-17T11:28:44,140 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415324
+2022-01-17T11:28:44,140 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415324
+2022-01-17T11:28:44,140 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5258.12890625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415324
+2022-01-17T11:28:44,141 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7699.54296875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415324
+2022-01-17T11:28:44,141 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:67.9|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415324
+2022-01-17T11:29:44,111 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415384
+2022-01-17T11:29:44,111 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.731491088867188|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415384
+2022-01-17T11:29:44,111 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415384
+2022-01-17T11:29:44,112 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415384
+2022-01-17T11:29:44,112 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5186.7578125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415384
+2022-01-17T11:29:44,112 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7934.05859375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415384
+2022-01-17T11:29:44,112 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:68.3|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415384
+2022-01-17T11:30:44,146 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415444
+2022-01-17T11:30:44,147 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.73107147216797|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415444
+2022-01-17T11:30:44,147 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415444
+2022-01-17T11:30:44,147 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415444
+2022-01-17T11:30:44,147 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5172.3984375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415444
+2022-01-17T11:30:44,147 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7951.0546875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415444
+2022-01-17T11:30:44,147 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:68.4|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415444
+2022-01-17T11:31:44,130 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415504
+2022-01-17T11:31:44,131 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.728172302246094|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415504
+2022-01-17T11:31:44,131 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415504
+2022-01-17T11:31:44,131 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415504
+2022-01-17T11:31:44,131 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5053.546875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415504
+2022-01-17T11:31:44,131 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7961.8359375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415504
+2022-01-17T11:31:44,131 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:69.2|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415504
+2022-01-17T11:32:44,138 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415564
+2022-01-17T11:32:44,139 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.71695327758789|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415564
+2022-01-17T11:32:44,139 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415564
+2022-01-17T11:32:44,139 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415564
+2022-01-17T11:32:44,139 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:5096.6796875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415564
+2022-01-17T11:32:44,139 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7919.859375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415564
+2022-01-17T11:32:44,139 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:68.9|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415564
+2022-01-17T11:33:44,095 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415624
+2022-01-17T11:33:44,096 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.71767807006836|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415624
+2022-01-17T11:33:44,096 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415624
+2022-01-17T11:33:44,096 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415624
+2022-01-17T11:33:44,096 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:4912.07421875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415624
+2022-01-17T11:33:44,096 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7957.5859375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415624
+2022-01-17T11:33:44,096 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:70.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415624
+2022-01-17T11:34:44,163 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415684
+2022-01-17T11:34:44,163 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.715778350830078|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415684
+2022-01-17T11:34:44,164 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415684
+2022-01-17T11:34:44,164 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.5|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415684
+2022-01-17T11:34:44,164 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:4921.80859375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415684
+2022-01-17T11:34:44,164 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7864.20703125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415684
+2022-01-17T11:34:44,164 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:70.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415684
+2022-01-17T11:35:44,113 [INFO ] pool-3-thread-2 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415744
+2022-01-17T11:35:44,114 [INFO ] pool-3-thread-2 TS_METRICS - DiskAvailable.Gigabytes:21.701465606689453|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415744
+2022-01-17T11:35:44,114 [INFO ] pool-3-thread-2 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415744
+2022-01-17T11:35:44,114 [INFO ] pool-3-thread-2 TS_METRICS - DiskUtilization.Percent:46.6|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415744
+2022-01-17T11:35:44,114 [INFO ] pool-3-thread-2 TS_METRICS - MemoryAvailable.Megabytes:4613.015625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415744
+2022-01-17T11:35:44,114 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUsed.Megabytes:7894.0390625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415744
+2022-01-17T11:35:44,114 [INFO ] pool-3-thread-2 TS_METRICS - MemoryUtilization.Percent:71.8|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415744
+2022-01-17T11:36:44,147 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415804
+2022-01-17T11:36:44,147 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:21.606700897216797|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415804
+2022-01-17T11:36:44,147 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415804
+2022-01-17T11:36:44,147 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:46.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415804
+2022-01-17T11:36:44,147 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:4655.76171875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415804
+2022-01-17T11:36:44,147 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:7664.640625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415804
+2022-01-17T11:36:44,147 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:71.6|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415804
+2022-01-17T11:37:44,136 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415864
+2022-01-17T11:37:44,137 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:21.597198486328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415864
+2022-01-17T11:37:44,137 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415864
+2022-01-17T11:37:44,137 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:46.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415864
+2022-01-17T11:37:44,137 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:4757.96484375|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415864
+2022-01-17T11:37:44,137 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:7593.79296875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415864
+2022-01-17T11:37:44,137 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:71.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415864
+2022-01-17T11:38:44,184 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415924
+2022-01-17T11:38:44,185 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:21.628528594970703|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415924
+2022-01-17T11:38:44,185 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415924
+2022-01-17T11:38:44,185 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:46.6|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415924
+2022-01-17T11:38:44,185 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:4808.828125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415924
+2022-01-17T11:38:44,185 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:7598.578125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415924
+2022-01-17T11:38:44,185 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:70.6|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415924
+2022-01-17T11:39:44,202 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:33.3|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415984
+2022-01-17T11:39:44,203 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:21.633663177490234|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415984
+2022-01-17T11:39:44,203 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:18.901611328125|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415984
+2022-01-17T11:39:44,203 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:46.6|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415984
+2022-01-17T11:39:44,203 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:4807.19921875|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415984
+2022-01-17T11:39:44,203 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:7631.9140625|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415984
+2022-01-17T11:39:44,204 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:70.7|#Level:Host|#hostname:nicolais-mbp-2.students.clients.local,timestamp:1642415984

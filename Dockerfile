@@ -10,7 +10,6 @@ apt clean && rm -rf /var/lib/apt/lists/*
 COPY requirements.txt requirements.txt
 COPY setup.py setup.py
 COPY src/ src/
-COPY data/ data/
 COPY configs/ configs/
 
 # Install ML_things and google.cloud storage
